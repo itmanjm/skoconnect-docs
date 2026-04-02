@@ -65,7 +65,7 @@ The bottom of the screen has five tabs for navigating the app:
 
 ## Step 4: Switch Between Children
 
-If you have more than one child at the school, the app makes it easy to see information for each child:
+If you have more than one child at the school, the app lets you switch between their information:
 
 1. On the **Home** screen, tap your child's name at the top of the screen
 2. A dropdown or list appears showing all your linked children
