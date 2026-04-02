@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-04-02" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-04-02</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#admin-quick-start-guide"
+id="toc-admin-quick-start-guide">Admin Quick Start Guide</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#prerequisites"
+id="toc-prerequisites">Prerequisites</a></li>
+<li><a href="#step-1-log-in-for-the-first-time"
+id="toc-step-1-log-in-for-the-first-time">Step 1: Log In for the First
+Time</a></li>
+<li><a href="#step-2-complete-the-setup-wizard"
+id="toc-step-2-complete-the-setup-wizard">Step 2: Complete the Setup
+Wizard</a></li>
+<li><a href="#step-3-send-your-first-notice"
+id="toc-step-3-send-your-first-notice">Step 3: Send Your First
+Notice</a></li>
+<li><a href="#step-4-create-your-first-event"
+id="toc-step-4-create-your-first-event">Step 4: Create Your First
+Event</a></li>
+<li><a href="#step-5-view-your-members"
+id="toc-step-5-view-your-members">Step 5: View Your Members</a></li>
+<li><a href="#whats-next" id="toc-whats-next">What’s Next</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-01</p>
+</blockquote>
+<h1 id="admin-quick-start-guide">Admin Quick Start Guide</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide walks you through setting up SkoConnect as a school
+administrator — from your first login to sending your first notice. The
+entire process takes about 15 minutes. By the end, you’ll have a fully
+functional school communication platform ready for your staff and
+families.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>An invitation email from SkoConnect with a link to set your
+password</li>
+<li>A web browser (Chrome, Firefox, Safari, or Edge)</li>
+<li>Your school’s enrollment CSV file (optional — you can upload this
+later)</li>
+</ul>
+<hr />
+<h2 id="step-1-log-in-for-the-first-time">Step 1: Log In for the First
+Time</h2>
+<p>When your school was created in SkoConnect, an invitation email was
+sent to you. Here’s how to access your account:</p>
+<ol type="1">
+<li>Open the invitation email from your inbox</li>
+<li>Click the link in the email — this takes you to the SkoConnect login
+page</li>
+<li>Create a strong password (at least 8 characters, mix of letters and
+numbers)</li>
+<li>Click <strong>Set Password</strong></li>
+</ol>
+<p>After setting your password, you’ll be taken directly to the
+<strong>Setup Wizard</strong> — a five-step process to configure your
+school.</p>
+<blockquote>
+<p><strong>Tip:</strong> If you can’t find the invitation email, check
+your spam or junk folder. If it’s not there, contact your SkoConnect
+representative to request a new link.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/admin-login.png"
+alt="Screenshot of Admin login page showing email and password fields" />
+<figcaption aria-hidden="true">Screenshot of Admin login page showing
+email and password fields</figcaption>
+</figure>
+<hr />
+<h2 id="step-2-complete-the-setup-wizard">Step 2: Complete the Setup
+Wizard</h2>
+<p>The Setup Wizard appears automatically the first time you log in. It
+walks you through five steps:</p>
+<p><strong>Step 1 — School Details:</strong> Confirm your school’s name,
+then add your school’s address, phone number, and timezone.</p>
+<p><strong>Step 2 — Download Template:</strong> Download the CSV
+template that shows exactly how to format your student and staff list.
+This template has columns for email, role, first name, last name, phone,
+and parent email.</p>
+<p><strong>Step 3 — Upload CSV:</strong> Upload your completed CSV file
+with your students and staff. The system automatically creates accounts
+and links parents to their children.</p>
+<p><strong>Step 4 — Review Results:</strong> See a summary of how many
+users were created and whether any rows had errors. You can fix errors
+in your CSV and re-upload if needed.</p>
+<p><strong>Step 5 — Go to Dashboard:</strong> Click <strong>Go to
+Dashboard</strong> to finish setup. You’ll see your admin dashboard with
+an overview of your school.</p>
+<blockquote>
+<p><strong>Note:</strong> You can also skip the CSV upload during setup
+and do it later from the <strong>Enrollment</strong> page. This is fine
+— many schools prefer to get familiar with the platform first.</p>
+</blockquote>
+<hr />
+<h2 id="step-3-send-your-first-notice">Step 3: Send Your First
+Notice</h2>
+<p>Notices are the primary way to communicate with families. Here’s how
+to send one:</p>
+<ol type="1">
+<li>Click <strong>Notices</strong> in the left sidebar</li>
+<li>Click <strong>Create Notice</strong> in the top-right corner</li>
+<li>In the <strong>Title</strong> field, enter a clear subject line —
+for example, “Welcome to SkoConnect!”</li>
+<li>In the <strong>Description</strong> field, write your message to
+families</li>
+<li>Under <strong>Target Audience</strong>, select which roles should
+see the notice — parents, students, or both</li>
+<li>Optionally, choose a category (School Announcement, Alert, Exam,
+Event, Sports, Holiday) to add color coding</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<figure>
+<img src="assets/screenshots/notices-redesigned.png"
+alt="Screenshot of Notices page showing the Create Notice form with title, description, and audience targeting" />
+<figcaption aria-hidden="true">Screenshot of Notices page showing the
+Create Notice form with title, description, and audience
+targeting</figcaption>
+</figure>
+<hr />
+<h2 id="step-4-create-your-first-event">Step 4: Create Your First
+Event</h2>
+<p>Events appear on families’ calendars in the mobile app. Here’s how to
+add one:</p>
+<ol type="1">
+<li>Click <strong>Events</strong> in the left sidebar</li>
+<li>Click <strong>Create Event</strong></li>
+<li>Enter an <strong>Event Title</strong> (e.g., “Parent-Teacher
+Conference”)</li>
+<li>Set the <strong>Date</strong>, <strong>Start Time</strong>, and
+<strong>End Time</strong></li>
+<li>Add a <strong>Location</strong> (optional but helpful)</li>
+<li>Under <strong>Target Audience</strong>, select who should see the
+event</li>
+<li>Under <strong>Reminders</strong>, choose when to notify attendees —
+options include 5 minutes before, 1 hour before, or 1 day before</li>
+<li>Click <strong>Create Event</strong></li>
+</ol>
+<figure>
+<img src="assets/screenshots/events-page.png"
+alt="Screenshot of Events page showing event creation form with date, time, location, and reminder options" />
+<figcaption aria-hidden="true">Screenshot of Events page showing event
+creation form with date, time, location, and reminder
+options</figcaption>
+</figure>
+<hr />
+<h2 id="step-5-view-your-members">Step 5: View Your Members</h2>
+<p>After enrollment, you can see everyone who has an account at your
+school:</p>
+<ol type="1">
+<li>Click <strong>Enrollment</strong> (or <strong>Users</strong>) in the
+left sidebar</li>
+<li>You’ll see a list of all users grouped by role</li>
+<li>Use the <strong>Search</strong> bar to find a specific person</li>
+<li>Use the <strong>Filter</strong> dropdown to show only admins,
+teachers, parents, or students</li>
+</ol>
+<figure>
+<img src="assets/screenshots/users-page.png"
+alt="Screenshot of Users page showing member directory with search and role filter" />
+<figcaption aria-hidden="true">Screenshot of Users page showing member
+directory with search and role filter</figcaption>
+</figure>
+<hr />
+<h2 id="whats-next">What’s Next</h2>
+<p>You’ve completed the basics. Here’s what to explore next:</p>
+<ul>
+<li>→ See <a href="guides/admin-sop.md">Admin Complete SOP</a> —
+detailed guidance on every feature including enrollment, forms,
+templates, emergency broadcasts, and analytics</li>
+<li>→ See <a href="deep-dives/enrollment-onboarding.md">Enrollment
+Deep-Dive</a> — detailed instructions for CSV formatting, mapping, and
+troubleshooting</li>
+<li>→ See <a href="faq.md">FAQ</a> — answers to common questions from
+school administrators</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I can’t find the invitation email</td>
+<td>Check your spam or junk folder. Contact your SkoConnect
+representative for a new invitation link.</td>
+</tr>
+<tr>
+<td>Setup Wizard doesn’t appear after I log in</td>
+<td>Clear your browser cache and cookies, then log in again. If the
+problem persists, contact support.</td>
+</tr>
+<tr>
+<td>My CSV upload shows errors</td>
+<td>Open your CSV in a spreadsheet app and verify the column headers
+match exactly: <code>email</code>, <code>role</code>,
+<code>first_name</code>, <code>last_name</code>. Optional columns:
+<code>phone</code>, <code>parent_email</code>. Remove any extra spaces
+from column headers.</td>
+</tr>
+<tr>
+<td>I forgot my password</td>
+<td>Go to the login page and click <strong>Forgot Password</strong>.
+Enter your email to receive a reset link.</td>
+</tr>
+<tr>
+<td>I don’t see the sidebar navigation</td>
+<td>Make sure you’re logged in as an administrator. Teachers, parents,
+and students see a different interface.</td>
+</tr>
+<tr>
+<td>My school’s name is wrong</td>
+<td>School names are set during initial setup. Contact your SkoConnect
+representative to request a change.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Can I add more administrators?</strong> A: Yes. Go to
+<strong>Users</strong> (or <strong>Enrollment</strong>) and create a new
+user with the “admin” role. You can have as many administrators as your
+school needs.</p>
+<p><strong>Q: How do I enroll students who join mid-year?</strong> A:
+Upload a new CSV with just the new students. The system automatically
+skips any duplicates (users who already have accounts). Their parents
+will be linked to existing accounts automatically.</p>
+<p><strong>Q: How do parents and students access SkoConnect?</strong> A:
+Families download the SkoConnect mobile app from the App Store (iPhone)
+or Google Play (Android) and log in with the credentials you assigned
+during enrollment.</p>
+<p><strong>Q: What if I accidentally send a notice to the wrong
+audience?</strong> A: You can edit or delete any notice after sending
+it. However, push notifications may have already been delivered. It’s
+always worth double-checking your audience selection before clicking
+<strong>Send</strong>.</p>
+<p><strong>Q: Can I schedule a notice to be sent later?</strong> A:
+Currently, notices are sent immediately when you click
+<strong>Send</strong>. For time-sensitive communications, consider
+preparing your notice ahead of time and sending it when you’re
+ready.</p>
+<p><strong>Q: How do I add teachers to my school?</strong> A: Include
+teachers in your enrollment CSV with the role set to “teacher,” or
+create them individually from the <strong>Users</strong> page. Each
+teacher will receive their own login credentials.</p>
+</body>
+</html>

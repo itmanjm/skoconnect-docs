@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-04-02" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-04-02</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#teacher-staff-complete-sop"
+id="toc-teacher-staff-complete-sop">Teacher &amp; Staff — Complete
+SOP</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#dashboard" id="toc-dashboard">Dashboard</a></li>
+<li><a href="#notices" id="toc-notices">Notices</a></li>
+<li><a href="#calendar-events" id="toc-calendar-events">Calendar &amp;
+Events</a></li>
+<li><a href="#digital-forms" id="toc-digital-forms">Digital
+Forms</a></li>
+<li><a href="#groups" id="toc-groups">Groups</a></li>
+<li><a href="#mobile-app" id="toc-mobile-app">Mobile App</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#related-guides" id="toc-related-guides">Related
+Guides</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-01</p>
+</blockquote>
+<h1 id="teacher-staff-complete-sop">Teacher &amp; Staff — Complete
+SOP</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide is the comprehensive reference for everything you can do
+as a teacher or staff member in SkoConnect. It covers the admin portal
+(web) and the mobile app.</p>
+<p>As a teacher or staff member, your primary role is <strong>creating
+content</strong> — notices, events, and forms — that keeps families
+informed and engaged. Here’s what you can and cannot do:</p>
+<table>
+<thead>
+<tr>
+<th>You CAN Do</th>
+<th>You CANNOT Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create, edit, and delete notices</td>
+<td>Manage users or create accounts</td>
+</tr>
+<tr>
+<td>Create, edit, and delete events</td>
+<td>Run enrollment or CSV uploads</td>
+</tr>
+<tr>
+<td>Create, edit, and delete forms</td>
+<td>Send emergency broadcasts</td>
+</tr>
+<tr>
+<td>Create and manage groups</td>
+<td>Access analytics or school settings</td>
+</tr>
+<tr>
+<td>View the user directory</td>
+<td>View other teachers’ private data</td>
+</tr>
+<tr>
+<td>Use the mobile app on the go</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Teachers and staff have the same permissions.
+The term “staff” refers to non-teaching school employees like
+administrators, counselors, and support staff who need to create
+content.</p>
+</blockquote>
+<p>Each section below is self-contained — jump to any section without
+reading the whole guide.</p>
+<hr />
+<h2 id="dashboard">Dashboard</h2>
+<p>After logging in to the admin portal, you’ll see your
+<strong>Dashboard</strong>. This gives you a quick snapshot of what’s
+happening at your school:</p>
+<ul>
+<li><strong>Recent notices</strong> — the latest announcements from you
+and other staff</li>
+<li><strong>Upcoming events</strong> — calendar events happening
+soon</li>
+<li><strong>Form status</strong> — forms you’ve created and their
+response counts</li>
+<li><strong>Quick actions</strong> — shortcuts to create a notice,
+event, or form</li>
+</ul>
+<p>The sidebar on the left is your main navigation. You’ll primarily use
+these sections:</p>
+<ul>
+<li><strong>Dashboard</strong> — return here anytime</li>
+<li><strong>Notices</strong> — create and manage announcements</li>
+<li><strong>Events</strong> — create and manage calendar events</li>
+<li><strong>Forms</strong> — create and manage digital forms</li>
+<li><strong>Form Templates</strong> — browse pre-built form
+templates</li>
+<li><strong>Groups</strong> — create and manage user groups</li>
+</ul>
+<figure>
+<img src="assets/screenshots/dashboard-full.png"
+alt="Screenshot of admin dashboard showing metrics cards and quick action links" />
+<figcaption aria-hidden="true">Screenshot of admin dashboard showing
+metrics cards and quick action links</figcaption>
+</figure>
+<hr />
+<h2 id="notices">Notices</h2>
+<p>Notices are the primary way to communicate with families. As a
+teacher, you’ll likely send notices for homework reminders, exam
+schedules, field trip details, and classroom updates.</p>
+<h3 id="creating-a-notice">Creating a Notice</h3>
+<ol type="1">
+<li><p>Click <strong>Notices</strong> in the left sidebar</p></li>
+<li><p>Click <strong>Create Notice</strong> in the top-right
+corner</p></li>
+<li><p>Fill in the notice details:</p>
+<p><strong>Title</strong> — Write a clear, specific subject line.
+Families scan notice titles, so make it descriptive:</p>
+<ul>
+<li>Good: “Grade 5 Science Fair: Projects Due Friday, April 10”</li>
+<li>Avoid: “Important Information”</li>
+</ul>
+<p><strong>Description</strong> — Write your full message. Keep it
+focused on one topic per notice.</p>
+<p><strong>Target Audience</strong> — Choose who should see the
+notice:</p>
+<ul>
+<li><strong>By role</strong> — parents, students, staff, or any
+combination</li>
+<li><strong>By grade</strong> — specific grade levels (e.g., Grade 3
+only)</li>
+</ul>
+<p><strong>Category</strong> — Assign a category for color coding:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>School Announcement</td>
+<td>General classroom or school news</td>
+</tr>
+<tr>
+<td>Alert</td>
+<td>Important but non-emergency warnings</td>
+</tr>
+<tr>
+<td>Exam</td>
+<td>Test schedules, study materials, results</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>Event reminders and details</td>
+</tr>
+<tr>
+<td>Sports</td>
+<td>Sports schedules, team updates</td>
+</tr>
+<tr>
+<td>Holiday</td>
+<td>Holiday-related announcements</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Optionally, attach an image (e.g., a flyer or worksheet
+image)</p></li>
+<li><p>Click <strong>Send</strong></p></li>
+</ol>
+<p>The notice appears instantly in the mobile app for everyone in your
+target audience.</p>
+<h3 id="editing-a-notice">Editing a Notice</h3>
+<ol type="1">
+<li>Go to <strong>Notices</strong> in the sidebar</li>
+<li>Find the notice in the list</li>
+<li>Click on it to open the details</li>
+<li>Click <strong>Edit</strong> to modify the title, description,
+audience, or category</li>
+<li>Click <strong>Save Changes</strong></li>
+</ol>
+<h3 id="deleting-a-notice">Deleting a Notice</h3>
+<ol type="1">
+<li>Go to <strong>Notices</strong> and find the notice</li>
+<li>Click on it to open the details</li>
+<li>Click <strong>Delete</strong></li>
+<li>Confirm the deletion</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> If you sent a notice with incorrect
+information, edit it rather than deleting it. This preserves the notice
+history and prevents confusion if someone already read the original.</p>
+</blockquote>
+<blockquote>
+<p><strong>Tip:</strong> Write notice titles like newspaper headlines —
+short and specific. Families decide whether to read a notice based on
+its title.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/notices-redesigned.png"
+alt="Screenshot of Notices page showing the notice list with categories and the Create Notice form" />
+<figcaption aria-hidden="true">Screenshot of Notices page showing the
+notice list with categories and the Create Notice form</figcaption>
+</figure>
+<hr />
+<h2 id="calendar-events">Calendar &amp; Events</h2>
+<p>Events appear on families’ calendars in the mobile app. Use events
+for anything with a specific date and time — parent-teacher conferences,
+field trips, exam days, assemblies.</p>
+<h3 id="creating-an-event">Creating an Event</h3>
+<ol type="1">
+<li><p>Click <strong>Events</strong> in the left sidebar</p></li>
+<li><p>Click <strong>Create Event</strong></p></li>
+<li><p>Fill in the event details:</p>
+<p><strong>Title</strong> — The event name (e.g., “Grade 4
+Parent-Teacher Conference”)</p>
+<p><strong>Description</strong> — Additional details about the event</p>
+<p><strong>Date, Start Time, End Time</strong> — When the event takes
+place</p>
+<p><strong>Location</strong> — Where the event happens (e.g., “School
+Auditorium” or “Room 201”)</p>
+<p><strong>All School</strong> — Toggle on to make the event visible to
+the entire school. Toggle off to target a specific audience.</p>
+<p><strong>Target Audience</strong> — If not all-school, select specific
+roles and/or grades</p></li>
+<li><p>Under <strong>Reminders</strong>, choose when to notify
+attendees:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 minutes before</td>
+<td>Short meetings, quick reminders</td>
+</tr>
+<tr>
+<td>1 hour before</td>
+<td>Events, assemblies, conferences</td>
+</tr>
+<tr>
+<td>1 day before</td>
+<td>Important dates, deadlines, trips</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Click <strong>Create Event</strong></p></li>
+</ol>
+<p>Families will see this event on their calendar and receive a reminder
+notification at the time you selected.</p>
+<h3 id="editing-an-event">Editing an Event</h3>
+<ol type="1">
+<li>Go to <strong>Events</strong> and find the event (in the list or on
+the calendar)</li>
+<li>Click on the event to open its details</li>
+<li>Click <strong>Edit</strong> to change any details</li>
+<li>Click <strong>Save Changes</strong></li>
+</ol>
+<h3 id="deleting-an-event">Deleting an Event</h3>
+<ol type="1">
+<li>Go to <strong>Events</strong> and find the event</li>
+<li>Click on it to open the details</li>
+<li>Click <strong>Delete</strong></li>
+<li>Confirm the deletion</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> If you change the date or time of an event
+after creating it, the reminder notifications will be sent based on the
+new time.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/events-page.png"
+alt="Screenshot of Events page showing calendar view and event creation form" />
+<figcaption aria-hidden="true">Screenshot of Events page showing
+calendar view and event creation form</figcaption>
+</figure>
+<hr />
+<h2 id="digital-forms">Digital Forms</h2>
+<p>Digital forms replace paper handouts. Parents and students fill them
+out on their phones, and you can see who has and hasn’t responded.</p>
+<h3 id="creating-a-form-from-scratch">Creating a Form from Scratch</h3>
+<ol type="1">
+<li><p>Click <strong>Forms</strong> in the left sidebar</p></li>
+<li><p>Click <strong>Create Form</strong></p></li>
+<li><p>Enter a <strong>Form Title</strong> (e.g., “Grade 6 Field Trip
+Permission Slip”)</p></li>
+<li><p>Click <strong>Add Field</strong> to add questions. Choose from
+these field types:</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Field Type</th>
+<th>Use For</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text</strong></td>
+<td>Short answers</td>
+<td>Student name, class, teacher</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td>Email addresses</td>
+<td>Parent email, alternate contact</td>
+</tr>
+<tr>
+<td><strong>Checkbox</strong></td>
+<td>Yes/no or agreement</td>
+<td>“I grant permission for my child to attend”</td>
+</tr>
+<tr>
+<td><strong>Dropdown</strong></td>
+<td>Multiple choice from a list</td>
+<td>Shirt size, bus route, lunch preference</td>
+</tr>
+<tr>
+<td><strong>Textarea</strong></td>
+<td>Long answers</td>
+<td>Comments, medical notes, special instructions</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>For each field, enter a <strong>Label</strong> (the question
+text)</p></li>
+<li><p>Toggle <strong>Required</strong> if the field must be filled
+in</p></li>
+<li><p>Drag fields to reorder them</p></li>
+<li><p>Click <strong>Save</strong></p></li>
+</ol>
+<h3 id="creating-a-form-from-a-template">Creating a Form from a
+Template</h3>
+<p>SkoConnect includes pre-built templates for common school forms.
+Using a template saves time:</p>
+<ol type="1">
+<li><p>Click <strong>Form Templates</strong> in the sidebar</p></li>
+<li><p>Browse the available templates:</p>
+<ul>
+<li><strong>Field Trip Permission Slip</strong> — off-campus trip
+consent</li>
+<li><strong>Medical Consent Form</strong> — medical treatment
+authorization</li>
+<li><strong>Photo/Video Release Form</strong> — media permission</li>
+<li><strong>Emergency Contact Form</strong> — emergency contact
+details</li>
+<li><strong>Technology Use Agreement</strong> — device usage rules</li>
+</ul></li>
+<li><p>Click a template to preview it</p></li>
+<li><p>Click <strong>Use Template</strong> to create a copy</p></li>
+<li><p>Customize fields as needed</p></li>
+<li><p>Click <strong>Save</strong></p></li>
+</ol>
+<h3 id="viewing-submissions">Viewing Submissions</h3>
+<ol type="1">
+<li>Go to <strong>Forms</strong> in the sidebar</li>
+<li>Find your form in the list</li>
+<li>Click on it to view the <strong>Submissions</strong> tab</li>
+<li>You’ll see each respondent’s name, date submitted, and their
+answers</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Check your form submissions regularly. If many
+families haven’t responded, send a notice reminding them to fill out the
+form.</p>
+</blockquote>
+<p>→ For detailed form instructions, see <a
+href="deep-dives/digital-forms.md">Digital Forms Deep-Dive</a></p>
+<figure>
+<img src="assets/screenshots/forms-page.png"
+alt="Screenshot of Forms page showing form builder with field type options and the form list" />
+<figcaption aria-hidden="true">Screenshot of Forms page showing form
+builder with field type options and the form list</figcaption>
+</figure>
+<hr />
+<h2 id="groups">Groups</h2>
+<p>Groups help you organize users by class, team, department, or any
+category. This makes it easier to target specific groups with your
+notices and events.</p>
+<h3 id="viewing-groups">Viewing Groups</h3>
+<ol type="1">
+<li>Click <strong>Groups</strong> in the sidebar</li>
+<li>You’ll see a list of all groups at your school</li>
+</ol>
+<h3 id="creating-a-group">Creating a Group</h3>
+<ol type="1">
+<li>Click <strong>Groups</strong> in the sidebar</li>
+<li>Click <strong>Create Group</strong></li>
+<li>Enter a <strong>Group Name</strong> (e.g., “Grade 5 Parents” or
+“Drama Club”)</li>
+<li>Add members by searching for users</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="managing-group-members">Managing Group Members</h3>
+<ol type="1">
+<li>Click on the group to open it</li>
+<li>Click <strong>Add Members</strong> to include more users</li>
+<li>Click <strong>Remove</strong> next to a member to remove them</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> When creating a notice or event, look for the
+option to target by group. This sends your content only to people in
+that group.</p>
+</blockquote>
+<hr />
+<h2 id="mobile-app">Mobile App</h2>
+<p>While the admin portal is where you do most of your content creation,
+the mobile app lets you stay connected on the go.</p>
+<h3 id="logging-in">Logging In</h3>
+<ol type="1">
+<li>Download the SkoConnect app from the App Store (iPhone) or Google
+Play (Android)</li>
+<li>Open the app and log in with the same email and password you use for
+the admin portal</li>
+</ol>
+<h3 id="what-you-can-do-on-mobile">What You Can Do on Mobile</h3>
+<ul>
+<li><strong>View notices</strong> — see all announcements from the
+feed</li>
+<li><strong>Create notices</strong> — tap the create button to write and
+send a notice from your phone</li>
+<li><strong>View events</strong> — check today’s schedule and upcoming
+calendar</li>
+<li><strong>View forms</strong> — see your active forms and
+submissions</li>
+</ul>
+<h3 id="when-to-use-mobile-vs.-web">When to Use Mobile vs. Web</h3>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Best On</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create a detailed notice with attachments</td>
+<td>Web (admin portal)</td>
+</tr>
+<tr>
+<td>Send a quick reminder</td>
+<td>Mobile app</td>
+</tr>
+<tr>
+<td>Create a form with multiple fields</td>
+<td>Web (admin portal)</td>
+</tr>
+<tr>
+<td>Check who submitted a form</td>
+<td>Web (admin portal)</td>
+</tr>
+<tr>
+<td>View upcoming events</td>
+<td>Either — both work well</td>
+</tr>
+<tr>
+<td>Create a quick event</td>
+<td>Mobile app</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Tip:</strong> Use the mobile app for quick tasks (sending a
+short notice, checking the calendar) and the web portal for more
+detailed work (building forms, reviewing submissions).</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/img/mobile-notices.jpg"
+alt="Screenshot of mobile app showing the notices feed" />
+<figcaption aria-hidden="true">Screenshot of mobile app showing the
+notices feed</figcaption>
+</figure>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I can’t log in to the admin portal</td>
+<td>Check that you’re using the correct email address — the one your
+administrator used to create your account. Try clicking <strong>Forgot
+Password</strong> to reset it.</td>
+</tr>
+<tr>
+<td>My notice doesn’t appear in the list</td>
+<td>Check that you clicked <strong>Send</strong> after creating it.
+Draft notices may not appear in the main list.</td>
+</tr>
+<tr>
+<td>I can’t target a notice to a specific class</td>
+<td>Use the grade targeting option when creating the notice. If you need
+class-level targeting, ask your administrator to create a group for that
+class.</td>
+</tr>
+<tr>
+<td>Parents say they didn’t receive my notice</td>
+<td>Check your target audience — the notice only reaches people in the
+selected roles and grades. Also, verify that parents have push
+notifications enabled on their phones.</td>
+</tr>
+<tr>
+<td>My form shows zero submissions</td>
+<td>Make sure you published the form (not just saved it as a draft).
+Also, verify the form is visible to the right audience.</td>
+</tr>
+<tr>
+<td>I accidentally deleted a notice</td>
+<td>Deleted notices cannot be recovered. You’ll need to recreate
+it.</td>
+</tr>
+<tr>
+<td>The mobile app shows different notices than the web portal</td>
+<td>Both should show the same notices. Pull down on the mobile notices
+list to refresh. If the issue persists, log out and log back in.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Can I see notices from other teachers?</strong> A: Yes.
+All notices from teachers and staff at your school are visible to you in
+the admin portal and mobile app. This helps everyone stay informed about
+what’s happening across the school.</p>
+<p><strong>Q: Can I edit a form after parents have started submitting
+it?</strong> A: Yes, but be careful. Adding new fields is fine — they’ll
+appear for users who haven’t submitted yet. Removing or changing
+existing fields may cause issues with submissions that are already in
+progress.</p>
+<p><strong>Q: Can I send a notice to just my class?</strong> A: Use
+grade targeting to limit the notice to a specific grade level. If you
+need to target a specific classroom, ask your administrator to create a
+group for that class, and then target the notice to that group.</p>
+<p><strong>Q: How do I know if a notice has been read?</strong> A:
+Notices include read receipt tracking. Open the notice details to see
+how many recipients have opened it. For detailed read reports, ask your
+administrator about the analytics dashboard.</p>
+<p><strong>Q: Can I create events on the mobile app?</strong> A: Yes.
+Open the mobile app and navigate to the Routine tab. Look for a create
+button to add an event directly from your phone.</p>
+<p><strong>Q: What’s the difference between a notice and an
+event?</strong> A: A <strong>notice</strong> is a message — an
+announcement or alert. An <strong>event</strong> has a date and time and
+appears on the calendar. If something has a specific date and time,
+create an event. If it’s just information, create a notice.</p>
+<hr />
+<h2 id="related-guides">Related Guides</h2>
+<ul>
+<li>→ See <a href="guides/teacher-quick-start.md">Teacher &amp; Staff
+Quick Start Guide</a> — the 5-minute getting started guide</li>
+<li>→ See <a href="deep-dives/digital-forms.md">Digital Forms
+Deep-Dive</a> — templates, field builder, and submission tracking</li>
+<li>→ See <a href="deep-dives/notice-system.md">Notice System
+Deep-Dive</a> — targeting, categories, and writing effective
+notices</li>
+<li>→ See <a href="deep-dives/calendar-events.md">Calendar Deep-Dive</a>
+— events, reminders, and calendar management</li>
+<li>→ See <a href="faq.md">FAQ</a> — answers to common questions from
+all roles</li>
+</ul>
+</body>
+</html>
