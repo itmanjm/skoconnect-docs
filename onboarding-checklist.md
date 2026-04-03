@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Client Onboarding Checklist
 
@@ -76,7 +76,8 @@ Your school has been set up on SkoConnect. You're the primary administrator for 
 **To get started:**
 
 1. Click this link to set your password: [INVITATION LINK]
-2. Complete the 5-step Setup Wizard when you log in
+2. Your School Code is: **[SCHOOL CODE]** — share this with all staff and families. They'll need it to log in to the mobile app.
+3. Complete the 5-step Setup Wizard when you log in
 3. Upload your enrollment CSV to create accounts for your staff and families
 
 **Your Quick Start Guide:** [Link to Admin Quick Start Guide]
@@ -94,6 +95,7 @@ The SkoConnect Team
 - [ ] Replace `[Admin Name]` with the administrator's name
 - [ ] Replace `[School Name]` with the school's name
 - [ ] Replace `[INVITATION LINK]` with the actual invitation link from the Super Admin page
+- [ ] Replace `[SCHOOL CODE]` with the actual School Code for this school
 - [ ] Replace `[Link to Admin Quick Start Guide]` with the actual guide URL
 - [ ] Send from your official SkoConnect email address
 - [ ] Copy yourself on the email for tracking

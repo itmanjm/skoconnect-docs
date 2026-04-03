@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Student Quick Start Guide
 
@@ -9,6 +9,7 @@ This guide walks you through the SkoConnect mobile app as a student — from dow
 ## Prerequisites
 
 - A smartphone (iPhone or Android)
+- Your **School Code** (provided by your school)
 - Your SkoConnect login credentials (provided by your school)
 - An internet connection (Wi-Fi or cellular data)
 
@@ -31,13 +32,16 @@ The app icon is green with the SkoConnect logo. Once installed, find it on your 
 Open the SkoConnect app and log in with the credentials your school gave you:
 
 1. Open the app
-2. Enter your school email address
-3. Enter your password
-4. Tap **Log In**
+2. Enter your **School Code** — this is the code your school gave you that identifies your school
+3. Enter your school email address
+4. Enter your password
+5. Tap **Log In**
 
 If this is your first time, you may need to set a new password. Pick something you'll remember — at least 8 characters with a mix of letters and numbers.
 
-> **Tip:** Forgot your password? Tap **Forgot Password** on the login screen. A reset link will be sent to your email.
+> **Tip:** Your School Code was given to you by your school. If you don't know it, ask your teacher or school office.
+
+> **Tip:** Forgot your password? Tap **Forgot Password** on the login screen. You'll need your School Code and email address to reset it.
 
 ![Screenshot of mobile app login screen showing email and password fields](assets/screenshots/mobile-login-screenshot.jpg)
 
@@ -143,7 +147,8 @@ You've covered the basics. Here's what to explore next:
 
 | Problem | Solution |
 |---------|----------|
-| I can't log in | Double-check your email address — use the one your school gave you. Tap **Forgot Password** to reset it via email. |
+| I can't log in | Double-check your **School Code** and email address — use the ones your school gave you. Tap **Forgot Password** to reset it via email. |
+| I don't know my School Code | Ask your teacher or school office. The School Code was given to you when your account was created. |
 | I don't see any notices | Check that you're connected to the internet. Pull down on the notices list to refresh. If the list is still empty, ask your teacher if they've posted any notices. |
 | The app shows old information | Pull down on any screen to refresh. If it still looks outdated, close the app completely and reopen it. |
 | I can't submit a form | Make sure you've filled in all required fields (marked with a red asterisk). If the form still won't submit, try closing and reopening it. |

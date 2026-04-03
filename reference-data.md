@@ -27,12 +27,14 @@
 | `/groups` | Groups | Create, manage, role-based access control |
 | `/emergency` | Emergency Broadcast | One-click send, 3 priority levels, acknowledgment progress bar |
 | `/analytics` | Analytics | Usage metrics, quick data points |
+| `/settings` | Settings | EMIS data export, grade promotion, school configuration |
 | `/super-admin` | Super Admin | School provisioning, invitation link generation |
 
 ### Mobile App Screens (source: `mobile/lib/app/screens/`)
 
 | Screen | Tab | Visible To | Key Features |
 |--------|-----|-----------|-------------|
+| Login | - | All | School Code + email/password, forgot password, first-time setup, biometric toggle |
 | Home | Tab 1 | All | Role-aware greeting, metrics, child selector (parents) |
 | Routine | Tab 2 | All | Today/Upcoming/Past events, child context for parents |
 | Forms | Tab 3 | All | Active/closed forms, submit, admin template panel (admin only) |

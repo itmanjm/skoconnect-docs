@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Parent Quick Start Guide
 
@@ -9,6 +9,7 @@ This guide walks you through the SkoConnect mobile app as a parent — from down
 ## Prerequisites
 
 - A smartphone (iPhone or Android)
+- Your **School Code** (provided by your school administrator)
 - Your SkoConnect login credentials (provided by your school administrator)
 - An internet connection (Wi-Fi or cellular data)
 
@@ -31,13 +32,16 @@ The app icon is green with the SkoConnect logo. Once installed, you'll find it o
 Open the SkoConnect app and log in with the credentials your school provided:
 
 1. Open the app
-2. Enter your email address
-3. Enter your password
-4. Tap **Log In**
+2. Enter your **School Code** — this is the code provided by your school administrator that identifies your child's school
+3. Enter your email address
+4. Enter your password
+5. Tap **Log In**
 
 If this is your first time logging in, you may need to set a new password. Choose something you'll remember — at least 8 characters with a mix of letters and numbers.
 
-> **Tip:** Can't remember your password? Tap **Forgot Password** on the login screen. You'll receive an email with a link to create a new one.
+> **Tip:** Your School Code was provided by your school administrator. If you don't know your School Code, contact your school's main office.
+
+> **Tip:** Can't remember your password? Tap **Forgot Password** on the login screen. You'll need your School Code and email address to reset it.
 
 ![Screenshot of mobile app login screen showing email and password fields](assets/screenshots/mobile-login-screenshot.jpg)
 
@@ -159,7 +163,8 @@ You've covered the basics. Here's what to explore next:
 
 | Problem | Solution |
 |---------|----------|
-| I can't log in | Make sure you're using the email address the school provided. Tap **Forgot Password** to reset your password via email. |
+| I can't log in | Make sure you're using the correct **School Code** and the email address the school provided. Tap **Forgot Password** to reset your password via email. |
+| I don't know my School Code | Contact your school administrator or main office. The School Code was provided when your account was created. |
 | I don't see my child's name on the Home screen | Your account may not be linked to your child yet. Contact your school administrator to complete the linking. |
 | I'm not receiving push notifications | Open your phone's **Settings**, find SkoConnect, and make sure **Notifications** are enabled. Also check the notification settings inside the app (under **More** → **Notification Settings**). |
 | The app shows outdated information | Pull down on any screen to refresh the content. Make sure you have a stable internet connection. |
