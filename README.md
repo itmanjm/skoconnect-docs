@@ -16,4 +16,4 @@ Table of Contents
 Notes
 - This repository is a generic SkoConnect documentation pack intended for onboarding and reference. It does not include school-specific branding.
 
-Last updated: (date)
+Last updated: 2026-04-02
