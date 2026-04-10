@@ -283,6 +283,8 @@ Digital forms replace paper handouts. Parents and students fill them out on thei
    - **Checkbox** — yes/no questions or agreement checkboxes
    - **Dropdown** — multiple choice from a list you define
    - **Textarea** — longer answers (comments, additional information)
+   - **Date** — calendar date selection (birth dates, event dates, deadlines)
+   - **Radio** — exclusive selection (only one answer allowed)
 5. For each field, enter a **Label** (the question) and choose whether it's **Required**
 6. Arrange fields in the order you want by dragging them up or down
 7. Click **Save**
@@ -343,6 +345,8 @@ If you build a form you want to reuse, you can save it as a template:
 2. Before or after saving, look for a **Save as Template** option
 3. Give your template a name
 4. The template will appear in the Form Templates gallery for future use
+
+![Screenshot of Form Templates page showing all available templates](assets/screenshots/form-templates-page.png)
 
 ---
 
@@ -411,6 +415,8 @@ Groups let you organize users by class, department, team, or any other category.
 5. Click **Remove** next to a member to remove them from the group
 
 > **Tip:** Groups are useful for sending notices and events to specific subsets of your school. When creating a notice or event, look for the option to target by group.
+
+![Screenshot of Groups page showing active groups and management options](assets/screenshots/groups-page.png)
 
 ---
 
@@ -509,6 +515,8 @@ At the end of an academic year, use Grade Promotion to move students up to their
 ---
 
 ### Settings & Security
+
+![Screenshot of Settings page showing EMIS configuration and data completeness](assets/screenshots/settings-page.png)
 
 ### Role Descriptions
 

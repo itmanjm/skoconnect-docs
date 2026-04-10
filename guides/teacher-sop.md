@@ -177,6 +177,8 @@ Digital forms replace paper handouts. Parents and students fill them out on thei
    | **Checkbox** | Yes/no or agreement | "I grant permission for my child to attend" |
    | **Dropdown** | Multiple choice from a list | Shirt size, bus route, lunch preference |
    | **Textarea** | Long answers | Comments, medical notes, special instructions |
+   | **Date** | Calendar date selection | Birth date, event date, deadline |
+   | **Radio** | Exclusive selection (one choice only) | Yes/No agreement, preference selection |
 
 5. For each field, enter a **Label** (the question text)
 6. Toggle **Required** if the field must be filled in

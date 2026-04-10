@@ -37,7 +37,7 @@ Digital forms replace paper handouts. When you create a form in SkoConnect, it a
 
 ### Field Types
 
-The form builder offers five field types. Each serves a different purpose:
+The form builder offers seven field types. Each serves a different purpose:
 
 | Field Type | What It Collects | Example Use |
 |------------|-----------------|-------------|
@@ -46,6 +46,8 @@ The form builder offers five field types. Each serves a different purpose:
 | **Checkbox** | Yes/no or agree/disagree responses | "I give permission for my child to attend" |
 | **Dropdown** | Single selection from a list you define | Grade level, class period, bus route |
 | **Textarea** | Long-form text (multiple lines) | Comments, concerns, medical notes |
+| **Date** | Calendar date selection | Event dates, birth dates, submission deadlines |
+| **Radio** | Exclusive selection from a list (only one choice allowed) | Yes/No questions, agreement/disagreement |
 
 ### When to Use Each Field Type
 
@@ -53,11 +55,15 @@ The form builder offers five field types. Each serves a different purpose:
 
 **Email** — Use when you need an email address. The app validates the format (must contain @ and a domain).
 
-**Checkbox** — Use for yes/no questions, consent, or acknowledgment. Each checkbox is a single yes/no choice.
+**Checkbox** — Use for yes/no questions, consent, or acknowledgment. Each checkbox is a single yes/no choice. Respondents can check multiple boxes if the question allows.
 
-**Dropdown** — Use when you want the respondent to pick from a set of options you define. Good for standardized answers.
+**Dropdown** — Use when you want the respondent to pick from a set of options you define. Good for standardized answers. The user sees a scrollable list.
 
 **Textarea** — Use for open-ended questions where you expect a paragraph or more. Good for comments, explanations, or detailed responses.
+
+**Date** — Use when you need a specific calendar date. The app provides a date picker on mobile. Good for birthday fields, trip dates, or deadline fields.
+
+**Radio** — Use for exclusive selection where only one answer is allowed. Similar to Dropdown, but shows all options at once. Good for yes/no questions where you want clarity that only one choice applies.
 
 ### Required vs. Optional Fields
 
