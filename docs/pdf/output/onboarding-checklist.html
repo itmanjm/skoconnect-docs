@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-04-05" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-04-05</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#client-onboarding-checklist"
+id="toc-client-onboarding-checklist">Client Onboarding Checklist</a>
+<ul>
+<li><a href="#purpose" id="toc-purpose">Purpose</a></li>
+<li><a href="#timeline-overview" id="toc-timeline-overview">Timeline
+Overview</a></li>
+<li><a href="#pre-onboarding-checklist"
+id="toc-pre-onboarding-checklist">Pre-Onboarding Checklist</a></li>
+<li><a href="#step-1-create-the-school-account"
+id="toc-step-1-create-the-school-account">Step 1: Create the School
+Account</a></li>
+<li><a href="#step-2-send-the-invitation-email"
+id="toc-step-2-send-the-invitation-email">Step 2: Send the Invitation
+Email</a></li>
+<li><a href="#step-3-verify-admin-setup"
+id="toc-step-3-verify-admin-setup">Step 3: Verify Admin Setup</a></li>
+<li><a href="#step-4-verify-user-enrollment"
+id="toc-step-4-verify-user-enrollment">Step 4: Verify User
+Enrollment</a></li>
+<li><a href="#step-5-test-end-to-end"
+id="toc-step-5-test-end-to-end">Step 5: Test End-to-End</a></li>
+<li><a href="#step-6-hand-off-documentation"
+id="toc-step-6-hand-off-documentation">Step 6: Hand Off
+Documentation</a></li>
+<li><a href="#post-onboarding-monitoring"
+id="toc-post-onboarding-monitoring">Post-Onboarding Monitoring</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
+</blockquote>
+<h1 id="client-onboarding-checklist">Client Onboarding Checklist</h1>
+<blockquote>
+<p><strong>Internal Use Only</strong> — This document is for the
+SkoConnect team (platform owner). It is NOT intended for school
+administrators or end users.</p>
+</blockquote>
+<h2 id="purpose">Purpose</h2>
+<p>This checklist guides you through onboarding a new client school onto
+SkoConnect. Follow each step in order. The timeline runs from initial
+contact through the first week after handoff.</p>
+<hr />
+<h2 id="timeline-overview">Timeline Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>When</th>
+<th>Who</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pre-Onboarding</td>
+<td>Before school contact</td>
+<td>SkoConnect team</td>
+</tr>
+<tr>
+<td>Day 0 — School Created</td>
+<td>Day of provisioning</td>
+<td>SkoConnect team</td>
+</tr>
+<tr>
+<td>Day 1-2 — Admin Setup</td>
+<td>After invitation sent</td>
+<td>School administrator</td>
+</tr>
+<tr>
+<td>Day 3-5 — User Enrollment</td>
+<td>After admin setup</td>
+<td>School administrator</td>
+</tr>
+<tr>
+<td>Day 7 — Handoff Complete</td>
+<td>One week after creation</td>
+<td>SkoConnect team</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pre-onboarding-checklist">Pre-Onboarding Checklist</h2>
+<p>Before contacting a new school, verify the platform is ready:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Firebase project is active and
+healthy</label>
+<ul>
+<li>Verify health endpoint:
+<code>https://us-central1-school-connect-enterprise.cloudfunctions.net/health</code></li>
+<li>Expected response: status 200 with
+<code>{ "status": "ok" }</code></li>
+</ul></li>
+<li><label><input type="checkbox" />All Cloud Functions are deployed and
+running</label>
+<ul>
+<li><code>health</code>, <code>auth</code>, <code>members</code>,
+<code>events</code>, <code>notifications</code>, <code>forms</code>,
+<code>relationships</code>, <code>scheduleReminders</code>,
+<code>enrollmentWizard</code>, <code>analytics</code></li>
+</ul></li>
+<li><label><input type="checkbox" />Firestore security rules are
+current</label></li>
+<li><label><input type="checkbox" />Admin portal is accessible at
+<code>https://school-connect-enterprise.web.app</code></label></li>
+<li><label><input type="checkbox" />Mobile app is available on App Store
+and Google Play (latest version)</label></li>
+</ul>
+<p>If any of these checks fail, resolve the issue before proceeding with
+onboarding.</p>
+<hr />
+<h2 id="step-1-create-the-school-account">Step 1: Create the School
+Account</h2>
+<p>Use the Super Admin portal to provision a new school:</p>
+<ol type="1">
+<li>Go to the Super Admin page:
+<code>https://school-connect-enterprise.web.app/super-admin</code></li>
+<li>Enter the master key: <code>SkoConnect-2026-Master</code></li>
+<li>Click <strong>Create School</strong></li>
+<li>Fill in the school details:
+<ul>
+<li><strong>School name</strong> (as it should appear to users)</li>
+<li><strong>Admin email</strong> (the primary administrator’s email
+address)</li>
+<li><strong>School address</strong> (optional)</li>
+<li><strong>Phone number</strong> (optional)</li>
+<li><strong>Timezone</strong> (important for event reminders)</li>
+</ul></li>
+<li>Click <strong>Provision School</strong></li>
+</ol>
+<p>The system creates: - A school document in Firestore - An admin user
+account with the specified email - An invitation link for the
+administrator</p>
+<hr />
+<h2 id="step-2-send-the-invitation-email">Step 2: Send the Invitation
+Email</h2>
+<p>After provisioning, send an invitation email to the school
+administrator. Use this template:</p>
+<hr />
+<p><strong>Subject:</strong> Welcome to SkoConnect — Set Up Your School
+Account</p>
+<p>Hello [Admin Name],</p>
+<p>Your school has been set up on SkoConnect. You’re the primary
+administrator for <strong>[School Name]</strong>.</p>
+<p><strong>To get started:</strong></p>
+<ol type="1">
+<li>Click this link to set your password: [INVITATION LINK]</li>
+<li>Your School Code is: <strong>[SCHOOL CODE]</strong> — share this
+with all staff and families. They’ll need it to log in to the mobile
+app.</li>
+<li>Complete the 5-step Setup Wizard when you log in</li>
+<li>Upload your enrollment CSV to create accounts for your staff and
+families</li>
+</ol>
+<p><strong>Your Quick Start Guide:</strong> [Link to Admin Quick Start
+Guide]</p>
+<p>If you have any questions or run into issues, reply to this
+email.</p>
+<p>Welcome aboard!</p>
+<p>The SkoConnect Team</p>
+<hr />
+<h3 id="email-checklist">Email Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Replace <code>[Admin Name]</code>
+with the administrator’s name</label></li>
+<li><label><input type="checkbox" />Replace <code>[School Name]</code>
+with the school’s name</label></li>
+<li><label><input type="checkbox" />Replace
+<code>[INVITATION LINK]</code> with the actual invitation link from the
+Super Admin page</label></li>
+<li><label><input type="checkbox" />Replace <code>[SCHOOL CODE]</code>
+with the actual School Code for this school</label></li>
+<li><label><input type="checkbox" />Replace
+<code>[Link to Admin Quick Start Guide]</code> with the actual guide
+URL</label></li>
+<li><label><input type="checkbox" />Send from your official SkoConnect
+email address</label></li>
+<li><label><input type="checkbox" />Copy yourself on the email for
+tracking</label></li>
+</ul>
+<hr />
+<h2 id="step-3-verify-admin-setup">Step 3: Verify Admin Setup</h2>
+<p>Wait 1-2 days after sending the invitation, then verify the
+administrator completed setup:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Administrator has logged in (check
+Firestore for last login timestamp)</label></li>
+<li><label><input type="checkbox" />Setup Wizard was completed (school
+details are filled in)</label></li>
+<li><label><input type="checkbox" />School document in Firestore is
+updated with address, phone, and timezone</label></li>
+</ul>
+<p>If the administrator hasn’t set up their account within 2 days, send
+a follow-up email reminding them to click the invitation link.</p>
+<hr />
+<h2 id="step-4-verify-user-enrollment">Step 4: Verify User
+Enrollment</h2>
+<p>After the administrator completes setup, they should begin uploading
+their enrollment CSV. Check progress after 3-5 days:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Users have been created in Firestore
+(check the <code>users</code> collection filtered by
+school_id)</label></li>
+<li><label><input type="checkbox" />Parent-student relationships are
+established (check the <code>relationships</code>
+collection)</label></li>
+<li><label><input type="checkbox" />Enrollment count matches the
+school’s expected user count (within reason — some schools enroll in
+batches)</label></li>
+</ul>
+<p>If enrollment numbers seem low, reach out to the administrator to see
+if they need help with CSV formatting.</p>
+<hr />
+<h2 id="step-5-test-end-to-end">Step 5: Test End-to-End</h2>
+<p>Before declaring the onboarding complete, run a quick end-to-end
+test:</p>
+<p><strong>From the admin portal:</strong> - [ ] Log in as the school
+administrator (use a test admin account if needed) - [ ] Create a test
+notice and verify it appears in the notice list - [ ] Create a test
+event with a reminder - [ ] Create a test form</p>
+<p><strong>From the mobile app:</strong> - [ ] Log in as a test parent
+or student user - [ ] Verify the test notice appears in the notices feed
+- [ ] Verify the test event appears in the calendar (Routine tab) - [ ]
+Verify the test form appears in the Forms tab - [ ] Submit the test form
+and verify the submission appears in the admin portal</p>
+<p>If any test fails, investigate and resolve the issue before
+handoff.</p>
+<hr />
+<h2 id="step-6-hand-off-documentation">Step 6: Hand Off
+Documentation</h2>
+<p>Once end-to-end testing passes, send the documentation package to the
+school administrator:</p>
+<p><strong>Email Template:</strong></p>
+<hr />
+<p><strong>Subject:</strong> SkoConnect — Your Documentation Package</p>
+<p>Hello [Admin Name],</p>
+<p>Your school is all set up on SkoConnect. Here are the resources your
+team will need:</p>
+<p><strong>For administrators:</strong> - Admin Quick Start Guide:
+[Link] - Admin Complete SOP: [Link]</p>
+<p><strong>For teachers and staff:</strong> - Teacher &amp; Staff Quick
+Start Guide: [Link] - Teacher &amp; Staff Complete SOP: [Link]</p>
+<p><strong>For parents:</strong> - Parent Quick Start Guide: [Link] -
+Parent Complete SOP: [Link]</p>
+<p><strong>For students:</strong> - Student Quick Start Guide: [Link] -
+Student Complete SOP: [Link]</p>
+<p><strong>Frequently Asked Questions:</strong> - FAQ: [Link]</p>
+<p>Share these guides with your team. They’re also available anytime at
+[documentation site URL].</p>
+<p>If you have questions, reply to this email.</p>
+<p>The SkoConnect Team</p>
+<hr />
+<h3 id="handoff-checklist">Handoff Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />All Quick Start guides are linked
+and accessible</label></li>
+<li><label><input type="checkbox" />All SOPs are linked and
+accessible</label></li>
+<li><label><input type="checkbox" />FAQ is linked and
+accessible</label></li>
+<li><label><input type="checkbox" />Documentation site is live (if
+applicable)</label></li>
+<li><label><input type="checkbox" />Email sent to the school
+administrator</label></li>
+</ul>
+<hr />
+<h2 id="post-onboarding-monitoring">Post-Onboarding Monitoring</h2>
+<p>For the first week after handoff, monitor for issues:</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Check Cloud Function logs for errors
+related to the new school</label></li>
+<li><label><input type="checkbox" />Watch for support emails or
+questions from the school</label></li>
+<li><label><input type="checkbox" />Verify enrollment numbers are
+growing as expected</label></li>
+<li><label><input type="checkbox" />Check that the school has sent at
+least one notice (activity indicator)</label></li>
+</ul>
+<p>If you spot any issues, proactively reach out to the school
+administrator.</p>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health endpoint returns an error</td>
+<td>Check Firebase console for Cloud Function deployment issues.
+Redeploy if necessary.</td>
+</tr>
+<tr>
+<td>Administrator can’t find the invitation email</td>
+<td>Check spam folder. Re-send the invitation from the Super Admin page
+(generate a new invitation link).</td>
+</tr>
+<tr>
+<td>Admin setup not completing</td>
+<td>Follow up with a reminder email. Offer to walk them through the
+Setup Wizard over a call.</td>
+</tr>
+<tr>
+<td>CSV upload errors</td>
+<td>Share the CSV format guide from the Admin SOP. Offer to review their
+CSV file for formatting issues.</td>
+</tr>
+<tr>
+<td>Parents can’t log in</td>
+<td>Verify the parent accounts were created during enrollment. Check
+that invitation emails were delivered.</td>
+</tr>
+<tr>
+<td>Mobile app not showing data</td>
+<td>Verify push notifications are working. Check that users have the
+latest app version.</td>
+</tr>
+<tr>
+<td>Low engagement after handoff</td>
+<td>Reach out to the administrator with tips for driving adoption —
+suggest sending a welcome notice to all families.</td>
+</tr>
+<tr>
+<td>School wants custom features</td>
+<td>Note the request. These are out of scope for V1 onboarding. Explain
+that feature requests can be considered for future updates.</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

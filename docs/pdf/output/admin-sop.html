@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-04-05" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-04-05</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#admin-portal-complete-sop"
+id="toc-admin-portal-complete-sop">Admin Portal — Complete SOP</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#dashboard" id="toc-dashboard">Dashboard</a></li>
+<li><a href="#enrollment" id="toc-enrollment">Enrollment</a></li>
+<li><a href="#user-management" id="toc-user-management">User
+Management</a></li>
+<li><a href="#notices" id="toc-notices">Notices</a></li>
+<li><a href="#calendar-events" id="toc-calendar-events">Calendar &amp;
+Events</a></li>
+<li><a href="#digital-forms" id="toc-digital-forms">Digital
+Forms</a></li>
+<li><a href="#form-templates" id="toc-form-templates">Form
+Templates</a></li>
+<li><a href="#emergency-broadcast"
+id="toc-emergency-broadcast">Emergency Broadcast</a></li>
+<li><a href="#groups" id="toc-groups">Groups</a></li>
+<li><a href="#analytics" id="toc-analytics">Analytics</a></li>
+<li><a href="#settings-bulk-operations"
+id="toc-settings-bulk-operations">Settings &amp; Bulk
+Operations</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#related-guides" id="toc-related-guides">Related
+Guides</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
+</blockquote>
+<h1 id="admin-portal-complete-sop">Admin Portal — Complete SOP</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide is the comprehensive reference for everything you can do
+as a school administrator in the SkoConnect admin portal. It covers
+every page, every feature, and every workflow available to you.</p>
+<p>As an administrator, you have full control over your school’s
+SkoConnect instance. Here’s a summary of your capabilities:</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr>
+<th>Feature</th>
+<th>What You Can Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dashboard</strong></td>
+<td>View school metrics and quick actions</td>
+</tr>
+<tr>
+<td><strong>Enrollment</strong></td>
+<td>Upload CSV files to create user accounts in bulk</td>
+</tr>
+<tr>
+<td><strong>User Management</strong></td>
+<td>Search, create, edit, and deactivate users</td>
+</tr>
+<tr>
+<td><strong>Notices</strong></td>
+<td>Create, edit, delete, and target announcements</td>
+</tr>
+<tr>
+<td><strong>Calendar &amp; Events</strong></td>
+<td>Create events with automatic reminders</td>
+</tr>
+<tr>
+<td><strong>Digital Forms</strong></td>
+<td>Build forms, use templates, and track submissions</td>
+</tr>
+<tr>
+<td><strong>Form Templates</strong></td>
+<td>Browse and customize pre-built form templates</td>
+</tr>
+<tr>
+<td><strong>Emergency Broadcast</strong></td>
+<td>Send urgent alerts and track acknowledgments</td>
+</tr>
+<tr>
+<td><strong>Groups</strong></td>
+<td>Create and manage user groups</td>
+</tr>
+<tr>
+<td><strong>Analytics</strong></td>
+<td>View usage metrics across your school</td>
+</tr>
+</tbody>
+</table>
+<p>Each section below is self-contained — you can jump to any section
+without reading the whole guide.</p>
+<blockquote>
+<p><strong>Note:</strong> This guide covers the <strong>admin portal
+only</strong> (the web interface). If you’re looking for mobile app
+guidance, see the Quick Start and SOP guides for your role.</p>
+</blockquote>
+<hr />
+<h2 id="dashboard">Dashboard</h2>
+<p>The Dashboard is your home base after logging in. It provides a
+snapshot of your school’s activity.</p>
+<h3 id="what-youll-see">What You’ll See</h3>
+<ul>
+<li><strong>Metrics cards</strong> — total users, active users, notices
+sent, forms submitted</li>
+<li><strong>Quick action links</strong> — shortcuts to create a notice,
+event, or form</li>
+<li><strong>Recent activity</strong> — the latest notices, events, and
+form submissions</li>
+</ul>
+<h3 id="navigating-the-sidebar">Navigating the Sidebar</h3>
+<p>The sidebar on the left is your main navigation. Click any item to go
+to that page:</p>
+<ul>
+<li><strong>Dashboard</strong> — return to this overview</li>
+<li><strong>Enrollment</strong> — upload CSV files and create users in
+bulk</li>
+<li><strong>Users</strong> — manage individual user accounts</li>
+<li><strong>Notices</strong> — create and manage announcements</li>
+<li><strong>Events</strong> — create and manage calendar events</li>
+<li><strong>Forms</strong> — create and manage digital forms</li>
+<li><strong>Form Templates</strong> — browse pre-built form
+templates</li>
+<li><strong>Groups</strong> — create and manage user groups</li>
+<li><strong>Emergency</strong> — send urgent broadcasts</li>
+<li><strong>Analytics</strong> — view school-wide usage data</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> If the sidebar is hidden, look for a menu icon
+(hamburger icon) in the top-left corner of the screen and click it to
+expand the sidebar.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/dashboard-full.png"
+alt="Screenshot of admin dashboard showing metrics cards, quick action links, and recent activity feed" />
+<figcaption aria-hidden="true">Screenshot of admin dashboard showing
+metrics cards, quick action links, and recent activity feed</figcaption>
+</figure>
+<hr />
+<h2 id="enrollment">Enrollment</h2>
+<p>The Enrollment page is where you add users to your school in bulk
+using a CSV (spreadsheet) file. This is the fastest way to get your
+entire school community set up on SkoConnect.</p>
+<h3 id="preparing-your-csv-file">Preparing Your CSV File</h3>
+<p>Before uploading, your CSV file must follow this format:</p>
+<p><strong>Required columns:</strong></p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 43%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>User’s email address</td>
+<td><code>jane.doe@school.edu</code></td>
+</tr>
+<tr>
+<td><code>role</code></td>
+<td>One of: <code>admin</code>, <code>teacher</code>,
+<code>parent</code>, <code>student</code>, <code>staff</code></td>
+<td><code>teacher</code></td>
+</tr>
+<tr>
+<td><code>first_name</code></td>
+<td>User’s first name</td>
+<td><code>Jane</code></td>
+</tr>
+<tr>
+<td><code>last_name</code></td>
+<td>User’s last name</td>
+<td><code>Doe</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Optional columns:</strong></p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 43%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>phone</code></td>
+<td>User’s phone number</td>
+<td><code>(555) 123-4567</code></td>
+</tr>
+<tr>
+<td><code>parent_email</code></td>
+<td>For students only — links to parent account</td>
+<td><code>john.doe@email.com</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example CSV (first 5 rows):</strong></p>
+<pre><code>email,role,first_name,last_name,phone,parent_email
+admin@school.edu,admin,Maria,Santos,(555) 100-0000,
+jane.doe@school.edu,teacher,Jane,Doe,(555) 100-0001,
+john.doe@email.com,parent,John,Doe,(555) 100-0002,
+emma.doe@email.com,student,Emma,Doe,,john.doe@email.com
+mark.smith@school.edu,staff,Mark,Smith,(555) 100-0003,</code></pre>
+<blockquote>
+<p><strong>Important:</strong> The first row must be column headers
+exactly as shown. The CSV must use commas as separators. Maximum 400
+rows per upload.</p>
+</blockquote>
+<h3 id="uploading-your-csv">Uploading Your CSV</h3>
+<ol type="1">
+<li>Click <strong>Enrollment</strong> in the sidebar</li>
+<li>Click <strong>Upload CSV</strong> or drag and drop your file onto
+the upload area</li>
+<li>The system reads your file and shows a preview of the columns it
+detected</li>
+<li>Verify that the columns are mapped correctly</li>
+<li>Click <strong>Confirm Upload</strong></li>
+</ol>
+<h3 id="understanding-results">Understanding Results</h3>
+<p>After uploading, you’ll see a results summary:</p>
+<ul>
+<li><strong>Users created</strong> — how many new accounts were
+created</li>
+<li><strong>Duplicates skipped</strong> — how many emails already
+existed in the system</li>
+<li><strong>Errors</strong> — any rows that failed, with the row number
+and reason</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> If you see errors, open your CSV in a
+spreadsheet app, fix the problematic rows, and re-upload. The system
+will skip any users who already exist, so you won’t create
+duplicates.</p>
+</blockquote>
+<p>→ For detailed enrollment instructions, see <a
+href="deep-dives/enrollment-onboarding.md">Enrollment Deep-Dive</a></p>
+<figure>
+<img src="assets/screenshots/enrollment-page.png"
+alt="Screenshot of Enrollment page showing CSV upload area with drag-and-drop and column preview" />
+<figcaption aria-hidden="true">Screenshot of Enrollment page showing CSV
+upload area with drag-and-drop and column preview</figcaption>
+</figure>
+<hr />
+<h2 id="user-management">User Management</h2>
+<p>The Users page lets you view, search, create, edit, and deactivate
+individual user accounts.</p>
+<h3 id="viewing-users">Viewing Users</h3>
+<ol type="1">
+<li>Click <strong>Users</strong> in the sidebar</li>
+<li>You’ll see a list of all users at your school</li>
+<li>Use the <strong>Search</strong> bar to find a specific person by
+name or email</li>
+<li>Use the <strong>Filter</strong> dropdown to show only users of a
+specific role (admin, teacher, parent, student, or staff)</li>
+</ol>
+<h3 id="creating-a-single-user">Creating a Single User</h3>
+<ol type="1">
+<li>Click <strong>Users</strong> in the sidebar</li>
+<li>Click <strong>Create User</strong> (or <strong>Add
+User</strong>)</li>
+<li>Fill in the user’s details:
+<ul>
+<li><strong>Email</strong> — required</li>
+<li><strong>Role</strong> — select from the dropdown</li>
+<li><strong>First Name</strong> — required</li>
+<li><strong>Last Name</strong> — required</li>
+<li><strong>Phone</strong> — optional</li>
+</ul></li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>The user will receive an invitation email with instructions to set
+their password.</p>
+<h3 id="editing-a-user">Editing a User</h3>
+<ol type="1">
+<li>Find the user in the list (search or filter)</li>
+<li>Click on the user’s row to open their profile</li>
+<li>Edit the fields you want to change (name, phone, role)</li>
+<li>Click <strong>Save Changes</strong></li>
+</ol>
+<h3 id="deactivating-a-user">Deactivating a User</h3>
+<ol type="1">
+<li>Find the user in the list</li>
+<li>Click on the user’s row</li>
+<li>Click <strong>Deactivate</strong> (or toggle their status to
+inactive)</li>
+<li>Confirm the deactivation</li>
+</ol>
+<p>A deactivated user can no longer log in, but their data (notices,
+form submissions, etc.) is preserved. You can reactivate them at any
+time.</p>
+<h3 id="linking-parents-to-students">Linking Parents to Students</h3>
+<p>If a parent account wasn’t linked to a student during enrollment, you
+can link them manually:</p>
+<ol type="1">
+<li>Find the parent’s user profile</li>
+<li>Look for the <strong>Linked Students</strong> section</li>
+<li>Click <strong>Link Student</strong> and search for the student by
+name</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="bulk-actions">Bulk Actions</h3>
+<p>You can select multiple users using the checkboxes next to each row,
+then apply bulk actions like deactivation or role changes.</p>
+<figure>
+<img src="assets/screenshots/users-page.png"
+alt="Screenshot of Users page showing member directory with search bar, role filter, and user list" />
+<figcaption aria-hidden="true">Screenshot of Users page showing member
+directory with search bar, role filter, and user list</figcaption>
+</figure>
+<hr />
+<h2 id="notices">Notices</h2>
+<p>Notices are the primary way to communicate with your school
+community. They appear in the mobile app and can be targeted to specific
+audiences.</p>
+<h3 id="creating-a-notice">Creating a Notice</h3>
+<ol type="1">
+<li>Click <strong>Notices</strong> in the sidebar</li>
+<li>Click <strong>Create Notice</strong> in the top-right corner</li>
+<li>Fill in the notice details:
+<ul>
+<li><strong>Title</strong> — a clear, specific subject line</li>
+<li><strong>Description</strong> — the full message body</li>
+<li><strong>Target Audience</strong> — choose roles (parents, students,
+staff) and/or grade levels</li>
+<li><strong>Category</strong> — select a category for color coding (see
+below)</li>
+</ul></li>
+<li>Optionally, attach an image by clicking the image upload area</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<h3 id="notice-categories">Notice Categories</h3>
+<p>Categories help organize notices visually. When you create a notice,
+you can assign one of these categories:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Color</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>School Announcement</td>
+<td>Blue</td>
+<td>General school-wide news</td>
+</tr>
+<tr>
+<td>Alert</td>
+<td>Red</td>
+<td>Important warnings or urgent but non-emergency updates</td>
+</tr>
+<tr>
+<td>Exam</td>
+<td>Blue</td>
+<td>Exam schedules, study tips, test results</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>Blue</td>
+<td>Event reminders and details</td>
+</tr>
+<tr>
+<td>Sports</td>
+<td>Green</td>
+<td>Sports schedules, team announcements, game results</td>
+</tr>
+<tr>
+<td>Holiday</td>
+<td>Purple</td>
+<td>Holiday schedules, school closures</td>
+</tr>
+</tbody>
+</table>
+<h3 id="targeting-your-audience">Targeting Your Audience</h3>
+<p>You can target notices to reach the right people:</p>
+<ul>
+<li><strong>By role</strong> — send to parents only, students only,
+staff only, or any combination</li>
+<li><strong>By grade</strong> — send to specific grade levels (for
+example, only Grade 5 families)</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> Combining role and grade targeting helps you
+reach exactly the right audience. For example, target “Grade 5 Parents”
+to send exam information only to families with 5th graders.</p>
+</blockquote>
+<h3 id="editing-and-deleting-notices">Editing and Deleting Notices</h3>
+<ol type="1">
+<li>Go to <strong>Notices</strong> in the sidebar</li>
+<li>Find the notice in the list</li>
+<li>Click on it to open the details</li>
+<li>Click <strong>Edit</strong> to modify the title, description, or
+audience</li>
+<li>Click <strong>Delete</strong> to remove the notice entirely</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Even after editing or deleting, push
+notifications may have already been delivered. Always double-check your
+notice before sending.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/notices-redesigned.png"
+alt="Screenshot of Notices page showing notice list with categories and the Create Notice form" />
+<figcaption aria-hidden="true">Screenshot of Notices page showing notice
+list with categories and the Create Notice form</figcaption>
+</figure>
+<hr />
+<h2 id="calendar-events">Calendar &amp; Events</h2>
+<p>Events appear on the school calendar in the mobile app. You can set
+automatic reminders so attendees get notified before an event
+starts.</p>
+<h3 id="creating-an-event">Creating an Event</h3>
+<ol type="1">
+<li>Click <strong>Events</strong> in the sidebar</li>
+<li>Click <strong>Create Event</strong></li>
+<li>Fill in the event details:
+<ul>
+<li><strong>Title</strong> — name of the event (e.g., “Parent-Teacher
+Conference”)</li>
+<li><strong>Description</strong> — details about the event</li>
+<li><strong>Date</strong> — the day of the event</li>
+<li><strong>Start Time</strong> and <strong>End Time</strong> — when the
+event begins and ends</li>
+<li><strong>Location</strong> — where the event takes place
+(optional)</li>
+<li><strong>All School</strong> — toggle on to make the event visible to
+everyone</li>
+<li><strong>Target Audience</strong> — if not all-school, select
+specific roles and/or grades</li>
+</ul></li>
+<li>Under <strong>Reminders</strong>, choose when to notify attendees:
+<ul>
+<li><strong>5 minutes before</strong> — good for short meetings</li>
+<li><strong>1 hour before</strong> — good for events and assemblies</li>
+<li><strong>1 day before</strong> — good for conferences and important
+dates</li>
+</ul></li>
+<li>Click <strong>Create Event</strong></li>
+</ol>
+<h3 id="viewing-the-calendar">Viewing the Calendar</h3>
+<p>The Events page includes a built-in calendar view. You can navigate
+between months by clicking the arrow buttons. Each day cell shows events
+scheduled for that day.</p>
+<h3 id="editing-and-deleting-events">Editing and Deleting Events</h3>
+<ol type="1">
+<li>Go to <strong>Events</strong> in the sidebar</li>
+<li>Find the event in the list or on the calendar</li>
+<li>Click on the event to open its details</li>
+<li>Click <strong>Edit</strong> to modify any details, or click
+<strong>Delete</strong> to remove it</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> If you change the date or time of an event
+after it’s been created, the reminder schedule stays the same relative
+to the new time.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/events-page.png"
+alt="Screenshot of Events page showing calendar view and event creation form with date, time, and reminder options" />
+<figcaption aria-hidden="true">Screenshot of Events page showing
+calendar view and event creation form with date, time, and reminder
+options</figcaption>
+</figure>
+<hr />
+<h2 id="digital-forms">Digital Forms</h2>
+<p>Digital forms replace paper handouts. Parents and students fill them
+out on their phones, and you can track who has and hasn’t responded.</p>
+<h3 id="creating-a-form-from-scratch">Creating a Form from Scratch</h3>
+<ol type="1">
+<li>Click <strong>Forms</strong> in the sidebar</li>
+<li>Click <strong>Create Form</strong></li>
+<li>Enter a <strong>Form Title</strong> (e.g., “Grade 3 Field Trip
+Permission Slip”)</li>
+<li>Add questions by clicking <strong>Add Field</strong> and selecting a
+field type:
+<ul>
+<li><strong>Text</strong> — short answers (name, class, teacher)</li>
+<li><strong>Email</strong> — email address validation</li>
+<li><strong>Checkbox</strong> — yes/no questions or agreement
+checkboxes</li>
+<li><strong>Dropdown</strong> — multiple choice from a list you
+define</li>
+<li><strong>Textarea</strong> — longer answers (comments, additional
+information)</li>
+<li><strong>Date</strong> — calendar date selection (birth dates, event
+dates, deadlines)</li>
+<li><strong>Radio</strong> — exclusive selection (only one answer
+allowed)</li>
+</ul></li>
+<li>For each field, enter a <strong>Label</strong> (the question) and
+choose whether it’s <strong>Required</strong></li>
+<li>Arrange fields in the order you want by dragging them up or
+down</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="creating-a-form-from-a-template">Creating a Form from a
+Template</h3>
+<p>Instead of starting from scratch, you can use a pre-built
+template:</p>
+<ol type="1">
+<li>Click <strong>Forms</strong> in the sidebar</li>
+<li>Click <strong>Create from Template</strong></li>
+<li>Browse the available templates and click one to preview it</li>
+<li>Customize any fields you want to change</li>
+<li>Click <strong>Save</strong> to create your form</li>
+</ol>
+<h3 id="viewing-submissions">Viewing Submissions</h3>
+<ol type="1">
+<li>Go to <strong>Forms</strong> in the sidebar</li>
+<li>Find the form in the list</li>
+<li>Click on it to see the <strong>Submissions</strong> tab</li>
+<li>You’ll see a list of everyone who has submitted the form, along with
+their responses</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Use the export option (if available) to
+download submissions as a file for your records.</p>
+</blockquote>
+<p>→ For detailed form instructions, see <a
+href="deep-dives/digital-forms.md">Digital Forms Deep-Dive</a></p>
+<figure>
+<img src="assets/screenshots/forms-page.png"
+alt="Screenshot of Forms page showing form list and the form builder with field type options" />
+<figcaption aria-hidden="true">Screenshot of Forms page showing form
+list and the form builder with field type options</figcaption>
+</figure>
+<hr />
+<h2 id="form-templates">Form Templates</h2>
+<p>SkoConnect includes pre-built form templates for common school needs.
+You can use these as starting points and customize them for your
+school.</p>
+<h3 id="available-system-templates">Available System Templates</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 33%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th>Template</th>
+<th>Purpose</th>
+<th>Fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Field Trip Permission Slip</strong></td>
+<td>Collect parent permission for off-campus trips</td>
+<td>Student name, class, destination, date, parent name, signature,
+emergency contact, medical notes</td>
+</tr>
+<tr>
+<td><strong>Medical Consent Form</strong></td>
+<td>Authorize medical treatment and share health information</td>
+<td>Student name, class, allergies, current medications, doctor name,
+parent authorization, emergency contact</td>
+</tr>
+<tr>
+<td><strong>Photo/Video Release Form</strong></td>
+<td>Get permission to use photos and videos of students</td>
+<td>Student name, class, parent name, consent checkbox,
+restrictions</td>
+</tr>
+<tr>
+<td><strong>Emergency Contact Form</strong></td>
+<td>Collect up-to-date emergency contact details</td>
+<td>Student name, class, primary contact name, phone, relationship,
+secondary contact, doctor name, special notes</td>
+</tr>
+<tr>
+<td><strong>Technology Use Agreement</strong></td>
+<td>Establish acceptable use rules for school devices</td>
+<td>Student name, class, parent name, agreement checkbox, signature,
+date</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-a-template">Using a Template</h3>
+<ol type="1">
+<li>Click <strong>Form Templates</strong> in the sidebar</li>
+<li>Browse the template gallery</li>
+<li>Click a template to preview its fields</li>
+<li>Click <strong>Use Template</strong> to create a copy</li>
+<li>Edit the fields as needed for your school</li>
+<li>Click <strong>Save</strong> — the form appears in your Forms list
+ready to send</li>
+</ol>
+<h3 id="creating-a-custom-template">Creating a Custom Template</h3>
+<p>If you build a form you want to reuse, you can save it as a
+template:</p>
+<ol type="1">
+<li>Create your form in the Forms page</li>
+<li>Before or after saving, look for a <strong>Save as Template</strong>
+option</li>
+<li>Give your template a name</li>
+<li>The template will appear in the Form Templates gallery for future
+use</li>
+</ol>
+<figure>
+<img src="assets/screenshots/form-templates-page.png"
+alt="Screenshot of Form Templates page showing all available templates" />
+<figcaption aria-hidden="true">Screenshot of Form Templates page showing
+all available templates</figcaption>
+</figure>
+<hr />
+<h2 id="emergency-broadcast">Emergency Broadcast</h2>
+<p>Emergency broadcasts are for urgent, time-sensitive communications
+that require immediate attention — safety incidents, weather closures,
+or other critical situations.</p>
+<h3 id="when-to-use-emergency-broadcast">When to Use Emergency
+Broadcast</h3>
+<p>Use the Emergency Broadcast feature when:</p>
+<ul>
+<li>A safety incident has occurred at or near the school</li>
+<li>The school needs to close unexpectedly</li>
+<li>There’s an urgent health or weather alert</li>
+<li>Any situation where families need to be notified immediately</li>
+</ul>
+<blockquote>
+<p><strong>Important:</strong> Do NOT use emergency broadcasts for
+routine announcements. Use regular notices for everyday communication.
+Overusing the emergency channel reduces its impact when a real emergency
+occurs.</p>
+</blockquote>
+<h3 id="creating-an-emergency-broadcast">Creating an Emergency
+Broadcast</h3>
+<ol type="1">
+<li>Click <strong>Emergency</strong> in the sidebar</li>
+<li>Click <strong>Create Broadcast</strong></li>
+<li>Compose your message — be clear, specific, and include actionable
+instructions</li>
+<li>Select the <strong>Priority Level</strong>:
+<ul>
+<li><strong>High</strong> — critical, life-safety situations</li>
+<li><strong>Medium</strong> — urgent but not immediately dangerous</li>
+<li><strong>Low</strong> — important updates that need prompt
+attention</li>
+</ul></li>
+<li>Select the <strong>Target Audience</strong> (or leave as “All” to
+reach everyone)</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Emergency broadcasts cannot be edited after
+sending. Double-check your message and audience before clicking
+<strong>Send</strong>.</p>
+</blockquote>
+<h3 id="tracking-acknowledgments">Tracking Acknowledgments</h3>
+<p>After sending a broadcast, you can see who has and hasn’t
+acknowledged it:</p>
+<ol type="1">
+<li>Stay on the Emergency page after sending</li>
+<li>You’ll see a progress bar showing acknowledgment counts</li>
+<li>The list shows each recipient’s name, role, and acknowledgment
+status</li>
+<li>You can filter by status: acknowledged, pending, or not
+received</li>
+</ol>
+<p>→ For detailed emergency broadcast guidance, see <a
+href="deep-dives/emergency-broadcast.md">Emergency Broadcast
+Deep-Dive</a></p>
+<figure>
+<img src="assets/screenshots/emergency-page.png"
+alt="Screenshot of Emergency Broadcast page showing alert creation form and acknowledgment tracking" />
+<figcaption aria-hidden="true">Screenshot of Emergency Broadcast page
+showing alert creation form and acknowledgment tracking</figcaption>
+</figure>
+<hr />
+<h2 id="groups">Groups</h2>
+<p>Groups let you organize users by class, department, team, or any
+other category. This makes it easier to target communications to
+specific subsets of your school.</p>
+<h3 id="creating-a-group">Creating a Group</h3>
+<ol type="1">
+<li>Click <strong>Groups</strong> in the sidebar</li>
+<li>Click <strong>Create Group</strong></li>
+<li>Enter a <strong>Group Name</strong> (e.g., “Grade 5 Teachers” or
+“Football Team”)</li>
+<li>Add members by searching for users or selecting from a list</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="managing-group-members">Managing Group Members</h3>
+<ol type="1">
+<li>Go to <strong>Groups</strong> in the sidebar</li>
+<li>Click on the group you want to manage</li>
+<li>You’ll see a list of current members</li>
+<li>Click <strong>Add Members</strong> to include more users</li>
+<li>Click <strong>Remove</strong> next to a member to remove them from
+the group</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Groups are useful for sending notices and
+events to specific subsets of your school. When creating a notice or
+event, look for the option to target by group.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/groups-page.png"
+alt="Screenshot of Groups page showing active groups and management options" />
+<figcaption aria-hidden="true">Screenshot of Groups page showing active
+groups and management options</figcaption>
+</figure>
+<hr />
+<h2 id="analytics">Analytics</h2>
+<p>The Analytics page gives you a high-level view of how your school is
+using SkoConnect.</p>
+<h3 id="what-youll-see-1">What You’ll See</h3>
+<ul>
+<li><strong>User activity</strong> — how many users are active, by
+role</li>
+<li><strong>Notice engagement</strong> — how many notices sent, read,
+and unread</li>
+<li><strong>Form submissions</strong> — response rates across your
+forms</li>
+<li><strong>Event participation</strong> — upcoming and past events with
+attendance metrics</li>
+</ul>
+<p>This data helps you understand whether your communications are
+reaching your community effectively.</p>
+<blockquote>
+<p><strong>Note:</strong> Analytics data updates periodically. You may
+not see real-time numbers immediately after sending a notice or creating
+an event.</p>
+</blockquote>
+<figure>
+<img src="assets/screenshots/analytics-page.png"
+alt="Screenshot of Analytics page showing usage metrics and data visualizations" />
+<figcaption aria-hidden="true">Screenshot of Analytics page showing
+usage metrics and data visualizations</figcaption>
+</figure>
+<hr />
+<h2 id="settings-bulk-operations">Settings &amp; Bulk Operations</h2>
+<h3 id="emis-data-export">EMIS Data Export</h3>
+<p>The EMIS (Education Management Information System) Export lets you
+generate data files for Jamaica’s Ministry of Education reporting. This
+is available from the <strong>Settings</strong> page in the admin
+portal.</p>
+<h4 id="setting-up-emis">Setting Up EMIS</h4>
+<ol type="1">
+<li>Go to <strong>Settings</strong> in the sidebar</li>
+<li>In the <strong>EMIS</strong> section, enter your school details:
+<ul>
+<li><strong>School Code</strong> — your official MoEY school code</li>
+<li><strong>Academic Year</strong> — the reporting year (e.g.,
+2025-2026)</li>
+<li><strong>Parish</strong> — your school’s parish</li>
+</ul></li>
+<li>Click <strong>Save Settings</strong></li>
+</ol>
+<h4 id="data-completeness-check">Data Completeness Check</h4>
+<p>Before exporting, the system shows a completeness summary: - Total
+students enrolled - How many have government IDs on file - How many have
+enrollment dates recorded - How many are assigned to a section/class</p>
+<blockquote>
+<p><strong>Tip:</strong> Aim for 100% completeness before exporting.
+Missing data can cause issues with MoEY reporting.</p>
+</blockquote>
+<h4 id="exporting-data">Exporting Data</h4>
+<ol type="1">
+<li>Open the <strong>Settings</strong> page</li>
+<li>In the <strong>EMIS</strong> section, select what to export:
+<ul>
+<li><strong>Students</strong> — student roster with demographics and
+enrollment info</li>
+<li><strong>Staff</strong> — staff roster with roles and contact
+info</li>
+<li><strong>Enrollment</strong> — enrollment summary by grade and
+section</li>
+<li><strong>Engagement Summary</strong> — communication engagement
+statistics</li>
+</ul></li>
+<li>Click <strong>Export</strong> and enter your admin password to
+confirm</li>
+<li>The file downloads to your computer</li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> EMIS exports require password
+confirmation. This protects sensitive student data from unauthorized
+downloads.</p>
+</blockquote>
+<h4 id="supported-grades">Supported Grades</h4>
+<p>K1, K2, K3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12</p>
+<hr />
+<h3 id="grade-promotion">Grade Promotion</h3>
+<p>At the end of an academic year, use Grade Promotion to move students
+up to their next grade in bulk or individually. This is also available
+from the <strong>Settings</strong> page.</p>
+<h4 id="before-you-promote">Before You Promote</h4>
+<ol type="1">
+<li>Go to <strong>Settings</strong> → <strong>Bulk
+Operations</strong></li>
+<li>Select a <strong>Source Grade</strong> (where students are now)</li>
+<li>Click <strong>Check</strong> — the system shows a preview of all
+students in that grade</li>
+<li>Review the list and any warnings</li>
+</ol>
+<h4 id="promoting-students">Promoting Students</h4>
+<p><strong>Bulk Mode</strong> (recommended for end-of-year): 1. Select
+the <strong>Source Grade</strong> (e.g., Grade 3) 2. Select the
+<strong>Target Grade</strong> (e.g., Grade 4) 3. Click
+<strong>Check</strong> to preview students 4. Click <strong>Promote
+All</strong> — confirm the action 5. All students in the source grade
+move to the target grade</p>
+<p><strong>Individual Mode</strong> (for selective promotion): 1. Select
+the <strong>Source Grade</strong> and click <strong>Check</strong> 2.
+Check the boxes next to specific students 3. Select the <strong>Target
+Grade</strong> 4. Click <strong>Promote Selected</strong> — confirm the
+action 5. Only selected students move to the target grade</p>
+<blockquote>
+<p><strong>Warning:</strong> Grade promotion permanently changes student
+records. Always preview the list first and double-check your source and
+target grades. There is no undo button.</p>
+</blockquote>
+<hr />
+<h3 id="settings-security">Settings &amp; Security</h3>
+<figure>
+<img src="assets/screenshots/settings-page.png"
+alt="Screenshot of Settings page showing EMIS configuration and data completeness" />
+<figcaption aria-hidden="true">Screenshot of Settings page showing EMIS
+configuration and data completeness</figcaption>
+</figure>
+<h3 id="role-descriptions">Role Descriptions</h3>
+<p>Your school has five roles, each with different permissions:</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr>
+<th>Role</th>
+<th>Can Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Admin</strong></td>
+<td>Everything — manage users, enrollment, notices, events, forms,
+emergency broadcasts, groups, analytics</td>
+</tr>
+<tr>
+<td><strong>Teacher</strong></td>
+<td>Create notices, events, and forms. View users. Cannot manage
+enrollment or other users.</td>
+</tr>
+<tr>
+<td><strong>Staff</strong></td>
+<td>Same permissions as teachers — create notices, events, and forms.
+Cannot manage users or enrollment.</td>
+</tr>
+<tr>
+<td><strong>Parent</strong></td>
+<td>View notices, events, and forms. Submit forms. Cannot create
+content. Mobile app only.</td>
+</tr>
+<tr>
+<td><strong>Student</strong></td>
+<td>View notices, events, and forms. Submit forms. Cannot create
+content. Mobile app only.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="password-reset-for-users">Password Reset for Users</h3>
+<p>If a user forgets their password:</p>
+<ol type="1">
+<li>Go to <strong>Users</strong> in the sidebar</li>
+<li>Find the user in the list</li>
+<li>Click on the user’s profile</li>
+<li>Click <strong>Reset Password</strong></li>
+<li>The user will receive an email with a link to set a new
+password</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> You cannot see or set a user’s password
+directly. The reset link is sent to the user’s email address.</p>
+</blockquote>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSV upload shows “invalid headers”</td>
+<td>Make sure your first row contains exactly these headers:
+<code>email</code>, <code>role</code>, <code>first_name</code>,
+<code>last_name</code>. No spaces, no extra columns, exact
+spelling.</td>
+</tr>
+<tr>
+<td>CSV upload shows duplicate errors</td>
+<td>Those email addresses already exist in the system. This is normal —
+the system skips them. You don’t need to remove them from your CSV.</td>
+</tr>
+<tr>
+<td>A user can’t log in after enrollment</td>
+<td>The user needs to set their password first. They should check their
+email for the invitation link. If they didn’t receive it, reset their
+password from the Users page.</td>
+</tr>
+<tr>
+<td>My notice isn’t reaching specific parents</td>
+<td>Check your target audience settings. If you selected a specific
+grade, only parents with children in that grade will see the
+notice.</td>
+</tr>
+<tr>
+<td>Emergency broadcast not delivering</td>
+<td>Check your internet connection. Emergency broadcasts require a
+stable connection. If the issue persists, check the acknowledgment list
+to see which recipients received the broadcast.</td>
+</tr>
+<tr>
+<td>Analytics data seems outdated</td>
+<td>Analytics update periodically, not in real time. Check back in a few
+minutes after sending content.</td>
+</tr>
+<tr>
+<td>Can’t find a user I just created</td>
+<td>The user list may need to be refreshed. Try searching for the user
+by email or click the refresh button.</td>
+</tr>
+<tr>
+<td>I need to change a user’s role</td>
+<td>Go to <strong>Users</strong>, find the user, click on their profile,
+and change the role dropdown. Click <strong>Save Changes</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: How many users can I enroll at once?</strong> A: You can
+upload up to 400 rows in a single CSV file. If you have more users,
+split them across multiple uploads.</p>
+<p><strong>Q: Can a user have more than one role?</strong> A: No. Each
+user has exactly one role. If someone needs different permissions,
+contact your SkoConnect representative.</p>
+<p><strong>Q: How do I remove a user from SkoConnect entirely?</strong>
+A: Currently, you can deactivate a user (they won’t be able to log in),
+but their data is preserved. If you need to permanently remove a user,
+contact your SkoConnect representative.</p>
+<p><strong>Q: Can I send a notice to a specific group?</strong> A: Yes.
+When creating a notice, look for the option to target by group in the
+audience settings.</p>
+<p><strong>Q: What happens to a user’s data if I deactivate
+them?</strong> A: Their data (notices, form submissions, event history)
+is preserved. They just can’t log in until you reactivate their
+account.</p>
+<p><strong>Q: Can I see which parents have read a specific
+notice?</strong> A: Yes. Notices include read receipt tracking. Open the
+notice details to see how many recipients have opened it.</p>
+<p><strong>Q: How do I add a new administrator?</strong> A: Create a new
+user with the “admin” role from the Users page. They’ll receive an
+invitation email with login instructions. You can have as many
+administrators as your school needs.</p>
+<p><strong>Q: What’s the difference between deactivating a user and
+deleting a notice?</strong> A: Deactivating a user stops them from
+logging in but keeps their data intact. Deleting a notice removes it
+from the feed entirely. Both actions can have significant impacts —
+deactivate users when someone leaves the school temporarily, and delete
+notices only when you’re sure you no longer need them.</p>
+<hr />
+<h2 id="related-guides">Related Guides</h2>
+<ul>
+<li>→ See <a href="guides/admin-quick-start.md">Admin Quick Start
+Guide</a> — the 5-minute getting started guide</li>
+<li>→ See <a href="deep-dives/enrollment-onboarding.md">Enrollment
+Deep-Dive</a> — detailed CSV formatting and bulk enrollment
+instructions</li>
+<li>→ See <a href="deep-dives/digital-forms.md">Digital Forms
+Deep-Dive</a> — form builder, templates, and submission tracking</li>
+<li>→ See <a href="deep-dives/emergency-broadcast.md">Emergency
+Broadcast Deep-Dive</a> — priority levels, best practices, and
+acknowledgment tracking</li>
+<li>→ See <a href="deep-dives/notice-system.md">Notice System
+Deep-Dive</a> — targeting, categories, and writing effective
+notices</li>
+<li>→ See <a href="faq.md">FAQ</a> — answers to common questions from
+all roles</li>
+</ul>
+</body>
+</html>
