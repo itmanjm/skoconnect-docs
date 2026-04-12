@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkoConnect Documentation</title>
+  <style>
+    :root {
+      --color-bg: #FAFAF8;
+      --color-surface: #FFFFFF;
+      --color-border: #E8E8E0;
+      --color-text: #1C1917;
+      --color-text-secondary: #78716C;
+      --color-primary: #0D9488;
+      --color-primary-hover: #0F766E;
+      --color-accent: #F59E0B;
+      --color-amber: #D97706;
+      --color-red: #E11D48;
+      --color-purple: #7C3AED;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --max-width: 960px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0F766E 0%, #115E59 50%, #134E4A 100%);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.125rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 2rem 1.5rem; }
+    .section { margin-bottom: 2.5rem; }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-border);
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      border-color: var(--color-primary);
+      box-shadow: 0 2px 8px rgba(13, 148, 136, 0.1);
+    }
+    .card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.75rem;
+    }
+    .card-link {
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    .card-link:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      margin-right: 0.375rem;
+    }
+    .badge-admin { background: #F0FDFA; color: #0F766E; }
+    .badge-teacher { background: #F0FDF4; color: #166534; }
+    .badge-parent { background: #FFFBEB; color: #92400E; }
+    .badge-student { background: #EDE9FE; color: #5B21B6; }
+    .badge-internal { background: #FFF1F2; color: #BE123C; }
+    .badge-all { background: #F5F5F0; color: #57534E; }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .quick-link {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 9999px;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: border-color 0.2s;
+    }
+    .quick-link:hover { border-color: var(--color-primary); }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--color-text-secondary);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--color-border);
+      margin-top: 2rem;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.75rem; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>SkoConnect Documentation</h1>
+    <p>Guides, SOPs, and FAQs for school administrators, teachers, parents, and students.</p>
+  </div>
+
+  <div class="container">
+    <div class="quick-links">
+      <a href="../pdf/output/admin-quick-start.html" class="quick-link">Admin Quick Start</a>
+      <a href="../pdf/output/teacher-quick-start.html" class="quick-link">Teacher Quick Start</a>
+      <a href="../pdf/output/parent-quick-start.html" class="quick-link">Parent Quick Start</a>
+      <a href="../pdf/output/student-quick-start.html" class="quick-link">Student Quick Start</a>
+      <a href="../pdf/output/faq.html" class="quick-link">FAQ</a>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Quick Start Guides</h2>
+      <p style="color: var(--color-text-secondary); margin-bottom: 1rem; font-size: 0.9375rem;">
+        Get started in 5 minutes. Choose the guide for your role.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title"><span class="badge badge-admin">Admin</span> Admin Quick Start</div>
+          <div class="card-desc">Set up your school, send your first notice, and create your first event.</div>
+          <a href="../pdf/output/admin-quick-start.html" class="card-link">Read guide →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-teacher">Teacher</span> Teacher &amp; Staff Quick Start</div>
+          <div class="card-desc">Log in, create your first notice, schedule an event, and build a form.</div>
+          <a href="../pdf/output/teacher-quick-start.html" class="card-link">Read guide →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-parent">Parent</span> Parent Quick Start</div>
+          <div class="card-desc">Download the app, view your child's notices, calendar, and fill out forms.</div>
+          <a href="../pdf/output/parent-quick-start.html" class="card-link">Read guide →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-student">Student</span> Student Quick Start</div>
+          <div class="card-desc">Download the app, check notices, view your calendar, and submit forms.</div>
+          <a href="../pdf/output/student-quick-start.html" class="card-link">Read guide →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Complete SOPs</h2>
+      <p style="color: var(--color-text-secondary); margin-bottom: 1rem; font-size: 0.9375rem;">
+        Comprehensive reference guides covering every feature.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title"><span class="badge badge-admin">Admin</span> Admin Portal SOP</div>
+          <div class="card-desc">Full reference for enrollment, user management, notices, events, forms, emergency broadcasts, groups, and analytics.</div>
+          <a href="../pdf/output/admin-sop.html" class="card-link">Read guide →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-teacher">Teacher</span> Teacher &amp; Staff SOP</div>
+          <div class="card-desc">Notices, events, forms, templates, groups, and mobile app usage for content creators.</div>
+          <a href="../pdf/output/teacher-sop.html" class="card-link">Read guide →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-parent">Parent</span> Parent Mobile App SOP</div>
+          <div class="card-desc">Complete mobile app guide — home screen, child selector, notices, calendar, forms, emergency alerts, and settings.</div>
+          <a href="../pdf/output/parent-sop.html" class="card-link">Read guide →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-student">Student</span> Student Mobile App SOP</div>
+          <div class="card-desc">Mobile app walkthrough — notices, calendar, forms, emergency alerts, and profile settings.</div>
+          <a href="../pdf/output/student-sop.html" class="card-link">Read guide →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Resources</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title"><span class="badge badge-all">All Roles</span> FAQ</div>
+          <div class="card-desc">44 frequently asked questions organized by topic — getting started, admin, teacher, parent, student, emergency, and security.</div>
+          <a href="../pdf/output/faq.html" class="card-link">Read FAQ →</a>
+        </div>
+        <div class="card">
+          <div class="card-title"><span class="badge badge-internal">Internal</span> Onboarding Checklist</div>
+          <div class="card-desc">Internal ops checklist for onboarding new client schools — from provisioning to handoff.</div>
+          <a href="../pdf/output/onboarding-checklist.html" class="card-link">Read checklist →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>SkoConnect Documentation v1.0 &middot; Last updated: 2026-04-05</p>
+    <p style="margin-top: 0.25rem;">Platform: <a href="https://school-connect-enterprise.web.app" style="color: var(--color-primary);">school-connect-enterprise.web.app</a></p>
+  </footer>
+</body>
+</html>
