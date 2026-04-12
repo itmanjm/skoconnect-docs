@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Admin Quick Start Guide
 
@@ -97,9 +97,10 @@ After enrollment, you can see everyone who has an account at your school:
 
 ## What's Next
 
-You've completed the basics. Here's what to explore next:
+You've completed the basics. Here are additional features to explore:
 
-- → See [Admin Complete SOP](guides/admin-sop.md) — detailed guidance on every feature including enrollment, forms, templates, emergency broadcasts, and analytics
+- → **Settings** — EMIS data export for MoEY reporting, grade promotion, school configuration
+- → See [Admin Complete SOP](guides/admin-sop.md) — detailed guidance on every feature including enrollment, forms, templates, emergency broadcasts, analytics, and bulk operations
 - → See [Enrollment Deep-Dive](deep-dives/enrollment-onboarding.md) — detailed instructions for CSV formatting, mapping, and troubleshooting
 - → See [FAQ](faq.md) — answers to common questions from school administrators
 

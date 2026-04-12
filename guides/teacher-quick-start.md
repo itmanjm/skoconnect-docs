@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Teacher & Staff Quick Start Guide
 
@@ -112,13 +112,14 @@ Need to collect information from parents or students? Digital forms replace pape
 While the admin portal is where you create content, the mobile app is where you can check what's happening on the go:
 
 1. Download the SkoConnect app from the App Store (iPhone) or Google Play (Android)
-2. Log in with the same email and password you use for the admin portal
+2. Open the app and enter your **School Code** (provided by your school administrator)
+3. Log in with the same email and password you use for the admin portal
 3. Tap the **Notices** tab to see all recent announcements
 4. Tap the **Routine** tab to see today's events and upcoming calendar items
 
 The mobile app is a convenient way to stay informed without needing a computer.
 
-![Screenshot of mobile app showing the notices feed with categorized posts](assets/screenshots/img/mobile-notices.jpg)
+![Screenshot of mobile app showing the notices feed with categorized posts](assets/screenshots/mobile-notices.jpg)
 
 ---
 
@@ -137,6 +138,7 @@ You've covered the basics. Here's what to explore next:
 | Problem | Solution |
 |---------|----------|
 | I can't log in | Check that you're using the correct email address — the one your administrator used to create your account. Try clicking **Forgot Password** to reset it. |
+| I don't know my School Code for the mobile app | Ask your school administrator for the School Code. You'll need it to log in to the mobile app. |
 | I don't see the sidebar navigation | Make sure your browser window is wide enough. Try maximizing the window or using a desktop browser instead of a tablet. |
 | My notice didn't reach everyone | Check your **Target Audience** selection. If you targeted a specific grade, only families in that grade will see the notice. |
 | I accidentally sent a notice with a typo | You can edit the notice after sending it. Click on the notice in the list, make your corrections, and save. |

@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Teacher & Staff — Complete SOP
 
@@ -177,6 +177,8 @@ Digital forms replace paper handouts. Parents and students fill them out on thei
    | **Checkbox** | Yes/no or agreement | "I grant permission for my child to attend" |
    | **Dropdown** | Multiple choice from a list | Shirt size, bus route, lunch preference |
    | **Textarea** | Long answers | Comments, medical notes, special instructions |
+   | **Date** | Calendar date selection | Birth date, event date, deadline |
+   | **Radio** | Exclusive selection (one choice only) | Yes/No agreement, preference selection |
 
 5. For each field, enter a **Label** (the question text)
 6. Toggle **Required** if the field must be filled in
@@ -250,7 +252,9 @@ While the admin portal is where you do most of your content creation, the mobile
 ### Logging In
 
 1. Download the SkoConnect app from the App Store (iPhone) or Google Play (Android)
-2. Open the app and log in with the same email and password you use for the admin portal
+2. Open the app
+3. Enter your **School Code** (provided by your school administrator)
+4. Log in with the same email and password you use for the admin portal
 
 ### What You Can Do on Mobile
 
@@ -272,7 +276,7 @@ While the admin portal is where you do most of your content creation, the mobile
 
 > **Tip:** Use the mobile app for quick tasks (sending a short notice, checking the calendar) and the web portal for more detailed work (building forms, reviewing submissions).
 
-![Screenshot of mobile app showing the notices feed](assets/screenshots/img/mobile-notices.jpg)
+![Screenshot of mobile app showing the notices feed](assets/screenshots/mobile-notices.jpg)
 
 ---
 

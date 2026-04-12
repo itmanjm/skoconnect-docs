@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="SkoConnect" />
-  <meta name="dcterms.date" content="2026-04-02" />
+  <meta name="dcterms.date" content="2026-04-05" />
   <title>SkoConnect Documentation</title>
   <style>
     /* Default styles provided by pandoc.
@@ -49,7 +49,7 @@
 <header id="title-block-header">
 <h1 class="title">SkoConnect Documentation</h1>
 <p class="author">SkoConnect</p>
-<p class="date">2026-04-02</p>
+<p class="date">2026-04-05</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -72,8 +72,9 @@ Templates</a></li>
 id="toc-emergency-broadcast">Emergency Broadcast</a></li>
 <li><a href="#groups" id="toc-groups">Groups</a></li>
 <li><a href="#analytics" id="toc-analytics">Analytics</a></li>
-<li><a href="#settings-security" id="toc-settings-security">Settings
-&amp; Security</a></li>
+<li><a href="#settings-bulk-operations"
+id="toc-settings-bulk-operations">Settings &amp; Bulk
+Operations</a></li>
 <li><a href="#troubleshooting"
 id="toc-troubleshooting">Troubleshooting</a></li>
 <li><a href="#faq" id="toc-faq">FAQ</a></li>
@@ -83,7 +84,7 @@ Guides</a></li>
 </ul>
 </nav>
 <blockquote>
-<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-01</p>
+<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
 </blockquote>
 <h1 id="admin-portal-complete-sop">Admin Portal — Complete SOP</h1>
 <h2 id="overview">Overview</h2>
@@ -555,6 +556,10 @@ checkboxes</li>
 define</li>
 <li><strong>Textarea</strong> — longer answers (comments, additional
 information)</li>
+<li><strong>Date</strong> — calendar date selection (birth dates, event
+dates, deadlines)</li>
+<li><strong>Radio</strong> — exclusive selection (only one answer
+allowed)</li>
 </ul></li>
 <li>For each field, enter a <strong>Label</strong> (the question) and
 choose whether it’s <strong>Required</strong></li>
@@ -666,6 +671,12 @@ option</li>
 <li>The template will appear in the Form Templates gallery for future
 use</li>
 </ol>
+<figure>
+<img src="assets/screenshots/form-templates-page.png"
+alt="Screenshot of Form Templates page showing all available templates" />
+<figcaption aria-hidden="true">Screenshot of Form Templates page showing
+all available templates</figcaption>
+</figure>
 <hr />
 <h2 id="emergency-broadcast">Emergency Broadcast</h2>
 <p>Emergency broadcasts are for urgent, time-sensitive communications
@@ -757,6 +768,12 @@ the group</li>
 events to specific subsets of your school. When creating a notice or
 event, look for the option to target by group.</p>
 </blockquote>
+<figure>
+<img src="assets/screenshots/groups-page.png"
+alt="Screenshot of Groups page showing active groups and management options" />
+<figcaption aria-hidden="true">Screenshot of Groups page showing active
+groups and management options</figcaption>
+</figure>
 <hr />
 <h2 id="analytics">Analytics</h2>
 <p>The Analytics page gives you a high-level view of how your school is
@@ -786,7 +803,96 @@ alt="Screenshot of Analytics page showing usage metrics and data visualizations"
 usage metrics and data visualizations</figcaption>
 </figure>
 <hr />
-<h2 id="settings-security">Settings &amp; Security</h2>
+<h2 id="settings-bulk-operations">Settings &amp; Bulk Operations</h2>
+<h3 id="emis-data-export">EMIS Data Export</h3>
+<p>The EMIS (Education Management Information System) Export lets you
+generate data files for Jamaica’s Ministry of Education reporting. This
+is available from the <strong>Settings</strong> page in the admin
+portal.</p>
+<h4 id="setting-up-emis">Setting Up EMIS</h4>
+<ol type="1">
+<li>Go to <strong>Settings</strong> in the sidebar</li>
+<li>In the <strong>EMIS</strong> section, enter your school details:
+<ul>
+<li><strong>School Code</strong> — your official MoEY school code</li>
+<li><strong>Academic Year</strong> — the reporting year (e.g.,
+2025-2026)</li>
+<li><strong>Parish</strong> — your school’s parish</li>
+</ul></li>
+<li>Click <strong>Save Settings</strong></li>
+</ol>
+<h4 id="data-completeness-check">Data Completeness Check</h4>
+<p>Before exporting, the system shows a completeness summary: - Total
+students enrolled - How many have government IDs on file - How many have
+enrollment dates recorded - How many are assigned to a section/class</p>
+<blockquote>
+<p><strong>Tip:</strong> Aim for 100% completeness before exporting.
+Missing data can cause issues with MoEY reporting.</p>
+</blockquote>
+<h4 id="exporting-data">Exporting Data</h4>
+<ol type="1">
+<li>Open the <strong>Settings</strong> page</li>
+<li>In the <strong>EMIS</strong> section, select what to export:
+<ul>
+<li><strong>Students</strong> — student roster with demographics and
+enrollment info</li>
+<li><strong>Staff</strong> — staff roster with roles and contact
+info</li>
+<li><strong>Enrollment</strong> — enrollment summary by grade and
+section</li>
+<li><strong>Engagement Summary</strong> — communication engagement
+statistics</li>
+</ul></li>
+<li>Click <strong>Export</strong> and enter your admin password to
+confirm</li>
+<li>The file downloads to your computer</li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> EMIS exports require password
+confirmation. This protects sensitive student data from unauthorized
+downloads.</p>
+</blockquote>
+<h4 id="supported-grades">Supported Grades</h4>
+<p>K1, K2, K3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12</p>
+<hr />
+<h3 id="grade-promotion">Grade Promotion</h3>
+<p>At the end of an academic year, use Grade Promotion to move students
+up to their next grade in bulk or individually. This is also available
+from the <strong>Settings</strong> page.</p>
+<h4 id="before-you-promote">Before You Promote</h4>
+<ol type="1">
+<li>Go to <strong>Settings</strong> → <strong>Bulk
+Operations</strong></li>
+<li>Select a <strong>Source Grade</strong> (where students are now)</li>
+<li>Click <strong>Check</strong> — the system shows a preview of all
+students in that grade</li>
+<li>Review the list and any warnings</li>
+</ol>
+<h4 id="promoting-students">Promoting Students</h4>
+<p><strong>Bulk Mode</strong> (recommended for end-of-year): 1. Select
+the <strong>Source Grade</strong> (e.g., Grade 3) 2. Select the
+<strong>Target Grade</strong> (e.g., Grade 4) 3. Click
+<strong>Check</strong> to preview students 4. Click <strong>Promote
+All</strong> — confirm the action 5. All students in the source grade
+move to the target grade</p>
+<p><strong>Individual Mode</strong> (for selective promotion): 1. Select
+the <strong>Source Grade</strong> and click <strong>Check</strong> 2.
+Check the boxes next to specific students 3. Select the <strong>Target
+Grade</strong> 4. Click <strong>Promote Selected</strong> — confirm the
+action 5. Only selected students move to the target grade</p>
+<blockquote>
+<p><strong>Warning:</strong> Grade promotion permanently changes student
+records. Always preview the list first and double-check your source and
+target grades. There is no undo button.</p>
+</blockquote>
+<hr />
+<h3 id="settings-security">Settings &amp; Security</h3>
+<figure>
+<img src="assets/screenshots/settings-page.png"
+alt="Screenshot of Settings page showing EMIS configuration and data completeness" />
+<figcaption aria-hidden="true">Screenshot of Settings page showing EMIS
+configuration and data completeness</figcaption>
+</figure>
 <h3 id="role-descriptions">Role Descriptions</h3>
 <p>Your school has five roles, each with different permissions:</p>
 <table>

@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Admin Portal — Complete SOP
 
@@ -283,6 +283,8 @@ Digital forms replace paper handouts. Parents and students fill them out on thei
    - **Checkbox** — yes/no questions or agreement checkboxes
    - **Dropdown** — multiple choice from a list you define
    - **Textarea** — longer answers (comments, additional information)
+   - **Date** — calendar date selection (birth dates, event dates, deadlines)
+   - **Radio** — exclusive selection (only one answer allowed)
 5. For each field, enter a **Label** (the question) and choose whether it's **Required**
 6. Arrange fields in the order you want by dragging them up or down
 7. Click **Save**
@@ -343,6 +345,8 @@ If you build a form you want to reuse, you can save it as a template:
 2. Before or after saving, look for a **Save as Template** option
 3. Give your template a name
 4. The template will appear in the Form Templates gallery for future use
+
+![Screenshot of Form Templates page showing all available templates](assets/screenshots/form-templates-page.png)
 
 ---
 
@@ -412,6 +416,8 @@ Groups let you organize users by class, department, team, or any other category.
 
 > **Tip:** Groups are useful for sending notices and events to specific subsets of your school. When creating a notice or event, look for the option to target by group.
 
+![Screenshot of Groups page showing active groups and management options](assets/screenshots/groups-page.png)
+
 ---
 
 ## Analytics
@@ -433,7 +439,84 @@ This data helps you understand whether your communications are reaching your com
 
 ---
 
-## Settings & Security
+## Settings & Bulk Operations
+
+### EMIS Data Export
+
+The EMIS (Education Management Information System) Export lets you generate data files for Jamaica's Ministry of Education reporting. This is available from the **Settings** page in the admin portal.
+
+#### Setting Up EMIS
+
+1. Go to **Settings** in the sidebar
+2. In the **EMIS** section, enter your school details:
+   - **School Code** — your official MoEY school code
+   - **Academic Year** — the reporting year (e.g., 2025-2026)
+   - **Parish** — your school's parish
+3. Click **Save Settings**
+
+#### Data Completeness Check
+
+Before exporting, the system shows a completeness summary:
+- Total students enrolled
+- How many have government IDs on file
+- How many have enrollment dates recorded
+- How many are assigned to a section/class
+
+> **Tip:** Aim for 100% completeness before exporting. Missing data can cause issues with MoEY reporting.
+
+#### Exporting Data
+
+1. Open the **Settings** page
+2. In the **EMIS** section, select what to export:
+   - **Students** — student roster with demographics and enrollment info
+   - **Staff** — staff roster with roles and contact info
+   - **Enrollment** — enrollment summary by grade and section
+   - **Engagement Summary** — communication engagement statistics
+3. Click **Export** and enter your admin password to confirm
+4. The file downloads to your computer
+
+> **Important:** EMIS exports require password confirmation. This protects sensitive student data from unauthorized downloads.
+
+#### Supported Grades
+
+K1, K2, K3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+
+---
+
+### Grade Promotion
+
+At the end of an academic year, use Grade Promotion to move students up to their next grade in bulk or individually. This is also available from the **Settings** page.
+
+#### Before You Promote
+
+1. Go to **Settings** → **Bulk Operations**
+2. Select a **Source Grade** (where students are now)
+3. Click **Check** — the system shows a preview of all students in that grade
+4. Review the list and any warnings
+
+#### Promoting Students
+
+**Bulk Mode** (recommended for end-of-year):
+1. Select the **Source Grade** (e.g., Grade 3)
+2. Select the **Target Grade** (e.g., Grade 4)
+3. Click **Check** to preview students
+4. Click **Promote All** — confirm the action
+5. All students in the source grade move to the target grade
+
+**Individual Mode** (for selective promotion):
+1. Select the **Source Grade** and click **Check**
+2. Check the boxes next to specific students
+3. Select the **Target Grade**
+4. Click **Promote Selected** — confirm the action
+5. Only selected students move to the target grade
+
+> **Warning:** Grade promotion permanently changes student records. Always preview the list first and double-check your source and target grades. There is no undo button.
+
+---
+
+### Settings & Security
+
+![Screenshot of Settings page showing EMIS configuration and data completeness](assets/screenshots/settings-page.png)
 
 ### Role Descriptions
 

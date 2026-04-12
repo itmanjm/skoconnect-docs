@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Student — Complete SOP
 
@@ -46,9 +46,10 @@ SkoConnect is available for both iPhone and Android:
 ### Email and Password
 
 1. Open the SkoConnect app
-2. Enter your school email address
-3. Enter your password
-4. Tap **Log In**
+2. Enter your **School Code** — the code your school gave you that identifies your school
+3. Enter your school email address
+4. Enter your password
+5. Tap **Log In**
 
 ### First-Time Login
 
@@ -62,9 +63,10 @@ If this is your first time, the school may have given you a temporary password:
 ### Forgot Password
 
 1. On the login screen, tap **Forgot Password**
-2. Enter your school email address
-3. Check your inbox for a reset link
-4. Follow the link to set a new password
+2. Enter your **School Code**
+3. Enter your school email address
+4. Check your inbox for a reset link
+5. Follow the link to set a new password
 
 ### Biometric Login
 
@@ -73,6 +75,8 @@ After logging in once, you can enable fingerprint or face login:
 1. Go to **More** → **Privacy & Security**
 2. Toggle **Biometric Login** on
 3. Next time you open the app, use your fingerprint or face to log in
+
+> **Tip:** Your School Code was given to you by your school. If you don't know it, ask your teacher or school office.
 
 > **Tip:** Biometric login is convenient, but remember your password in case you need to log in on a different device.
 
@@ -294,7 +298,8 @@ Control which notifications you receive:
 
 | Problem | Solution |
 |---------|----------|
-| Can't log in | Double-check your email address. Tap **Forgot Password** to reset via email. Make sure you're connected to the internet. |
+| Can't log in | Double-check your **School Code** and email address. Tap **Forgot Password** to reset via email. Make sure you're connected to the internet. |
+| Don't know my School Code | Ask your teacher or school office. The School Code was given to you when your account was created. |
 | No notices showing | Pull down on the notices list to refresh. Check your internet connection. Ask your teacher if they've posted any notices. |
 | App shows old information | Pull down to refresh. Close and reopen the app. If it's still outdated, check your internet connection. |
 | Can't submit a form | Fill in all required fields (marked with *). If it still won't submit, close and reopen the form. Try again. |

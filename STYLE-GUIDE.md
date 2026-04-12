@@ -1,6 +1,6 @@
 # SkoConnect Documentation — Style Guide
 
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 ---
 

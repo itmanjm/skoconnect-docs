@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-01
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
 
 # Frequently Asked Questions
 
@@ -9,7 +9,10 @@ This page answers common questions from all SkoConnect users. Questions are orga
 ## Getting Started
 
 **Q: How do I log in to SkoConnect?**
-A: Open the SkoConnect app (mobile) or go to your school's portal URL (admin/teachers). Enter the email address your school provided and your password. If this is your first time, check your email for a password setup link.
+A: Open the SkoConnect app (mobile) or go to your school's portal URL (admin/teachers). On the mobile app, enter your **School Code** (provided by your school), then your email address and password. On the web portal, just enter your email and password. If this is your first time, check your email for a password setup link.
+
+**Q: What is a School Code and where do I find it?**
+A: A School Code is a short identifier that tells the mobile app which school you belong to. Your school administrator provides this code during enrollment. If you don't know your School Code, contact your school's main office or administrator.
 
 **Q: I forgot my password. How do I reset it?**
 A: Tap **Forgot Password** on the login screen (mobile app) or click the **Forgot Password** link on the portal login page. Enter your email address and check your inbox for a reset link. The link expires after a few hours — if it doesn't work, request a new one.
@@ -167,6 +170,28 @@ A: First, try closing the app completely (swipe up from the app switcher) and re
 
 **Q: Can I change the email address associated with my account?**
 A: Go to **More** → **Profile Settings** in the mobile app and update your email address. You'll need to verify the new email before the change takes effect. If you're an administrator, you can also update email addresses from the Users page in the portal.
+
+---
+
+## Admin: EMIS & Grade Promotion
+
+**Q: What is the EMIS Export?**
+A: EMIS (Education Management Information System) Export generates data files for Jamaica's Ministry of Education reporting. You can export student rosters, staff data, enrollment summaries, and engagement statistics. Go to **Settings** in the admin portal to access it.
+
+**Q: What information do I need before using EMIS Export?**
+A: You'll need your school's official MoEY school code, the current academic year, and your parish. Enter these in **Settings** → **EMIS** before exporting.
+
+**Q: Can I promote students to the next grade all at once?**
+A: Yes. Go to **Settings** → **Bulk Operations** → **Grade Promotion**. Select the source grade, check the preview list, then select the target grade and promote. You can use bulk mode (all students) or individual mode (select specific students).
+
+**Q: What happens if I promote students to the wrong grade?**
+A: Grade promotion is permanent — there is no undo. Always preview the student list first and double-check your source and target grades before confirming. If a mistake is made, contact your SkoConnect representative.
+
+**Q: What grades are supported for promotion?**
+A: K1 through Grade 12 (K1, K2, K3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12).
+
+**Q: Why does the EMIS Export ask for my password?**
+A: EMIS exports contain sensitive student data. Password confirmation ensures that only authorized administrators can download this information.
 
 ---
 
