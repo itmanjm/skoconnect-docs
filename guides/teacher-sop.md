@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-23
 
 # Teacher & Staff — Complete SOP
 

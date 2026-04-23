@@ -16,4 +16,10 @@ Table of Contents
 Notes
 - This repository is a generic SkoConnect documentation pack intended for onboarding and reference. It does not include school-specific branding.
 
-Last updated: 2026-04-02
+Last updated: 2026-04-23
+
+
+Validation snapshot (2026-04-23)
+- Confirmed admin login flow uses: School ID + Email + Password.
+- Staging parity verified for: Dashboard, Enrollment, Users, Notices, Events, Forms, Groups, Analytics, Emergency, Setup.
+- Canonical role SOP files synced to Drive and Git for Admin/Teacher/Parent.
