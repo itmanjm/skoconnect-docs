@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-23
 
 # Admin Quick Start Guide
 
@@ -20,12 +20,16 @@ When your school was created in SkoConnect, an invitation email was sent to you.
 
 1. Open the invitation email from your inbox
 2. Click the link in the email — this takes you to the SkoConnect login page
-3. Create a strong password (at least 8 characters, mix of letters and numbers)
-4. Click **Set Password**
+3. Enter your **School ID** (provided by your SkoConnect onboarding contact)
+4. Enter your admin email and password
+5. Create a strong password if prompted (at least 8 characters, mix of letters and numbers)
+6. Click **Sign in**
 
 After setting your password, you'll be taken directly to the **Setup Wizard** — a five-step process to configure your school.
 
 > **Tip:** If you can't find the invitation email, check your spam or junk folder. If it's not there, contact your SkoConnect representative to request a new link.
+
+> **School ID format example:** `pga-academy`
 
 ![Screenshot of Admin login page showing email and password fields](assets/screenshots/admin-login.png)
 

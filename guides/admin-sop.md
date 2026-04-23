@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.0 | Last updated: 2026-04-23
 
 # Admin Portal — Complete SOP
 
@@ -26,6 +26,21 @@ Each section below is self-contained — you can jump to any section without rea
 > **Note:** This guide covers the **admin portal only** (the web interface). If you're looking for mobile app guidance, see the Quick Start and SOP guides for your role.
 
 ---
+
+## Route Coverage (Validated on Staging)
+
+The following admin routes were validated on 2026-04-23 and are currently served in staging:
+
+- `/` (Dashboard)
+- `/enrollment`
+- `/users`
+- `/notices`
+- `/events`
+- `/forms`
+- `/groups`
+- `/analytics`
+- `/emergency`
+- `/setup`
 
 ## Dashboard
 
