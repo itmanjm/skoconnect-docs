@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Client Onboarding Checklist
 
@@ -27,12 +27,12 @@ This checklist guides you through onboarding a new client school onto SkoConnect
 Before contacting a new school, verify the platform is ready:
 
 - [ ] Firebase project is active and healthy
-  - Verify health endpoint: `https://us-central1-school-connect-enterprise.cloudfunctions.net/health`
+  - Verify health endpoint: `https://us-central1-skoconnect.cloudfunctions.net/health`
   - Expected response: status 200 with `{ "status": "ok" }`
 - [ ] All Cloud Functions are deployed and running
   - `health`, `auth`, `members`, `events`, `notifications`, `forms`, `relationships`, `scheduleReminders`, `enrollmentWizard`, `analytics`
 - [ ] Firestore security rules are current
-- [ ] Admin portal is accessible at `https://school-connect-enterprise.web.app`
+- [ ] Admin portal is accessible at `https://admin.skoconnect.com`
 - [ ] Mobile app is available on App Store and Google Play (latest version)
 
 If any of these checks fail, resolve the issue before proceeding with onboarding.
@@ -41,18 +41,17 @@ If any of these checks fail, resolve the issue before proceeding with onboarding
 
 ## Step 1: Create the School Account
 
-Use the Super Admin portal to provision a new school:
+Provision a new school through the Super Admin portal (internal ops tooling — credentials are provisioned separately and must not be stored in documentation):
 
-1. Go to the Super Admin page: `https://school-connect-enterprise.web.app/super-admin`
-2. Enter the master key: `SkoConnect-2026-Master`
-3. Click **Create School**
-4. Fill in the school details:
+1. Access the Super Admin portal (URL and credentials are stored in the SkoConnect team password vault — contact the platform owner if you need access)
+2. Click **Create School**
+3. Fill in the school details:
    - **School name** (as it should appear to users)
    - **Admin email** (the primary administrator's email address)
    - **School address** (optional)
    - **Phone number** (optional)
    - **Timezone** (important for event reminders)
-5. Click **Provision School**
+4. Click **Provision School**
 
 The system creates:
 - A school document in Firestore

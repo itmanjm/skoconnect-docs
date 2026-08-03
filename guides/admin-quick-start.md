@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Admin Quick Start Guide
 
@@ -58,7 +58,7 @@ Notices are the primary way to communicate with families. Here's how to send one
 3. In the **Title** field, enter a clear subject line — for example, "Welcome to SkoConnect!"
 4. In the **Description** field, write your message to families
 5. Under **Target Audience**, select which roles should see the notice — parents, students, or both
-6. Optionally, choose a category (School Announcement, Alert, Exam, Event, Sports, Holiday) to add color coding
+6. Optionally, choose a category (School Announcement, Alert, Holiday) to add color coding
 7. Click **Send**
 
 ![Screenshot of Notices page showing the Create Notice form with title, description, and audience targeting](assets/screenshots/notices-redesigned.png)
@@ -101,7 +101,6 @@ You've completed the basics. Here are additional features to explore:
 
 - → **Settings** — EMIS data export for MoEY reporting, grade promotion, school configuration
 - → See [Admin Complete SOP](guides/admin-sop.md) — detailed guidance on every feature including enrollment, forms, templates, emergency broadcasts, analytics, and bulk operations
-- → See [Enrollment Deep-Dive](deep-dives/enrollment-onboarding.md) — detailed instructions for CSV formatting, mapping, and troubleshooting
 - → See [FAQ](faq.md) — answers to common questions from school administrators
 
 ---
@@ -128,7 +127,7 @@ A: Yes. Go to **Users** (or **Enrollment**) and create a new user with the "admi
 A: Upload a new CSV with just the new students. The system automatically skips any duplicates (users who already have accounts). Their parents will be linked to existing accounts automatically.
 
 **Q: How do parents and students access SkoConnect?**
-A: Families download the SkoConnect mobile app from the App Store (iPhone) or Google Play (Android) and log in with the credentials you assigned during enrollment.
+A: Families download the SkoConnect mobile app from the Google Play Store (search for "SkoConnect") and log in with the credentials you assigned during enrollment. iOS coming soon.
 
 **Q: What if I accidentally send a notice to the wrong audience?**
 A: You can edit or delete any notice after sending it. However, push notifications may have already been delivered. It's always worth double-checking your audience selection before clicking **Send**.

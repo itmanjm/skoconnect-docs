@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Frequently Asked Questions
 
@@ -18,7 +18,7 @@ A: A School Code is a short identifier that tells the mobile app which school yo
 A: Tap **Forgot Password** on the login screen (mobile app) or click the **Forgot Password** link on the portal login page. Enter your email address and check your inbox for a reset link. The link expires after a few hours — if it doesn't work, request a new one.
 
 **Q: How do I download the mobile app?**
-A: Open the App Store (iPhone) or Google Play (Android) and search for "SkoConnect." Download and install the free app. You need iOS 14+ or Android 8.0+.
+A: Open the Google Play Store on your Android phone and search for "SkoConnect." Download and install the free app. You need Android 8.0+. The iOS app is coming soon.
 
 **Q: Can I use SkoConnect on my computer?**
 A: The admin portal (for administrators, teachers, and staff) works in any web browser. Parents and students use the mobile app only — there's no web version for those roles.
@@ -31,7 +31,7 @@ A: Check your spam or junk folder first. Invitation emails sometimes get filtere
 ## Admin Questions
 
 **Q: How many users can I enroll at once?**
-A: You can upload up to 400 rows in a single CSV file. For larger schools, split your list across multiple uploads. The system automatically skips duplicate emails, so re-uploading is safe.
+A: Each enrollment CSV file has a maximum size of 10 MB. For very large schools, split your list across multiple uploads. The system automatically skips duplicate emails, so re-uploading is safe.
 
 **Q: What format should my enrollment CSV use?**
 A: Your CSV must have these columns in the first row: `email`, `role`, `first_name`, `last_name`. Optional columns: `phone`, `parent_email` (for linking students to parents). See the [Admin Complete SOP](guides/admin-sop.md) for a complete example.
@@ -103,7 +103,7 @@ A: No. Students can view notices, events, and forms. Teachers and administrators
 A: Forms are sent to the person they're addressed to. If a form is sent to you, your parents won't see it unless the school also sends them a copy. Permission slips and consent forms are usually sent to parents directly.
 
 **Q: Can I enable fingerprint or face login?**
-A: Go to **More** → **Privacy & Security** and toggle **Biometric Login** on. You'll also need fingerprint or face recognition set up in your phone's system settings (under Settings → Face ID/Touch ID on iPhone, or Settings → Security → Fingerprint on Android).
+A: Go to **More** → **Privacy & Security** and toggle **Biometric Login** on. You'll also need fingerprint or face recognition set up in your phone's system settings (Settings → Security → Fingerprint or Face on Android). iOS biometric setup will be published when the iOS app launches.
 
 **Q: I submitted a form with the wrong answers. Can I change it?**
 A: Contact your teacher right away. They may be able to help you resubmit the form. Once a form closes, you can't make changes.
@@ -145,7 +145,7 @@ A: Your account will be deactivated. Your data (notices read, forms submitted) i
 ## General
 
 **Q: What devices does SkoConnect support?**
-A: The mobile app works on iPhones (iOS 14+) and Android phones (Android 8.0+). The admin portal works in any modern web browser (Chrome, Firefox, Safari, Edge). There's no tablet or desktop app version.
+A: The mobile app works on Android phones (Android 8.0+). The iOS app is coming soon — iOS version requirements will be published at launch. The admin portal works in any modern web browser (Chrome, Firefox, Safari, Edge). There's no tablet or desktop app version.
 
 **Q: Does SkoConnect work offline?**
 A: The mobile app requires an internet connection to load new content. If you're offline, you can view the last content that was loaded. New notices, events, and forms won't appear until you reconnect. Pull down to refresh when you're back online.
@@ -163,10 +163,10 @@ A: Yes. You can log in on multiple devices at the same time — for example, the
 A: SkoConnect currently supports English only. Additional language support may be considered for future updates.
 
 **Q: How often is the app updated?**
-A: The app is updated periodically with bug fixes and improvements. Enable automatic updates on your phone (App Store → SkoConnect → Automatic Updates) to always have the latest version.
+A: The app is updated periodically with bug fixes and improvements. Enable automatic updates on your phone (Google Play → SkoConnect → Enable Auto-Update) to always have the latest version.
 
 **Q: What should I do if the app crashes or freezes?**
-A: First, try closing the app completely (swipe up from the app switcher) and reopening it. If the problem persists, check the App Store or Google Play for an update. As a last resort, uninstall and reinstall the app — you won't lose any data since it's stored on the server.
+A: First, try closing the app completely (swipe it away from your recent apps list) and reopening it. If the problem persists, check the Google Play Store for an update. As a last resort, uninstall and reinstall the app — you won't lose any data since it's stored on the server.
 
 **Q: Can I change the email address associated with my account?**
 A: Go to **More** → **Profile Settings** in the mobile app and update your email address. You'll need to verify the new email before the change takes effect. If you're an administrator, you can also update email addresses from the Users page in the portal.

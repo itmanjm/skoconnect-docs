@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Parent — Complete SOP
 
@@ -28,16 +28,18 @@ Each section below is self-contained — jump to any section without reading the
 
 ### Download
 
-SkoConnect is available for both iPhone and Android:
+SkoConnect is available on Android:
 
-1. Open the **App Store** (iPhone) or **Google Play** (Android) on your phone
+1. Open the **Google Play Store** on your phone
 2. Search for **SkoConnect**
 3. Download and install the app
 
+> **Note:** iOS coming soon. The iPhone app will be available on the App Store once it launches.
+
 ### System Requirements
 
-- **iPhone**: iOS 14 or later
 - **Android**: Version 8.0 or later
+- **iPhone**: iOS coming soon — version requirements will be published when the iOS app launches
 - An internet connection (Wi-Fi or cellular data)
 
 ---
@@ -171,12 +173,9 @@ Notices are color-coded by category to help you find what's relevant:
 
 | Category | Color | What You'll Find |
 |----------|-------|------------------|
-| School Announcement | Blue | General school news and updates |
-| Alert | Red | Important warnings and non-emergency alerts |
-| Exam | Blue | Test schedules, study guides, exam results |
-| Event | Blue | Event reminders and details |
-| Sports | Green | Sports schedules, team announcements |
-| Holiday | Purple | Holiday schedules and school closures |
+| School Announcement | Green | General school news and updates |
+| Alert | Orange | Important warnings and non-emergency alerts |
+| Holiday | Pink | Holiday schedules and school closures |
 
 ### Grade-Level Targeting
 
@@ -372,7 +371,7 @@ A: Yes. Go to **More** → **Notification Settings**. Turn off Notices, Events, 
 A: Yes. You can only see information related to your own children. The app includes privacy settings you can review under **More** → **Privacy & Security**. You can also enable biometric login for extra security.
 
 **Q: What devices does the app work on?**
-A: SkoConnect works on iPhones (iOS 14 or later) and Android phones (version 8.0 or later). It does not currently work on tablets or desktop computers.
+A: SkoConnect works on Android phones (version 8.0 or later). The iOS app is coming soon — version requirements will be published when it launches. It does not currently work on tablets or desktop computers.
 
 ---
 

@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Notices & Announcements — Deep-Dive
 
@@ -58,18 +58,15 @@ Categories add a colored label to your notice in the mobile app. This helps fami
 
 | Category | Color | When to Use |
 |----------|-------|-------------|
-| School Announcement | Blue | General school news, policy updates, reminders |
-| Alert | Red | Important time-sensitive updates (not emergencies) |
-| Exam | Purple | Exam schedules, testing reminders, results information |
-| Event | Green | Upcoming events, fundraisers, assemblies |
-| Sports | Orange | Sports tryouts, game schedules, team updates |
-| Holiday | Teal | Holiday schedules, break reminders, school closures |
+| 📢 School Announcement | Green | General school news, policy updates, reminders |
+| ⚠️ Alert | Orange | Important time-sensitive updates (not emergencies) |
+| 🌟 Holiday | Pink | Holiday schedules, break reminders, school closures |
 
 ### Tips for Choosing a Category
 
 - Pick the category that best matches the **primary topic** of your notice
-- If a notice covers multiple topics (exam schedule during a holiday), pick the more urgent category (Exam)
-- Don't overuse the Alert category — families may start ignoring red labels if everything is "urgent"
+- If a notice covers multiple topics (an event during a holiday), pick the more urgent category (Alert)
+- Don't overuse the Alert category — families may start ignoring orange labels if everything is "urgent"
 
 ---
 

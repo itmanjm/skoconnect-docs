@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-08-03" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-08-03</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#calendar-events-deep-dive"
+id="toc-calendar-events-deep-dive">Calendar &amp; Events — Deep-Dive</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#event-basics" id="toc-event-basics">Event Basics</a></li>
+<li><a href="#creating-an-event" id="toc-creating-an-event">Creating an
+Event</a></li>
+<li><a href="#reminder-scheduling" id="toc-reminder-scheduling">Reminder
+Scheduling</a></li>
+<li><a href="#targeting-events" id="toc-targeting-events">Targeting
+Events</a></li>
+<li><a href="#how-events-appear-on-mobile"
+id="toc-how-events-appear-on-mobile">How Events Appear on
+Mobile</a></li>
+<li><a href="#timezone-considerations"
+id="toc-timezone-considerations">Timezone Considerations</a></li>
+<li><a href="#best-practices" id="toc-best-practices">Best
+Practices</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#related-guides" id="toc-related-guides">Related
+Guides</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
+</blockquote>
+<h1 id="calendar-events-deep-dive">Calendar &amp; Events —
+Deep-Dive</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide covers the Calendar &amp; Events feature in detail. It’s
+written for school administrators, teachers, and staff who create and
+manage events. You’ll learn about event fields, reminder scheduling, how
+events appear on mobile devices, and best practices for keeping your
+school calendar organized.</p>
+<hr />
+<h2 id="event-basics">Event Basics</h2>
+<p>An event is a calendar item with a specific date and time. Events
+appear in the <strong>Routine</strong> tab of the mobile app, organized
+as <strong>Today</strong>, <strong>Upcoming</strong>, and
+<strong>Past</strong>.</p>
+<h3 id="events-vs.-notices">Events vs. Notices</h3>
+<table>
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>When to Use</th>
+<th>Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Something with a date, time, and possibly a location</td>
+<td><strong>Event</strong></td>
+</tr>
+<tr class="even">
+<td>General information without a specific time</td>
+<td><strong>Notice</strong></td>
+</tr>
+<tr class="odd">
+<td>A recurring schedule (classes, timetables)</td>
+<td><strong>Event</strong> (create one per occurrence)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> V1 does not support recurring events. If you
+have a weekly event (like “Assembly every Monday”), you’ll need to
+create each occurrence individually.</p>
+</blockquote>
+<h3 id="who-can-create-events">Who Can Create Events</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Can Create</th>
+<th>Can Edit/Delete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admin</td>
+<td>✅ Yes</td>
+<td>✅ Yes (all events)</td>
+</tr>
+<tr class="even">
+<td>Teacher</td>
+<td>✅ Yes</td>
+<td>✅ Yes (own events)</td>
+</tr>
+<tr class="odd">
+<td>Staff</td>
+<td>✅ Yes</td>
+<td>✅ Yes (own events)</td>
+</tr>
+<tr class="even">
+<td>Parent</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+<tr class="odd">
+<td>Student</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="creating-an-event">Creating an Event</h2>
+<h3 id="step-by-step">Step-by-Step</h3>
+<ol type="1">
+<li>Click <strong>Events</strong> in the left sidebar of the admin
+portal</li>
+<li>Click <strong>Create Event</strong></li>
+<li>Fill in the event details (see field guide below)</li>
+<li>Set your <strong>Target Audience</strong></li>
+<li>Choose <strong>Reminder</strong> options</li>
+<li>Click <strong>Create Event</strong></li>
+</ol>
+<h3 id="event-fields">Event Fields</h3>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 35%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Required?</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Event Title</strong></td>
+<td>✅ Yes</td>
+<td>A clear name for the event (e.g., “Parent-Teacher Conference”)</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>✅ Yes</td>
+<td>The date of the event</td>
+</tr>
+<tr class="odd">
+<td><strong>Start Time</strong></td>
+<td>✅ Yes</td>
+<td>When the event begins</td>
+</tr>
+<tr class="even">
+<td><strong>End Time</strong></td>
+<td>✅ Yes</td>
+<td>When the event ends</td>
+</tr>
+<tr class="odd">
+<td><strong>Location</strong></td>
+<td>❌ Optional</td>
+<td>Where the event takes place (e.g., “School Auditorium”, “Room
+201”)</td>
+</tr>
+<tr class="even">
+<td><strong>Description</strong></td>
+<td>❌ Optional</td>
+<td>Additional details about the event</td>
+</tr>
+<tr class="odd">
+<td><strong>Target Audience</strong></td>
+<td>✅ Yes</td>
+<td>Which roles and/or grades should see this event</td>
+</tr>
+<tr class="even">
+<td><strong>Reminders</strong></td>
+<td>❌ Optional</td>
+<td>When to send push notifications before the event</td>
+</tr>
+</tbody>
+</table>
+<h3 id="writing-clear-event-titles">Writing Clear Event Titles</h3>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Good Title</th>
+<th>Why It Works</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Parent-Teacher Conference — Grade 3”</td>
+<td>Specific audience and purpose</td>
+</tr>
+<tr class="even">
+<td>“Sports Day — March 20”</td>
+<td>Clear topic and date</td>
+</tr>
+<tr class="odd">
+<td>“Grade 6 Field Trip to National Museum”</td>
+<td>Descriptive with the audience built in</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Weak Title</th>
+<th>Why It’s Weak</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Meeting”</td>
+<td>Meeting about what? For whom?</td>
+</tr>
+<tr class="even">
+<td>“Event”</td>
+<td>No information at all</td>
+</tr>
+<tr class="odd">
+<td>“Don’t Forget!”</td>
+<td>Forget what?</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="reminder-scheduling">Reminder Scheduling</h2>
+<p>Reminders are push notifications sent to attendees before an event
+starts. This is one of the most powerful features in SkoConnect —
+families don’t have to remember events because the app reminds them.</p>
+<h3 id="available-reminder-options">Available Reminder Options</h3>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 60%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>When the Notification Sends</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>5 minutes before</strong></td>
+<td>5 minutes before the event start time</td>
+<td>Classes, assemblies, short events</td>
+</tr>
+<tr class="even">
+<td><strong>1 hour before</strong></td>
+<td>1 hour before the event start time</td>
+<td>Meetings, sports events, field trips</td>
+</tr>
+<tr class="odd">
+<td><strong>1 day before</strong></td>
+<td>24 hours before the event start time</td>
+<td>Major events, conferences, deadlines</td>
+</tr>
+</tbody>
+</table>
+<p>You can select multiple reminders for a single event. For a major
+event like a parent-teacher conference, selecting all three options
+gives families the best chance of attending.</p>
+<h3 id="how-auto-reminders-work">How Auto-Reminders Work</h3>
+<p>SkoConnect runs a background process (cron job) every 5 minutes that
+checks for upcoming events with reminders. When the current time matches
+a reminder trigger, the system sends push notifications to the target
+audience.</p>
+<p>What this means in practice: - Reminders are delivered within 5
+minutes of the scheduled time (not exactly on the minute) - If you
+create an event 2 minutes before a reminder should fire, the reminder
+may be delayed by up to 5 minutes - Reminders only fire once per event —
+families won’t get spammed</p>
+<hr />
+<h2 id="targeting-events">Targeting Events</h2>
+<h3 id="role-based-targeting">Role-Based Targeting</h3>
+<p>Choose which roles see the event in their calendar:</p>
+<ul>
+<li><strong>Parents</strong> — shows on parents’ calendars (linked to
+their children’s grades)</li>
+<li><strong>Students</strong> — shows on students’ calendars</li>
+<li><strong>Staff</strong> — shows on teachers’ and staff members’
+calendars</li>
+</ul>
+<h3 id="grade-level-targeting">Grade-Level Targeting</h3>
+<p>Limit an event to specific grades. This is useful for:</p>
+<ul>
+<li>Grade-specific exams or assessments</li>
+<li>Field trips for certain classes</li>
+<li>Grade-level meetings or orientations</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> If an event applies to the whole school (like
+Sports Day or a holiday), don’t set a grade filter — let everyone see
+it.</p>
+</blockquote>
+<hr />
+<h2 id="how-events-appear-on-mobile">How Events Appear on Mobile</h2>
+<h3 id="the-routine-tab">The Routine Tab</h3>
+<p>Events appear in the <strong>Routine</strong> tab of the mobile app,
+organized into three sections:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>What Shows Here</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Today</strong></td>
+<td>Events happening today, sorted by start time</td>
+</tr>
+<tr class="even">
+<td><strong>Upcoming</strong></td>
+<td>Future events within the next few weeks</td>
+</tr>
+<tr class="odd">
+<td><strong>Past</strong></td>
+<td>Events that have already ended</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-detail-view">Event Detail View</h3>
+<p>When a user taps an event, they see:</p>
+<ul>
+<li><strong>Title</strong> — the event name</li>
+<li><strong>Date and time</strong> — when it starts and ends</li>
+<li><strong>Location</strong> — where it takes place (if provided)</li>
+<li><strong>Description</strong> — additional details (if provided)</li>
+</ul>
+<h3 id="parent-experience">Parent Experience</h3>
+<p>Parents see events relevant to their children’s grades. If a parent
+has multiple children at the school, they can switch between children
+using the child selector — the Routine tab updates to show events for
+the selected child.</p>
+<h3 id="student-experience">Student Experience</h3>
+<p>Students see the same event detail view as parents. Events targeted
+to their grade appear in their Routine tab.</p>
+<hr />
+<h2 id="timezone-considerations">Timezone Considerations</h2>
+<p>Event times are displayed based on the <strong>school’s
+timezone</strong>, which is set during the initial Setup Wizard. All
+users see the same times regardless of their phone’s timezone
+settings.</p>
+<p>For example, if your school is in Jamaica (UTC-5) and an event is set
+for 3:00 PM, a parent visiting another timezone will still see 3:00
+PM.</p>
+<blockquote>
+<p><strong>Note:</strong> If your school’s timezone was set incorrectly
+during setup, contact your SkoConnect representative to update it.
+Timezone changes affect all existing events.</p>
+</blockquote>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="calendar-organization">Calendar Organization</h3>
+<ul>
+<li>Use clear, descriptive titles that include the grade or audience
+when relevant</li>
+<li>Add locations to in-person events so families know where to go</li>
+<li>Add descriptions for events that need context (e.g., “Students
+should bring a packed lunch”)</li>
+<li>Set reminders for events where attendance matters</li>
+</ul>
+<h3 id="event-volume">Event Volume</h3>
+<ul>
+<li>Add all school events at the start of each term — families
+appreciate having the full calendar upfront</li>
+<li>Aim for at least 1-2 weeks of upcoming events visible at any
+time</li>
+<li>Remove or update events that are cancelled or rescheduled</li>
+</ul>
+<h3 id="coordinating-with-notices">Coordinating with Notices</h3>
+<ul>
+<li>Create an <strong>event</strong> for anything with a date and
+time</li>
+<li>Create a <strong>notice</strong> to remind families about the event
+a few days before</li>
+<li>Use both together for major events: the event goes on the calendar,
+the notice drives awareness</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Event not appearing on mobile</td>
+<td>Check the target audience — make sure the correct roles and grades
+are selected. Pull down to refresh the Routine tab.</td>
+</tr>
+<tr class="even">
+<td>Reminder not delivered</td>
+<td>Reminders run every 5 minutes, so there may be a short delay. Verify
+the reminder option was selected when creating the event. Check that the
+user has push notifications enabled.</td>
+</tr>
+<tr class="odd">
+<td>Wrong time showing</td>
+<td>The event uses the school’s timezone. If the time looks wrong, edit
+the event and correct the start/end time.</td>
+</tr>
+<tr class="even">
+<td>Can’t create an event</td>
+<td>Only admins, teachers, and staff can create events. Verify your role
+has the correct permissions.</td>
+</tr>
+<tr class="odd">
+<td>Duplicate events showing</td>
+<td>Check if someone else at the school created the same event.
+Coordinate with other staff to avoid duplicates.</td>
+</tr>
+<tr class="even">
+<td>Past event still showing</td>
+<td>Past events automatically move to the <strong>Past</strong> section.
+They remain visible but are separated from current events.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Can I create recurring events (e.g., “Every
+Monday”)?</strong> A: Not in V1. You’ll need to create each occurrence
+individually. For weekly events, create them all at the start of the
+term.</p>
+<p><strong>Q: Can I sync SkoConnect events with Google Calendar or
+Outlook?</strong> A: Not in V1. Calendar sync may be considered for a
+future update.</p>
+<p><strong>Q: How far in advance can I create events?</strong> A:
+There’s no limit. You can create events months in advance — this is
+encouraged so families can plan ahead.</p>
+<p><strong>Q: Can I edit an event after creating it?</strong> A: Yes. Go
+to <strong>Events</strong>, click on the event, make your changes, and
+click <strong>Save</strong>. Changes appear immediately in the mobile
+app.</p>
+<p><strong>Q: What happens when I delete an event?</strong> A: The event
+is removed from everyone’s calendar. If reminders were set, they will no
+longer fire. Deleted events cannot be recovered.</p>
+<p><strong>Q: Can parents add events to their personal phone
+calendar?</strong> A: Not directly from the app in V1. They can note the
+date and time and add it to their phone’s calendar manually.</p>
+<hr />
+<h2 id="related-guides">Related Guides</h2>
+<p>→ See <a href="./admin-sop.html">Admin Complete SOP</a> — full
+event management instructions → See <a
+href="./teacher-sop.html">Teacher &amp; Staff Complete SOP</a> —
+event creation for teachers → See <a href="./notices.html">Notices
+Deep-Dive</a> — when to use notices alongside events → See <a
+href="./faq.html">FAQ</a> — answers to common questions</p>
+</body>
+</html>

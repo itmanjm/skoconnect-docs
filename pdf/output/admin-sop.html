@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="SkoConnect" />
-  <meta name="dcterms.date" content="2026-04-05" />
+  <meta name="dcterms.date" content="2026-08-03" />
   <title>SkoConnect Documentation</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -49,7 +47,7 @@
 <header id="title-block-header">
 <h1 class="title">SkoConnect Documentation</h1>
 <p class="author">SkoConnect</p>
-<p class="date">2026-04-05</p>
+<p class="date">2026-08-03</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -84,7 +82,7 @@ Guides</a></li>
 </ul>
 </nav>
 <blockquote>
-<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
 </blockquote>
 <h1 id="admin-portal-complete-sop">Admin Portal — Complete SOP</h1>
 <h2 id="overview">Overview</h2>
@@ -99,49 +97,49 @@ SkoConnect instance. Here’s a summary of your capabilities:</p>
 <col style="width: 64%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Feature</th>
 <th>What You Can Do</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><strong>Dashboard</strong></td>
 <td>View school metrics and quick actions</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Enrollment</strong></td>
 <td>Upload CSV files to create user accounts in bulk</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>User Management</strong></td>
 <td>Search, create, edit, and deactivate users</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Notices</strong></td>
 <td>Create, edit, delete, and target announcements</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Calendar &amp; Events</strong></td>
 <td>Create events with automatic reminders</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Digital Forms</strong></td>
 <td>Build forms, use templates, and track submissions</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Form Templates</strong></td>
 <td>Browse and customize pre-built form templates</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Emergency Broadcast</strong></td>
 <td>Send urgent alerts and track acknowledgments</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Groups</strong></td>
 <td>Create and manage user groups</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Analytics</strong></td>
 <td>View usage metrics across your school</td>
 </tr>
@@ -210,30 +208,30 @@ entire school community set up on SkoConnect.</p>
 <col style="width: 30%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Column</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><code>email</code></td>
 <td>User’s email address</td>
 <td><code>jane.doe@school.edu</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td><code>role</code></td>
 <td>One of: <code>admin</code>, <code>teacher</code>,
 <code>parent</code>, <code>student</code>, <code>staff</code></td>
 <td><code>teacher</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td><code>first_name</code></td>
 <td>User’s first name</td>
 <td><code>Jane</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td><code>last_name</code></td>
 <td>User’s last name</td>
 <td><code>Doe</code></td>
@@ -248,19 +246,19 @@ entire school community set up on SkoConnect.</p>
 <col style="width: 30%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Column</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><code>phone</code></td>
 <td>User’s phone number</td>
 <td><code>(555) 123-4567</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td><code>parent_email</code></td>
 <td>For students only — links to parent account</td>
 <td><code>john.doe@email.com</code></td>
@@ -276,8 +274,8 @@ emma.doe@email.com,student,Emma,Doe,,john.doe@email.com
 mark.smith@school.edu,staff,Mark,Smith,(555) 100-0003,</code></pre>
 <blockquote>
 <p><strong>Important:</strong> The first row must be column headers
-exactly as shown. The CSV must use commas as separators. Maximum 400
-rows per upload.</p>
+exactly as shown. The CSV must use commas as separators. Maximum file
+size: 10 MB.</p>
 </blockquote>
 <h3 id="uploading-your-csv">Uploading Your CSV</h3>
 <ol type="1">
@@ -306,7 +304,7 @@ will skip any users who already exist, so you won’t create
 duplicates.</p>
 </blockquote>
 <p>→ For detailed enrollment instructions, see <a
-href="deep-dives/enrollment-onboarding.md">Enrollment Deep-Dive</a></p>
+href="./digital-forms.html">Digital Forms Deep-Dive</a></p>
 <figure>
 <img src="assets/screenshots/enrollment-page.png"
 alt="Screenshot of Enrollment page showing CSV upload area with drag-and-drop and column preview" />
@@ -405,42 +403,32 @@ below)</li>
 <p>Categories help organize notices visually. When you create a notice,
 you can assign one of these categories:</p>
 <table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 43%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Category</th>
 <th>Color</th>
 <th>When to Use</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>School Announcement</td>
-<td>Blue</td>
+<td>Green</td>
 <td>General school-wide news</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Alert</td>
-<td>Red</td>
+<td>Orange</td>
 <td>Important warnings or urgent but non-emergency updates</td>
 </tr>
-<tr>
-<td>Exam</td>
-<td>Blue</td>
-<td>Exam schedules, study tips, test results</td>
-</tr>
-<tr>
-<td>Event</td>
-<td>Blue</td>
-<td>Event reminders and details</td>
-</tr>
-<tr>
-<td>Sports</td>
-<td>Green</td>
-<td>Sports schedules, team announcements, game results</td>
-</tr>
-<tr>
+<tr class="odd">
 <td>Holiday</td>
-<td>Purple</td>
+<td>Pink</td>
 <td>Holiday schedules, school closures</td>
 </tr>
 </tbody>
@@ -591,7 +579,7 @@ their responses</li>
 download submissions as a file for your records.</p>
 </blockquote>
 <p>→ For detailed form instructions, see <a
-href="deep-dives/digital-forms.md">Digital Forms Deep-Dive</a></p>
+href="./digital-forms.html">Digital Forms Deep-Dive</a></p>
 <figure>
 <img src="assets/screenshots/forms-page.png"
 alt="Screenshot of Forms page showing form list and the form builder with field type options" />
@@ -611,38 +599,38 @@ school.</p>
 <col style="width: 29%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Template</th>
 <th>Purpose</th>
 <th>Fields</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><strong>Field Trip Permission Slip</strong></td>
 <td>Collect parent permission for off-campus trips</td>
 <td>Student name, class, destination, date, parent name, signature,
 emergency contact, medical notes</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Medical Consent Form</strong></td>
 <td>Authorize medical treatment and share health information</td>
 <td>Student name, class, allergies, current medications, doctor name,
 parent authorization, emergency contact</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Photo/Video Release Form</strong></td>
 <td>Get permission to use photos and videos of students</td>
 <td>Student name, class, parent name, consent checkbox,
 restrictions</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Emergency Contact Form</strong></td>
 <td>Collect up-to-date emergency contact details</td>
 <td>Student name, class, primary contact name, phone, relationship,
 secondary contact, doctor name, special notes</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Technology Use Agreement</strong></td>
 <td>Establish acceptable use rules for school devices</td>
 <td>Student name, class, parent name, agreement checkbox, signature,
@@ -732,7 +720,7 @@ status</li>
 received</li>
 </ol>
 <p>→ For detailed emergency broadcast guidance, see <a
-href="deep-dives/emergency-broadcast.md">Emergency Broadcast
+href="./emergency-broadcast.html">Emergency Broadcast
 Deep-Dive</a></p>
 <figure>
 <img src="assets/screenshots/emergency-page.png"
@@ -901,33 +889,33 @@ configuration and data completeness</figcaption>
 <col style="width: 57%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Role</th>
 <th>Can Do</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><strong>Admin</strong></td>
 <td>Everything — manage users, enrollment, notices, events, forms,
 emergency broadcasts, groups, analytics</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Teacher</strong></td>
 <td>Create notices, events, and forms. View users. Cannot manage
 enrollment or other users.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Staff</strong></td>
 <td>Same permissions as teachers — create notices, events, and forms.
 Cannot manage users or enrollment.</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Parent</strong></td>
 <td>View notices, events, and forms. Submit forms. Cannot create
 content. Mobile app only.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Student</strong></td>
 <td>View notices, events, and forms. Submit forms. Cannot create
 content. Mobile app only.</td>
@@ -956,53 +944,53 @@ directly. The reset link is sent to the user’s email address.</p>
 <col style="width: 52%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Problem</th>
 <th>Solution</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>CSV upload shows “invalid headers”</td>
 <td>Make sure your first row contains exactly these headers:
 <code>email</code>, <code>role</code>, <code>first_name</code>,
 <code>last_name</code>. No spaces, no extra columns, exact
 spelling.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>CSV upload shows duplicate errors</td>
 <td>Those email addresses already exist in the system. This is normal —
 the system skips them. You don’t need to remove them from your CSV.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>A user can’t log in after enrollment</td>
 <td>The user needs to set their password first. They should check their
 email for the invitation link. If they didn’t receive it, reset their
 password from the Users page.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>My notice isn’t reaching specific parents</td>
 <td>Check your target audience settings. If you selected a specific
 grade, only parents with children in that grade will see the
 notice.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Emergency broadcast not delivering</td>
 <td>Check your internet connection. Emergency broadcasts require a
 stable connection. If the issue persists, check the acknowledgment list
 to see which recipients received the broadcast.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Analytics data seems outdated</td>
 <td>Analytics update periodically, not in real time. Check back in a few
 minutes after sending content.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Can’t find a user I just created</td>
 <td>The user list may need to be refreshed. Try searching for the user
 by email or click the refresh button.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>I need to change a user’s role</td>
 <td>Go to <strong>Users</strong>, find the user, click on their profile,
 and change the role dropdown. Click <strong>Save Changes</strong>.</td>
@@ -1011,9 +999,10 @@ and change the role dropdown. Click <strong>Save Changes</strong>.</td>
 </table>
 <hr />
 <h2 id="faq">FAQ</h2>
-<p><strong>Q: How many users can I enroll at once?</strong> A: You can
-upload up to 400 rows in a single CSV file. If you have more users,
-split them across multiple uploads.</p>
+<p><strong>Q: How many users can I enroll at once?</strong> A: The
+maximum CSV file size is 10 MB. For very large schools, you can split
+your enrollment list across multiple uploads. The system automatically
+skips duplicate emails, so re-uploading is safe.</p>
 <p><strong>Q: Can a user have more than one role?</strong> A: No. Each
 user has exactly one role. If someone needs different permissions,
 contact your SkoConnect representative.</p>
@@ -1044,20 +1033,18 @@ notices only when you’re sure you no longer need them.</p>
 <hr />
 <h2 id="related-guides">Related Guides</h2>
 <ul>
-<li>→ See <a href="guides/admin-quick-start.md">Admin Quick Start
+<li>→ See <a href="./admin-quick-start.html">Admin Quick Start
 Guide</a> — the 5-minute getting started guide</li>
-<li>→ See <a href="deep-dives/enrollment-onboarding.md">Enrollment
-Deep-Dive</a> — detailed CSV formatting and bulk enrollment
-instructions</li>
-<li>→ See <a href="deep-dives/digital-forms.md">Digital Forms
+<li>→ See <a href="./digital-forms.html">Digital Forms
 Deep-Dive</a> — form builder, templates, and submission tracking</li>
-<li>→ See <a href="deep-dives/emergency-broadcast.md">Emergency
+<li>→ See <a href="./emergency-broadcast.html">Emergency
 Broadcast Deep-Dive</a> — priority levels, best practices, and
 acknowledgment tracking</li>
-<li>→ See <a href="deep-dives/notice-system.md">Notice System
-Deep-Dive</a> — targeting, categories, and writing effective
-notices</li>
-<li>→ See <a href="faq.md">FAQ</a> — answers to common questions from
+<li>→ See <a href="./notices.html">Notices Deep-Dive</a> —
+targeting, categories, and writing effective notices</li>
+<li>→ See <a href="./events-calendar.html">Calendar &amp; Events
+Deep-Dive</a> — events, reminders, and calendar management</li>
+<li>→ See <a href="./faq.html">FAQ</a> — answers to common questions from
 all roles</li>
 </ul>
 </body>

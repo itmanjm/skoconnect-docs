@@ -1,6 +1,6 @@
 # SkoConnect Documentation Repository
 
-A generic, end-user documentation repository for SkoConnect. This collection focuses on adoption-ready guides, SOPs, and deep-dives designed for school staff and families. The live platform is at https://school-connect-enterprise.web.app.
+A generic, end-user documentation repository for SkoConnect. This collection focuses on adoption-ready guides, SOPs, and deep-dives designed for school staff and families. The live platform is at https://admin.skoconnect.com.
 
 Table of Contents
 - reference-data.md
@@ -16,4 +16,4 @@ Table of Contents
 Notes
 - This repository is a generic SkoConnect documentation pack intended for onboarding and reference. It does not include school-specific branding.
 
-Last updated: 2026-04-02
+Last updated: 2026-08-03

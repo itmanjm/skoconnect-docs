@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="SkoConnect" />
-  <meta name="dcterms.date" content="2026-04-05" />
+  <meta name="dcterms.date" content="2026-08-03" />
   <title>SkoConnect Documentation</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -49,7 +47,7 @@
 <header id="title-block-header">
 <h1 class="title">SkoConnect Documentation</h1>
 <p class="author">SkoConnect</p>
-<p class="date">2026-04-05</p>
+<p class="date">2026-08-03</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -85,7 +83,7 @@ id="toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 </nav>
 <blockquote>
-<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
 </blockquote>
 <h1 id="client-onboarding-checklist">Client Onboarding Checklist</h1>
 <blockquote>
@@ -101,34 +99,34 @@ contact through the first week after handoff.</p>
 <h2 id="timeline-overview">Timeline Overview</h2>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Phase</th>
 <th>When</th>
 <th>Who</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Pre-Onboarding</td>
 <td>Before school contact</td>
 <td>SkoConnect team</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Day 0 — School Created</td>
 <td>Day of provisioning</td>
 <td>SkoConnect team</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Day 1-2 — Admin Setup</td>
 <td>After invitation sent</td>
 <td>School administrator</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Day 3-5 — User Enrollment</td>
 <td>After admin setup</td>
 <td>School administrator</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Day 7 — Handoff Complete</td>
 <td>One week after creation</td>
 <td>SkoConnect team</td>
@@ -143,7 +141,7 @@ contact through the first week after handoff.</p>
 healthy</label>
 <ul>
 <li>Verify health endpoint:
-<code>https://us-central1-school-connect-enterprise.cloudfunctions.net/health</code></li>
+<code>https://us-central1-skoconnect.cloudfunctions.net/health</code></li>
 <li>Expected response: status 200 with
 <code>{ "status": "ok" }</code></li>
 </ul></li>
@@ -158,7 +156,7 @@ running</label>
 <li><label><input type="checkbox" />Firestore security rules are
 current</label></li>
 <li><label><input type="checkbox" />Admin portal is accessible at
-<code>https://school-connect-enterprise.web.app</code></label></li>
+<code>https://admin.skoconnect.com</code></label></li>
 <li><label><input type="checkbox" />Mobile app is available on App Store
 and Google Play (latest version)</label></li>
 </ul>
@@ -167,11 +165,13 @@ onboarding.</p>
 <hr />
 <h2 id="step-1-create-the-school-account">Step 1: Create the School
 Account</h2>
-<p>Use the Super Admin portal to provision a new school:</p>
+<p>Provision a new school through the Super Admin portal (internal ops
+tooling — credentials are provisioned separately and must not be stored
+in documentation):</p>
 <ol type="1">
-<li>Go to the Super Admin page:
-<code>https://school-connect-enterprise.web.app/super-admin</code></li>
-<li>Enter the master key: <code>SkoConnect-2026-Master</code></li>
+<li>Access the Super Admin portal (URL and credentials are stored in the
+SkoConnect team password vault — contact the platform owner if you need
+access)</li>
 <li>Click <strong>Create School</strong></li>
 <li>Fill in the school details:
 <ul>
@@ -342,48 +342,48 @@ administrator.</p>
 <col style="width: 52%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Problem</th>
 <th>Solution</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Health endpoint returns an error</td>
 <td>Check Firebase console for Cloud Function deployment issues.
 Redeploy if necessary.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Administrator can’t find the invitation email</td>
 <td>Check spam folder. Re-send the invitation from the Super Admin page
 (generate a new invitation link).</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Admin setup not completing</td>
 <td>Follow up with a reminder email. Offer to walk them through the
 Setup Wizard over a call.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>CSV upload errors</td>
 <td>Share the CSV format guide from the Admin SOP. Offer to review their
 CSV file for formatting issues.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Parents can’t log in</td>
 <td>Verify the parent accounts were created during enrollment. Check
 that invitation emails were delivered.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Mobile app not showing data</td>
 <td>Verify push notifications are working. Check that users have the
 latest app version.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Low engagement after handoff</td>
 <td>Reach out to the administrator with tips for driving adoption —
 suggest sending a welcome notice to all families.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>School wants custom features</td>
 <td>Note the request. These are out of scope for V1 onboarding. Explain
 that feature requests can be considered for future updates.</td>

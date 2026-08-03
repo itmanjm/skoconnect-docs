@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="SkoConnect" />
-  <meta name="dcterms.date" content="2026-04-05" />
+  <meta name="dcterms.date" content="2026-08-03" />
   <title>SkoConnect Documentation</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -49,7 +47,7 @@
 <header id="title-block-header">
 <h1 class="title">SkoConnect Documentation</h1>
 <p class="author">SkoConnect</p>
-<p class="date">2026-04-05</p>
+<p class="date">2026-08-03</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -81,7 +79,7 @@ id="toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 </nav>
 <blockquote>
-<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
 </blockquote>
 <h1 id="admin-quick-start-guide">Admin Quick Start Guide</h1>
 <h2 id="overview">Overview</h2>
@@ -164,8 +162,8 @@ for example, “Welcome to SkoConnect!”</li>
 families</li>
 <li>Under <strong>Target Audience</strong>, select which roles should
 see the notice — parents, students, or both</li>
-<li>Optionally, choose a category (School Announcement, Alert, Exam,
-Event, Sports, Holiday) to add color coding</li>
+<li>Optionally, choose a category (School Announcement, Alert, Holiday)
+to add color coding</li>
 <li>Click <strong>Send</strong></li>
 </ol>
 <figure>
@@ -226,13 +224,10 @@ explore:</p>
 <ul>
 <li>→ <strong>Settings</strong> — EMIS data export for MoEY reporting,
 grade promotion, school configuration</li>
-<li>→ See <a href="guides/admin-sop.md">Admin Complete SOP</a> —
+<li>→ See <a href="./admin-sop.html">Admin Complete SOP</a> —
 detailed guidance on every feature including enrollment, forms,
 templates, emergency broadcasts, analytics, and bulk operations</li>
-<li>→ See <a href="deep-dives/enrollment-onboarding.md">Enrollment
-Deep-Dive</a> — detailed instructions for CSV formatting, mapping, and
-troubleshooting</li>
-<li>→ See <a href="faq.md">FAQ</a> — answers to common questions from
+<li>→ See <a href="./faq.html">FAQ</a> — answers to common questions from
 school administrators</li>
 </ul>
 <hr />
@@ -243,23 +238,23 @@ school administrators</li>
 <col style="width: 52%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Problem</th>
 <th>Solution</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>I can’t find the invitation email</td>
 <td>Check your spam or junk folder. Contact your SkoConnect
 representative for a new invitation link.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Setup Wizard doesn’t appear after I log in</td>
 <td>Clear your browser cache and cookies, then log in again. If the
 problem persists, contact support.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>My CSV upload shows errors</td>
 <td>Open your CSV in a spreadsheet app and verify the column headers
 match exactly: <code>email</code>, <code>role</code>,
@@ -267,17 +262,17 @@ match exactly: <code>email</code>, <code>role</code>,
 <code>phone</code>, <code>parent_email</code>. Remove any extra spaces
 from column headers.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>I forgot my password</td>
 <td>Go to the login page and click <strong>Forgot Password</strong>.
 Enter your email to receive a reset link.</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>I don’t see the sidebar navigation</td>
 <td>Make sure you’re logged in as an administrator. Teachers, parents,
 and students see a different interface.</td>
 </tr>
-<tr>
+<tr class="even">
 <td>My school’s name is wrong</td>
 <td>School names are set during initial setup. Contact your SkoConnect
 representative to request a change.</td>
@@ -295,9 +290,9 @@ Upload a new CSV with just the new students. The system automatically
 skips any duplicates (users who already have accounts). Their parents
 will be linked to existing accounts automatically.</p>
 <p><strong>Q: How do parents and students access SkoConnect?</strong> A:
-Families download the SkoConnect mobile app from the App Store (iPhone)
-or Google Play (Android) and log in with the credentials you assigned
-during enrollment.</p>
+Families download the SkoConnect mobile app from the Google Play Store
+(search for “SkoConnect”) and log in with the credentials you assigned
+during enrollment. iOS coming soon.</p>
 <p><strong>Q: What if I accidentally send a notice to the wrong
 audience?</strong> A: You can edit or delete any notice after sending
 it. However, push notifications may have already been delivered. It’s

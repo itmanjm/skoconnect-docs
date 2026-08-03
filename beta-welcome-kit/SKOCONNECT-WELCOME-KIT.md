@@ -50,7 +50,7 @@ Your school account has been created and an invitation email is on its way to **
 **Getting started right now:**
 1. Check your inbox for the invitation email from SkoConnect
 2. Click the link to set your password
-3. Log in at [school-connect-enterprise.web.app](https://school-connect-enterprise.web.app)
+3. Log in at [school-connect-enterprise.web.app](https://admin.skoconnect.com)
 4. Complete the Setup Wizard (takes about 10 minutes)
 
 Attached to this email:

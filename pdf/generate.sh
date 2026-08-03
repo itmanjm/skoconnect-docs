@@ -59,6 +59,12 @@ for file in "$DOCS_DIR"/guides/*.md; do
 done
 
 echo ""
+echo "Converting deep-dives..."
+for file in "$DOCS_DIR"/deep-dives/*.md; do
+  [ -f "$file" ] && convert_file "$file"
+done
+
+echo ""
 echo "Converting supplementary documents..."
 for file in "$DOCS_DIR"/faq.md "$DOCS_DIR"/onboarding-checklist.md; do
   [ -f "$file" ] && convert_file "$file"
@@ -68,6 +74,37 @@ echo ""
 echo "=== Done ==="
 echo "Open files in pdf/output/ → Print → Save as PDF"
 echo ""
+
+# Post-process: rewrite cross-links so they resolve in the flat output directory.
+# Pandoc preserves source paths like guides/foo.md and deep-dives/foo.md in href
+# attributes, but all generated HTML lives in the same directory. Rewrite them.
+echo "Rewriting cross-links..."
+for f in "$OUTPUT_DIR"/*.html; do
+  [ -f "$f" ] || continue
+  # ../guides/foo.md or guides/foo.md → ./foo.html
+  sed -i -E 's|href="\.\./guides/([a-z-]+)\.md|href="./\1.html|g' "$f"
+  sed -i -E 's|href="guides/([a-z-]+)\.md|href="./\1.html|g' "$f"
+  # ../deep-dives/foo.md or deep-dives/foo.md → ./foo.html
+  sed -i -E 's|href="\.\./deep-dives/([a-z-]+)\.md|href="./\1.html|g' "$f"
+  sed -i -E 's|href="deep-dives/([a-z-]+)\.md|href="./\1.html|g' "$f"
+  # same-directory deep-dive references: foo.md (no path prefix) → ./foo.html
+  # Only touches known deep-dive filenames to avoid clobbering anchors/fragments.
+  for dd in digital-forms emergency-broadcast events-calendar notices; do
+    sed -i -E "s|href=\"${dd}\.md|href=\"./${dd}.html|g" "$f"
+  done
+  # ../faq.md or faq.md → ./faq.html
+  sed -i -E 's|href="\.\./faq\.md|href="./faq.html|g' "$f"
+  sed -i -E 's|href="faq\.md|href="./faq.html|g' "$f"
+  # onboarding-checklist.md → ./onboarding-checklist.html
+  sed -i -E 's|href="\.\./onboarding-checklist\.md|href="./onboarding-checklist.html|g' "$f"
+  sed -i -E 's|href="onboarding-checklist\.md|href="./onboarding-checklist.html|g' "$f"
+  # reference-data.md → ./reference-data.html (if it exists)
+  sed -i -E 's|href="\.\./reference-data\.md|href="./reference-data.html|g' "$f"
+  sed -i -E 's|href="reference-data\.md|href="./reference-data.html|g' "$f"
+done
+echo "Cross-links rewritten."
+echo ""
+
 ls -1 "$OUTPUT_DIR"/*.html 2>/dev/null | while read f; do
   echo "  $(basename "$f") ($(du -h "$f" | cut -f1))"
 done
