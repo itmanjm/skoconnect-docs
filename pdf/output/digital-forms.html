@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-08-03" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-08-03</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#digital-forms-deep-dive"
+id="toc-digital-forms-deep-dive">Digital Forms — Deep-Dive</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#form-basics" id="toc-form-basics">Form Basics</a></li>
+<li><a href="#the-form-builder" id="toc-the-form-builder">The Form
+Builder</a></li>
+<li><a href="#form-templates" id="toc-form-templates">Form
+Templates</a></li>
+<li><a href="#submission-tracking"
+id="toc-submission-tracking">Submission Tracking</a></li>
+<li><a href="#form-lifecycle" id="toc-form-lifecycle">Form
+Lifecycle</a></li>
+<li><a href="#targeting-forms" id="toc-targeting-forms">Targeting
+Forms</a></li>
+<li><a href="#how-forms-appear-on-mobile"
+id="toc-how-forms-appear-on-mobile">How Forms Appear on Mobile</a></li>
+<li><a href="#best-practices" id="toc-best-practices">Best
+Practices</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#related-guides" id="toc-related-guides">Related
+Guides</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
+</blockquote>
+<h1 id="digital-forms-deep-dive">Digital Forms — Deep-Dive</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide covers the Digital Forms feature in detail. It’s written
+for school administrators, teachers, and staff who create and manage
+forms. You’ll learn about field types, templates, submission tracking,
+and best practices for designing forms that get responses.</p>
+<hr />
+<h2 id="form-basics">Form Basics</h2>
+<p>Digital forms replace paper handouts. When you create a form in
+SkoConnect, it appears in the <strong>Forms</strong> tab of the mobile
+app for your target audience. Responses are tracked automatically — no
+more counting paper slips.</p>
+<h3 id="who-can-create-forms">Who Can Create Forms</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Can Create</th>
+<th>Can Edit/Delete</th>
+<th>Can Submit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admin</td>
+<td>✅ Yes</td>
+<td>✅ Yes (all forms)</td>
+<td>❌ No</td>
+</tr>
+<tr class="even">
+<td>Teacher</td>
+<td>✅ Yes</td>
+<td>✅ Yes (own forms)</td>
+<td>❌ No</td>
+</tr>
+<tr class="odd">
+<td>Staff</td>
+<td>✅ Yes</td>
+<td>✅ Yes (own forms)</td>
+<td>❌ No</td>
+</tr>
+<tr class="even">
+<td>Parent</td>
+<td>❌ No</td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+<tr class="odd">
+<td>Student</td>
+<td>❌ No</td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="the-form-builder">The Form Builder</h2>
+<h3 id="step-by-step-creating-a-form">Step-by-Step: Creating a Form</h3>
+<ol type="1">
+<li>Click <strong>Forms</strong> in the left sidebar of the admin
+portal</li>
+<li>Click <strong>Create Form</strong></li>
+<li>Enter a <strong>Form Title</strong> (e.g., “Grade 4 Field Trip
+Permission Slip”)</li>
+<li>Add your questions using the field type buttons</li>
+<li>Set your <strong>Target Audience</strong></li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<h3 id="field-types">Field Types</h3>
+<p>The form builder offers seven field types. Each serves a different
+purpose:</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field Type</th>
+<th>What It Collects</th>
+<th>Example Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Text</strong></td>
+<td>Short text answers (one line)</td>
+<td>Student name, class section, phone number</td>
+</tr>
+<tr class="even">
+<td><strong>Email</strong></td>
+<td>Email addresses (validated format)</td>
+<td>Parent email, emergency contact email</td>
+</tr>
+<tr class="odd">
+<td><strong>Checkbox</strong></td>
+<td>Yes/no or agree/disagree responses</td>
+<td>“I give permission for my child to attend”</td>
+</tr>
+<tr class="even">
+<td><strong>Dropdown</strong></td>
+<td>Single selection from a list you define</td>
+<td>Grade level, class period, bus route</td>
+</tr>
+<tr class="odd">
+<td><strong>Textarea</strong></td>
+<td>Long-form text (multiple lines)</td>
+<td>Comments, concerns, medical notes</td>
+</tr>
+<tr class="even">
+<td><strong>Date</strong></td>
+<td>Calendar date selection</td>
+<td>Event dates, birth dates, submission deadlines</td>
+</tr>
+<tr class="odd">
+<td><strong>Radio</strong></td>
+<td>Exclusive selection from a list (only one choice allowed)</td>
+<td>Yes/No questions, agreement/disagreement</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-to-use-each-field-type">When to Use Each Field Type</h3>
+<p><strong>Text</strong> — Use for short, freeform answers. If the
+answer fits on one line, use Text.</p>
+<p><strong>Email</strong> — Use when you need an email address. The app
+validates the format (must contain @ and a domain).</p>
+<p><strong>Checkbox</strong> — Use for yes/no questions, consent, or
+acknowledgment. Each checkbox is a single yes/no choice. Respondents can
+check multiple boxes if the question allows.</p>
+<p><strong>Dropdown</strong> — Use when you want the respondent to pick
+from a set of options you define. Good for standardized answers. The
+user sees a scrollable list.</p>
+<p><strong>Textarea</strong> — Use for open-ended questions where you
+expect a paragraph or more. Good for comments, explanations, or detailed
+responses.</p>
+<p><strong>Date</strong> — Use when you need a specific calendar date.
+The app provides a date picker on mobile. Good for birthday fields, trip
+dates, or deadline fields.</p>
+<p><strong>Radio</strong> — Use for exclusive selection where only one
+answer is allowed. Similar to Dropdown, but shows all options at once.
+Good for yes/no questions where you want clarity that only one choice
+applies.</p>
+<h3 id="required-vs.-optional-fields">Required vs. Optional Fields</h3>
+<ul>
+<li>Fields marked as <strong>required</strong> (with a red asterisk)
+must be filled in before the form can be submitted</li>
+<li>Optional fields can be left blank</li>
+<li>Mark a field as required when you absolutely need that
+information</li>
+<li>Too many required fields can discourage submissions — keep required
+fields to the essentials</li>
+</ul>
+<hr />
+<h2 id="form-templates">Form Templates</h2>
+<p>SkoConnect includes pre-built form templates for common school forms.
+Templates save time and ensure consistency.</p>
+<h3 id="system-templates">System Templates</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 30%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Template</th>
+<th>Purpose</th>
+<th>Key Fields</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Field Trip Permission</strong></td>
+<td>Parent consent for student field trips</td>
+<td>Student name, destination, emergency contact, consent checkbox</td>
+</tr>
+<tr class="even">
+<td><strong>Medical Consent</strong></td>
+<td>Permission to provide medical treatment</td>
+<td>Student name, medical conditions, allergies, consent checkbox</td>
+</tr>
+<tr class="odd">
+<td><strong>Emergency Contact Update</strong></td>
+<td>Collect or update emergency contact details</td>
+<td>Student name, primary contact, secondary contact, phone numbers</td>
+</tr>
+<tr class="even">
+<td><strong>Student Information</strong></td>
+<td>General student information collection</td>
+<td>Student name, grade, address, parent info, medical notes</td>
+</tr>
+<tr class="odd">
+<td><strong>Parent Volunteer</strong></td>
+<td>Sign up parent volunteers for school events</td>
+<td>Parent name, email, availability, preferred activities</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-a-template">Using a Template</h3>
+<ol type="1">
+<li>Click <strong>Form Templates</strong> in the left sidebar</li>
+<li>Browse the template gallery</li>
+<li>Click <strong>Use Template</strong> on the one you want</li>
+<li>Customize the fields as needed (add, remove, or edit fields)</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>You can modify any template after selecting it. The original template
+is preserved for future use.</p>
+<h3 id="creating-custom-templates">Creating Custom Templates</h3>
+<p>After creating a form from scratch, you can save it as a template for
+future use. This is useful if your school has specific forms used every
+term or year.</p>
+<hr />
+<h2 id="submission-tracking">Submission Tracking</h2>
+<h3 id="viewing-responses">Viewing Responses</h3>
+<ol type="1">
+<li>Go to <strong>Forms</strong> in the admin portal</li>
+<li>Click on the form you want to check</li>
+<li>You’ll see a list of submissions with the respondent’s name and
+submission date</li>
+<li>Click any submission to view the full response</li>
+</ol>
+<h3 id="submission-status">Submission Status</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Active</strong></td>
+<td>The form is open and accepting submissions</td>
+</tr>
+<tr class="even">
+<td><strong>Closed</strong></td>
+<td>The form is no longer accepting submissions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tracking-response-rates">Tracking Response Rates</h3>
+<p>The form list shows how many submissions each form has received.
+Compare this against your total target audience to gauge response
+rates.</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 37%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Response Rate</th>
+<th>What It Means</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80%+</td>
+<td>Excellent</td>
+<td>No action needed</td>
+</tr>
+<tr class="even">
+<td>50-79%</td>
+<td>Average</td>
+<td>Send a reminder notice</td>
+</tr>
+<tr class="odd">
+<td>Under 50%</td>
+<td>Low</td>
+<td>Send a reminder notice and consider extending the deadline</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sending-reminders-for-forms">Sending Reminders for Forms</h3>
+<p>If response rates are low, create a notice targeting the same
+audience as the form. In the notice, include:</p>
+<ul>
+<li>The form name</li>
+<li>The deadline</li>
+<li>A brief description of what the form is for</li>
+<li>Where to find it (Forms tab in the app)</li>
+</ul>
+<hr />
+<h2 id="form-lifecycle">Form Lifecycle</h2>
+<h3 id="active-forms">Active Forms</h3>
+<p>When you create a form, it starts as <strong>Active</strong>. It
+appears in the mobile app for your target audience. They can open it,
+fill it out, and submit it.</p>
+<h3 id="closing-a-form">Closing a Form</h3>
+<p>When you no longer want to accept submissions, close the form:</p>
+<ol type="1">
+<li>Go to <strong>Forms</strong> in the admin portal</li>
+<li>Click on the form</li>
+<li>Click <strong>Close</strong> (or change the status to Closed)</li>
+</ol>
+<p>Closed forms move to the <strong>Closed</strong> section in the
+mobile app. Users can still view their submitted responses but can no
+longer edit or resubmit.</p>
+<blockquote>
+<p><strong>Tip:</strong> Close forms when you’ve received enough
+responses or when the deadline has passed. This prevents late
+submissions and keeps the Forms tab clean for users.</p>
+</blockquote>
+<hr />
+<h2 id="targeting-forms">Targeting Forms</h2>
+<h3 id="role-based-targeting">Role-Based Targeting</h3>
+<p>Choose who receives the form:</p>
+<ul>
+<li><strong>Parents</strong> — for consent forms, permission slips,
+volunteer sign-ups</li>
+<li><strong>Students</strong> — for surveys, student information forms,
+class-specific forms</li>
+<li><strong>Both</strong> — for forms that need input from both parents
+and students</li>
+</ul>
+<h3 id="grade-level-targeting">Grade-Level Targeting</h3>
+<p>Limit forms to specific grades when the form only applies to certain
+students:</p>
+<ul>
+<li>Field trip forms for a specific class</li>
+<li>Grade-level surveys</li>
+<li>Medical forms for incoming students</li>
+</ul>
+<hr />
+<h2 id="how-forms-appear-on-mobile">How Forms Appear on Mobile</h2>
+<h3 id="for-parents-and-students">For Parents and Students</h3>
+<p>Forms appear in the <strong>Forms</strong> tab of the mobile app,
+organized into two sections:</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>What Shows Here</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Active</strong></td>
+<td>Open forms that need a response</td>
+</tr>
+<tr class="even">
+<td><strong>Closed</strong></td>
+<td>Forms that are no longer accepting submissions (past responses
+visible)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="filling-out-a-form">Filling Out a Form</h3>
+<ol type="1">
+<li>Tap the <strong>Forms</strong> tab at the bottom of the screen</li>
+<li>Tap the form you want to complete</li>
+<li>Fill in each field (required fields are marked with a red
+asterisk)</li>
+<li>Tap <strong>Submit</strong></li>
+<li>A confirmation message appears</li>
+</ol>
+<h3 id="after-submission">After Submission</h3>
+<p>Users can view their submitted responses in the
+<strong>Closed</strong> section after the form closes. They cannot edit
+a submission after sending it — if changes are needed, they should
+contact the form creator.</p>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="form-design">Form Design</h3>
+<ul>
+<li><strong>Keep forms short</strong> — aim for 5-10 fields. Long forms
+discourage completion</li>
+<li><strong>Use clear labels</strong> — “Student’s First Name” is better
+than “Name”</li>
+<li><strong>Put required fields first</strong> — get the essential
+information upfront</li>
+<li><strong>Use Dropdown instead of Text</strong> when you want
+standardized answers (e.g., grade level, bus route)</li>
+<li><strong>Add a Textarea field</strong> for comments or additional
+information — it gives respondents space to share details</li>
+<li><strong>Include a consent Checkbox</strong> for permission slips and
+medical forms</li>
+</ul>
+<h3 id="communication">Communication</h3>
+<ul>
+<li><strong>Announce new forms with a notice</strong> — don’t rely on
+families finding the form on their own</li>
+<li><strong>Set clear deadlines</strong> — include the deadline in the
+form title or description</li>
+<li><strong>Send reminders</strong> — if response rates are low, create
+a notice reminding families to complete the form</li>
+<li><strong>Close forms promptly</strong> — don’t leave forms open
+indefinitely</li>
+</ul>
+<h3 id="common-form-types">Common Form Types</h3>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 50%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Form Type</th>
+<th>Recommended Fields</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Permission Slip</td>
+<td>Student name (Text), consent (Checkbox), emergency contact (Text),
+notes (Textarea)</td>
+<td>Parents</td>
+</tr>
+<tr class="even">
+<td>Medical Consent</td>
+<td>Student name (Text), allergies (Textarea), consent (Checkbox),
+doctor info (Text)</td>
+<td>Parents</td>
+</tr>
+<tr class="odd">
+<td>Survey</td>
+<td>Rating questions (Dropdown), open feedback (Textarea)</td>
+<td>Parents or Students</td>
+</tr>
+<tr class="even">
+<td>Contact Update</td>
+<td>Parent name (Text), phone (Text), email (Email), address
+(Textarea)</td>
+<td>Parents</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Form not appearing on mobile</td>
+<td>Check the target audience and make sure the form is in
+<strong>Active</strong> status. The user may not be in the target
+group.</td>
+</tr>
+<tr class="even">
+<td>Users can’t submit the form</td>
+<td>Verify all required fields (marked with *) are filled in. Check that
+the form hasn’t been closed.</td>
+</tr>
+<tr class="odd">
+<td>Zero submissions on a form</td>
+<td>Confirm the form was saved and is Active. Announce the form with a
+notice so families know it exists.</td>
+</tr>
+<tr class="even">
+<td>User submitted wrong answers</td>
+<td>The user cannot edit a submission. Contact the form creator (teacher
+or admin) to note the correction.</td>
+</tr>
+<tr class="odd">
+<td>Can’t find a template I need</td>
+<td>Browse the Form Templates page. If no system template fits, create a
+form from scratch and save it as a custom template.</td>
+</tr>
+<tr class="even">
+<td>Form is too long and response rate is low</td>
+<td>Reduce the number of fields. Keep only essential questions. Split
+into two shorter forms if needed.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Can I add file uploads or image attachments to
+forms?</strong> A: Not in V1. Forms support the five field types listed
+above. For documents, include a link in the form description (e.g., a
+Google Drive link).</p>
+<p><strong>Q: Can I export form submissions?</strong> A: View
+submissions from the Forms page in the admin portal. For data export,
+contact your SkoConnect representative.</p>
+<p><strong>Q: Can users save a draft and finish later?</strong> A: Not
+in V1. Users need to complete and submit the form in one session.</p>
+<p><strong>Q: What happens to form data if a student leaves the
+school?</strong> A: Submission data is preserved in the system. The
+student’s account may be deactivated, but their submitted responses
+remain accessible to administrators.</p>
+<p><strong>Q: Can I create a form that goes to both parents and
+students?</strong> A: Yes. Select both Parents and Students in the
+target audience. Each person receives their own copy of the form to fill
+out independently.</p>
+<p><strong>Q: How do I delete a form?</strong> A: Go to
+<strong>Forms</strong>, click on the form, and click
+<strong>Delete</strong>. This removes the form and all associated
+submissions. This action cannot be undone.</p>
+<hr />
+<h2 id="related-guides">Related Guides</h2>
+<p>→ See <a href="./admin-sop.html">Admin Complete SOP</a> — full
+form management instructions → See <a
+href="./teacher-sop.html">Teacher &amp; Staff Complete SOP</a> —
+form creation for teachers → See <a
+href="./parent-quick-start.html">Parent Quick Start Guide</a> —
+how parents fill out forms on mobile → See <a
+href="./student-quick-start.html">Student Quick Start Guide</a> —
+how students fill out forms on mobile → See <a href="./faq.html">FAQ</a>
+— answers to common questions</p>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-08-03" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-08-03</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#notices-announcements-deep-dive"
+id="toc-notices-announcements-deep-dive">Notices &amp; Announcements —
+Deep-Dive</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#notice-basics" id="toc-notice-basics">Notice
+Basics</a></li>
+<li><a href="#creating-a-notice" id="toc-creating-a-notice">Creating a
+Notice</a></li>
+<li><a href="#notice-categories" id="toc-notice-categories">Notice
+Categories</a></li>
+<li><a href="#targeting-your-audience"
+id="toc-targeting-your-audience">Targeting Your Audience</a></li>
+<li><a href="#read-receipt-tracking" id="toc-read-receipt-tracking">Read
+Receipt Tracking</a></li>
+<li><a href="#editing-and-deleting-notices"
+id="toc-editing-and-deleting-notices">Editing and Deleting
+Notices</a></li>
+<li><a href="#best-practices" id="toc-best-practices">Best
+Practices</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#related-guides" id="toc-related-guides">Related
+Guides</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
+</blockquote>
+<h1 id="notices-announcements-deep-dive">Notices &amp; Announcements —
+Deep-Dive</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide takes a closer look at the Notices feature in SkoConnect.
+It’s written for school administrators, teachers, and staff who create
+and manage announcements. By the end, you’ll understand notice
+categories, targeting options, read tracking, and best practices for
+getting your messages noticed.</p>
+<hr />
+<h2 id="notice-basics">Notice Basics</h2>
+<p>A notice is a message sent from the school to families and students.
+Notices appear in the <strong>Notices</strong> tab of the mobile app and
+are delivered as push notifications to recipients’ phones.</p>
+<h3 id="who-can-create-notices">Who Can Create Notices</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Can Create</th>
+<th>Can Edit/Delete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admin</td>
+<td>✅ Yes</td>
+<td>✅ Yes (all notices)</td>
+</tr>
+<tr class="even">
+<td>Teacher</td>
+<td>✅ Yes</td>
+<td>✅ Yes (own notices)</td>
+</tr>
+<tr class="odd">
+<td>Staff</td>
+<td>✅ Yes</td>
+<td>✅ Yes (own notices)</td>
+</tr>
+<tr class="even">
+<td>Parent</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+<tr class="odd">
+<td>Student</td>
+<td>❌ No</td>
+<td>❌ No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notice-vs.-event-vs.-emergency-broadcast">Notice vs. Event
+vs. Emergency Broadcast</h3>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>When to Use</th>
+<th>Feature</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sharing information or updates</td>
+<td><strong>Notice</strong></td>
+<td>“Report cards go home Friday”</td>
+</tr>
+<tr class="even">
+<td>Something with a specific date and time</td>
+<td><strong>Event</strong></td>
+<td>“Parent-Teacher Conference — March 15 at 3 PM”</td>
+</tr>
+<tr class="odd">
+<td>Urgent safety situation</td>
+<td><strong>Emergency Broadcast</strong></td>
+<td>“School lockdown — shelter in place”</td>
+</tr>
+</tbody>
+</table>
+<p>If your message has a date and time attached, create an event
+instead. If it’s a life-safety situation, use an emergency
+broadcast.</p>
+<hr />
+<h2 id="creating-a-notice">Creating a Notice</h2>
+<h3 id="step-by-step">Step-by-Step</h3>
+<ol type="1">
+<li>Click <strong>Notices</strong> in the left sidebar of the admin
+portal</li>
+<li>Click <strong>Create Notice</strong> in the top-right corner</li>
+<li>Fill in the <strong>Title</strong> — this is your headline (keep it
+short and specific)</li>
+<li>Write your message in the <strong>Description</strong> field</li>
+<li>Choose a <strong>Category</strong> (optional but recommended)</li>
+<li>Set your <strong>Target Audience</strong> (roles and/or grade
+levels)</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<p>Your notice appears instantly in the mobile app for everyone in your
+target audience. They’ll also receive a push notification on their
+phone.</p>
+<blockquote>
+<p><strong>Important:</strong> Push notifications are delivered when you
+click <strong>Send</strong>. If you edit the notice later, a new
+notification is not sent.</p>
+</blockquote>
+<hr />
+<h2 id="notice-categories">Notice Categories</h2>
+<p>Categories add a colored label to your notice in the mobile app. This
+helps families scan their feed and find what’s relevant to them.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 23%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Color</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>📢 School Announcement</td>
+<td>Green</td>
+<td>General school news, policy updates, reminders</td>
+</tr>
+<tr class="even">
+<td>⚠️ Alert</td>
+<td>Orange</td>
+<td>Important time-sensitive updates (not emergencies)</td>
+</tr>
+<tr class="odd">
+<td>🌟 Holiday</td>
+<td>Pink</td>
+<td>Holiday schedules, break reminders, school closures</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tips-for-choosing-a-category">Tips for Choosing a Category</h3>
+<ul>
+<li>Pick the category that best matches the <strong>primary
+topic</strong> of your notice</li>
+<li>If a notice covers multiple topics (an event during a holiday), pick
+the more urgent category (Alert)</li>
+<li>Don’t overuse the Alert category — families may start ignoring
+orange labels if everything is “urgent”</li>
+</ul>
+<hr />
+<h2 id="targeting-your-audience">Targeting Your Audience</h2>
+<h3 id="role-based-targeting">Role-Based Targeting</h3>
+<p>When creating a notice, you choose which roles receive it:</p>
+<ul>
+<li><strong>Parents</strong> — reaches all parent accounts linked to
+students at your school</li>
+<li><strong>Students</strong> — reaches all student accounts</li>
+<li><strong>Staff</strong> — reaches teachers and staff members</li>
+</ul>
+<p>You can select one, two, or all three roles. Most everyday notices
+target <strong>Parents</strong> or <strong>Parents +
+Students</strong>.</p>
+<h3 id="grade-level-targeting">Grade-Level Targeting</h3>
+<p>You can also limit a notice to specific grade ranges. This is useful
+for:</p>
+<ul>
+<li>Exam schedules that only apply to certain grades</li>
+<li>Field trip details for a specific class</li>
+<li>Grade-specific announcements (e.g., “Grade 6 immunization
+forms”)</li>
+</ul>
+<p>When grade targeting is active, only families with children in those
+grades see the notice.</p>
+<blockquote>
+<p><strong>Tip:</strong> If you’re not sure whether to target broadly or
+narrowly, go broad. It’s better for a parent to receive a notice that
+doesn’t apply to them than to miss one that does.</p>
+</blockquote>
+<hr />
+<h2 id="read-receipt-tracking">Read Receipt Tracking</h2>
+<p>After sending a notice, you can see how many people have opened
+it.</p>
+<h3 id="how-it-works">How It Works</h3>
+<ol type="1">
+<li>Go to <strong>Notices</strong> in the admin portal</li>
+<li>Look at the notice in the list — you’ll see a read count (e.g., “45
+of 120 read”)</li>
+<li>Click on the notice to see more details</li>
+</ol>
+<p>The read count updates in real time as people open the notice in the
+mobile app.</p>
+<h3 id="what-counts-as-read">What Counts as “Read”</h3>
+<p>A notice is marked as read when the recipient opens it in the app.
+The count does not include push notifications that were dismissed
+without opening the app.</p>
+<h3 id="interpreting-read-rates">Interpreting Read Rates</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 42%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Read Rate</th>
+<th>What It Means</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80%+</td>
+<td>Great engagement</td>
+<td>No action needed</td>
+</tr>
+<tr class="even">
+<td>50-79%</td>
+<td>Average</td>
+<td>Consider resending or following up</td>
+</tr>
+<tr class="odd">
+<td>Under 50%</td>
+<td>Low engagement</td>
+<td>Resend with a clearer title, or check if notifications are
+enabled</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="editing-and-deleting-notices">Editing and Deleting Notices</h2>
+<h3 id="editing-a-sent-notice">Editing a Sent Notice</h3>
+<ol type="1">
+<li>Go to <strong>Notices</strong> in the admin portal</li>
+<li>Click on the notice you want to edit</li>
+<li>Make your changes</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>You can edit the title, description, category, and target audience
+after sending. However, the push notification was already delivered with
+the original content.</p>
+<h3 id="deleting-a-notice">Deleting a Notice</h3>
+<ol type="1">
+<li>Go to <strong>Notices</strong> in the admin portal</li>
+<li>Click on the notice you want to delete</li>
+<li>Click <strong>Delete</strong></li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> Deleted notices are removed from
+everyone’s feed. They cannot be recovered. Consider editing instead of
+deleting when possible.</p>
+</blockquote>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="writing-effective-titles">Writing Effective Titles</h3>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Good Title</th>
+<th>Why It Works</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Grade 5 Science Fair: Projects Due Friday”</td>
+<td>Specific, actionable, has a deadline</td>
+</tr>
+<tr class="even">
+<td>“No School — Monday, January 15 (National Holiday)”</td>
+<td>Clear, date-specific, scannable</td>
+</tr>
+<tr class="odd">
+<td>“Report Cards Going Home Today”</td>
+<td>Timely and relevant</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weak Title</th>
+<th>Why It’s Weak</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Important Information”</td>
+<td>Vague — doesn’t tell the reader what it’s about</td>
+</tr>
+<tr class="even">
+<td>“Please Read”</td>
+<td>Every notice should be read — this doesn’t help</td>
+</tr>
+<tr class="odd">
+<td>“Update”</td>
+<td>Update about what?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notice-frequency">Notice Frequency</h3>
+<p>There’s no hard limit on notices, but here are guidelines:</p>
+<ul>
+<li><strong>1-3 notices per week</strong> is a healthy pace</li>
+<li><strong>More than 5 per week</strong> risks families tuning out</li>
+<li>Group related information into a single notice when possible</li>
+<li>If you find yourself sending daily notices, consider whether some of
+that information belongs in an event or form instead</li>
+</ul>
+<h3 id="timing">Timing</h3>
+<ul>
+<li>Send notices during school hours (8 AM - 4 PM) when families are
+most likely to check their phones</li>
+<li>Avoid sending notices late at night or on weekends unless it’s
+urgent</li>
+<li>Emergency broadcasts are the exception — send them immediately
+regardless of time</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Parents say they didn’t receive a notice</td>
+<td>Check your <strong>Target Audience</strong> — the notice only
+reaches people in the selected roles and grades. Verify that parents
+have push notifications enabled on their phones.</td>
+</tr>
+<tr class="even">
+<td>Notice has a typo after sending</td>
+<td>Edit the notice from the Notices page. The in-app content will
+update, but the push notification already went out with the original
+text.</td>
+</tr>
+<tr class="odd">
+<td>Low read rate on a notice</td>
+<td>Check the title — was it clear and specific? Consider resending with
+a better title. Also verify the target audience was set correctly.</td>
+</tr>
+<tr class="even">
+<td>Can’t find a notice I created</td>
+<td>Check if you accidentally deleted it. Use the search bar on the
+Notices page. Notices are sorted by date — scroll down for older
+ones.</td>
+</tr>
+<tr class="odd">
+<td>Notice appears under the wrong category</td>
+<td>Edit the notice and change the category. The label updates
+immediately in the mobile app.</td>
+</tr>
+<tr class="even">
+<td>Parents see notices from the wrong grade</td>
+<td>Check the grade targeting settings. If no grade filter was set, all
+parents see the notice regardless of grade.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Can I schedule a notice to send later?</strong> A:
+Currently, notices are sent immediately when you click
+<strong>Send</strong>. Prepare your notice ahead of time and send it
+when you’re ready.</p>
+<p><strong>Q: Can I attach files or images to a notice?</strong> A:
+Notices support text content. For documents or images, consider sharing
+a link (Google Drive, Dropbox) in the notice description.</p>
+<p><strong>Q: How do I know if a specific parent read my
+notice?</strong> A: The read count shows the total number of readers,
+not individual names. For detailed tracking, ask your administrator
+about the analytics dashboard.</p>
+<p><strong>Q: What happens if I send a notice to the wrong
+audience?</strong> A: Edit the notice and change the target audience.
+People outside the new audience will no longer see it. However, the push
+notification already went out to the original group.</p>
+<p><strong>Q: Can students reply to notices?</strong> A: No. Notices are
+one-way communications. If a student or parent needs to respond, they
+should contact the teacher or school office directly.</p>
+<p><strong>Q: How long do notices stay visible in the app?</strong> A:
+Notices remain visible until they are deleted by the creator or an
+administrator. There’s no automatic expiration.</p>
+<hr />
+<h2 id="related-guides">Related Guides</h2>
+<p>→ See <a href="./admin-sop.html">Admin Complete SOP</a> —
+step-by-step instructions for all admin features → See <a
+href="./teacher-sop.html">Teacher &amp; Staff Complete SOP</a> —
+notice creation and management for teachers → See <a
+href="./emergency-broadcast.html">Emergency Broadcast Deep-Dive</a> — when
+to use emergency broadcasts instead of notices → See <a
+href="./faq.html">FAQ</a> — answers to common questions</p>
+</body>
+</html>

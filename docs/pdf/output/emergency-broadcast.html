@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="SkoConnect" />
+  <meta name="dcterms.date" content="2026-08-03" />
+  <title>SkoConnect Documentation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="" />
+  <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; color: #1e293b; line-height: 1.7; font-size: 11pt; }
+  h1 { font-size: 1.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 2rem; }
+  h2 { font-size: 1.35rem; margin-top: 1.75rem; color: #1e293b; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; color: #334155; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #f1f5f9; font-weight: 600; }
+  tr:nth-child(even) { background: #f8fafc; }
+  code { background: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #f1f5f9; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+  blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #475569; margin: 1rem 0; }
+  img { max-width: 100%; height: auto; }
+  a { color: #2563eb; text-decoration: none; }
+  @media print { body { padding: 0; } h1 { page-break-before: auto; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">SkoConnect Documentation</h1>
+<p class="author">SkoConnect</p>
+<p class="date">2026-08-03</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#emergency-broadcast-deep-dive"
+id="toc-emergency-broadcast-deep-dive">Emergency Broadcast —
+Deep-Dive</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#emergency-broadcast-basics"
+id="toc-emergency-broadcast-basics">Emergency Broadcast Basics</a></li>
+<li><a href="#when-to-use-emergency-broadcast"
+id="toc-when-to-use-emergency-broadcast">When to Use Emergency
+Broadcast</a></li>
+<li><a href="#priority-levels" id="toc-priority-levels">Priority
+Levels</a></li>
+<li><a href="#sending-an-emergency-broadcast"
+id="toc-sending-an-emergency-broadcast">Sending an Emergency
+Broadcast</a></li>
+<li><a href="#acknowledgment-tracking"
+id="toc-acknowledgment-tracking">Acknowledgment Tracking</a></li>
+<li><a href="#how-alerts-appear-on-mobile"
+id="toc-how-alerts-appear-on-mobile">How Alerts Appear on
+Mobile</a></li>
+<li><a href="#best-practices" id="toc-best-practices">Best
+Practices</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#related-guides" id="toc-related-guides">Related
+Guides</a></li>
+</ul></li>
+</ul>
+</nav>
+<blockquote>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
+</blockquote>
+<h1 id="emergency-broadcast-deep-dive">Emergency Broadcast —
+Deep-Dive</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide covers the Emergency Broadcast feature in detail. It’s
+written for school administrators who are responsible for sending urgent
+alerts. You’ll learn when to use emergency broadcasts (and when not to),
+how priority levels work, how acknowledgment tracking operates, and best
+practices for managing emergency communications.</p>
+<hr />
+<h2 id="emergency-broadcast-basics">Emergency Broadcast Basics</h2>
+<p>An emergency broadcast is an urgent message that reaches everyone at
+your school immediately. It appears as a push notification and is
+prominently displayed in the mobile app with a priority-colored
+indicator.</p>
+<h3 id="emergency-broadcast-vs.-notice">Emergency Broadcast
+vs. Notice</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 52%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Emergency Broadcast</th>
+<th>Notice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Speed</td>
+<td>Immediate push to all users</td>
+<td>Immediate push to target audience</td>
+</tr>
+<tr class="even">
+<td>Audience</td>
+<td>Everyone at the school</td>
+<td>Selectable roles and grades</td>
+</tr>
+<tr class="odd">
+<td>Priority levels</td>
+<td>3 levels (Red, Orange, Yellow)</td>
+<td>Categories (info labels only)</td>
+</tr>
+<tr class="even">
+<td>Acknowledgment tracking</td>
+<td>✅ Yes — tracks who confirmed receipt</td>
+<td>❌ No</td>
+</tr>
+<tr class="odd">
+<td>Editable after sending</td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+<tr class="even">
+<td>Who can send</td>
+<td>Admin only</td>
+<td>Admin, Teacher, Staff</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Important:</strong> Emergency broadcasts <strong>cannot be
+edited after sending</strong>. Double-check your message before clicking
+<strong>Send</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="when-to-use-emergency-broadcast">When to Use Emergency
+Broadcast</h2>
+<p>Emergency broadcasts are for situations that require immediate
+attention from everyone at the school. Overusing this feature reduces
+its impact — families may start ignoring alerts if they receive too
+many.</p>
+<h3 id="when-to-send-an-emergency-broadcast">When to Send an Emergency
+Broadcast</h3>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 42%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Priority Level</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Immediate threat to safety</td>
+<td>Red (High)</td>
+<td>Lockdown, active security incident</td>
+</tr>
+<tr class="even">
+<td>Weather-related closure</td>
+<td>Orange (Medium)</td>
+<td>Hurricane warning, flooding, severe storm</td>
+</tr>
+<tr class="odd">
+<td>Important operational change</td>
+<td>Yellow (Low)</td>
+<td>Unexpected early dismissal, power outage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-to-send-a-notice-instead">When to Send a Notice
+Instead</h3>
+<ul>
+<li>General announcements (use a notice)</li>
+<li>Event reminders (use an event with reminders)</li>
+<li>Non-urgent schedule changes (use a notice)</li>
+<li>Information that doesn’t require immediate action (use a
+notice)</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> Ask yourself: “Does everyone at the school need
+to see this right now?” If the answer is no, use a notice instead.</p>
+</blockquote>
+<hr />
+<h2 id="priority-levels">Priority Levels</h2>
+<p>Emergency broadcasts have three priority levels. Each has a distinct
+color in the mobile app so families can quickly assess urgency.</p>
+<h3 id="red-high-priority">Red — High Priority</h3>
+<ul>
+<li><strong>Color:</strong> Red</li>
+<li><strong>When to use:</strong> Life-safety situations, active
+threats, lockdowns</li>
+<li><strong>Tone:</strong> Immediate action required</li>
+<li><strong>Example:</strong> “LOCKDOWN IN EFFECT. All students and
+staff shelter in place. Do not come to the school. Await further
+instructions.”</li>
+</ul>
+<h3 id="orange-medium-priority">Orange — Medium Priority</h3>
+<ul>
+<li><strong>Color:</strong> Orange</li>
+<li><strong>When to use:</strong> Urgent but not immediately dangerous
+situations</li>
+<li><strong>Tone:</strong> Important — take note and prepare</li>
+<li><strong>Example:</strong> “School closed tomorrow due to severe
+weather. All after-school activities cancelled. Check back tomorrow
+evening for an update.”</li>
+</ul>
+<h3 id="yellow-low-priority">Yellow — Low Priority</h3>
+<ul>
+<li><strong>Color:</strong> Yellow</li>
+<li><strong>When to use:</strong> Important updates that need prompt
+attention but aren’t emergencies</li>
+<li><strong>Tone:</strong> Please be aware</li>
+<li><strong>Example:</strong> “Early dismissal today at 12:00 PM due to
+power outage. Buses will run the early schedule. Please arrange
+pickup.”</li>
+</ul>
+<hr />
+<h2 id="sending-an-emergency-broadcast">Sending an Emergency
+Broadcast</h2>
+<h3 id="step-by-step">Step-by-Step</h3>
+<ol type="1">
+<li>Click <strong>Emergency</strong> in the left sidebar of the admin
+portal</li>
+<li>Click <strong>Send Emergency Broadcast</strong></li>
+<li>Write your message — be clear, specific, and include any
+instructions</li>
+<li>Select the <strong>Priority Level</strong> (Red, Orange, or
+Yellow)</li>
+<li>Review your message one more time</li>
+<li>Click <strong>Send</strong></li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong> Once you click <strong>Send</strong>, the
+broadcast cannot be edited or recalled. Triple-check your message before
+sending.</p>
+</blockquote>
+<h3 id="what-happens-after-you-send">What Happens After You Send</h3>
+<ol type="1">
+<li>All users at your school receive a push notification
+immediately</li>
+<li>The alert appears at the top of the notices feed in the mobile app
+with the priority color</li>
+<li>Users who open the alert see the full message and an
+<strong>Acknowledge</strong> button</li>
+<li>The admin portal shows a real-time progress bar of
+acknowledgments</li>
+</ol>
+<hr />
+<h2 id="acknowledgment-tracking">Acknowledgment Tracking</h2>
+<h3 id="how-it-works">How It Works</h3>
+<p>When you send an emergency broadcast, the system tracks who has and
+hasn’t acknowledged it. This helps you account for everyone during an
+emergency.</p>
+<h3 id="the-progress-bar">The Progress Bar</h3>
+<p>The Emergency page in the admin portal shows a progress bar for each
+broadcast:</p>
+<ul>
+<li><strong>Total sent</strong> — the number of users who received the
+alert</li>
+<li><strong>Acknowledged</strong> — the number of users who tapped
+<strong>Acknowledge</strong> in the app</li>
+<li><strong>Percentage</strong> — the acknowledgment rate</li>
+</ul>
+<p>The progress bar updates in real time as acknowledgments come in.</p>
+<h3 id="what-counts-as-an-acknowledgment">What Counts as an
+Acknowledgment</h3>
+<p>A user has acknowledged the broadcast when they:</p>
+<ol type="1">
+<li>Open the alert in the mobile app</li>
+<li>Read the message</li>
+<li>Tap the <strong>Acknowledge</strong> button</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Simply receiving the push notification does
+not count as an acknowledgment. The user must open the app and tap the
+button.</p>
+</blockquote>
+<h3 id="who-can-see-acknowledgment-data">Who Can See Acknowledgment
+Data</h3>
+<p>Only administrators can view acknowledgment data. Teachers and staff
+cannot access the Emergency page or see who has/hasn’t acknowledged a
+broadcast.</p>
+<h3 id="post-incident-review">Post-Incident Review</h3>
+<p>After an emergency is resolved, review the acknowledgment data:</p>
+<ol type="1">
+<li>Go to <strong>Emergency</strong> in the admin portal</li>
+<li>Find the broadcast in the list</li>
+<li>Review the acknowledgment rate and timeline</li>
+<li>Note any patterns (e.g., specific grade levels with low
+acknowledgment rates)</li>
+</ol>
+<p>This data can help improve future emergency preparedness — for
+example, if certain families never acknowledge alerts, you may need to
+follow up individually to ensure their notifications are working.</p>
+<hr />
+<h2 id="how-alerts-appear-on-mobile">How Alerts Appear on Mobile</h2>
+<h3 id="push-notification">Push Notification</h3>
+<p>All users receive an immediate push notification on their phone. The
+notification includes:</p>
+<ul>
+<li>The alert message (or a preview of it)</li>
+<li>The school name</li>
+<li>A priority indicator</li>
+</ul>
+<h3 id="in-app-display">In-App Display</h3>
+<p>When users open the SkoConnect app, the emergency alert appears:</p>
+<ul>
+<li>At the top of the notices feed (above regular notices)</li>
+<li>With a colored priority indicator (Red, Orange, or Yellow)</li>
+<li>With an <strong>Acknowledge</strong> button</li>
+</ul>
+<p>Users cannot dismiss the alert without acknowledging it — it remains
+visible until they tap <strong>Acknowledge</strong>.</p>
+<h3 id="what-users-see">What Users See</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>What It Shows</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Priority indicator</td>
+<td>Colored bar (Red/Orange/Yellow)</td>
+</tr>
+<tr class="even">
+<td>Message</td>
+<td>The full text of the broadcast</td>
+</tr>
+<tr class="odd">
+<td>Date and time</td>
+<td>When the broadcast was sent</td>
+</tr>
+<tr class="even">
+<td>Acknowledge button</td>
+<td>Taps to confirm receipt</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="writing-emergency-messages">Writing Emergency Messages</h3>
+<ul>
+<li><strong>Be specific</strong> — include exactly what’s happening and
+what people should do</li>
+<li><strong>Include instructions</strong> — tell families whether to
+come to school, stay away, or wait for updates</li>
+<li><strong>Keep it concise</strong> — people read emergency messages
+under stress; shorter is better</li>
+<li><strong>Avoid jargon</strong> — use plain language that everyone
+understands</li>
+<li><strong>Include a follow-up plan</strong> — let families know when
+to expect an update</li>
+</ul>
+<h3 id="before-you-send">Before You Send</h3>
+<ol type="1">
+<li>Verify the information is accurate</li>
+<li>Check the priority level is appropriate</li>
+<li>Proofread the message (you can’t edit it after sending)</li>
+<li>Confirm you’re logged into the correct school account</li>
+</ol>
+<h3 id="after-you-send">After You Send</h3>
+<ol type="1">
+<li>Monitor the acknowledgment progress bar</li>
+<li>Follow up with a notice when the situation is resolved</li>
+<li>Review acknowledgment data for gaps</li>
+<li>Document the incident for your school’s records</li>
+</ol>
+<h3 id="cadence-and-restraint">Cadence and Restraint</h3>
+<ul>
+<li>Reserve emergency broadcasts for true emergencies</li>
+<li>If you send more than 2-3 per month, you’re probably overusing the
+feature</li>
+<li>Families who receive too many alerts may start ignoring them — this
+is dangerous during a real emergency</li>
+<li>Use notices for anything that isn’t time-critical</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Low acknowledgment rate</td>
+<td>Check that push notifications are enabled for the app. Some users
+may have notifications turned off. Follow up individually with families
+who haven’t acknowledged.</td>
+</tr>
+<tr class="even">
+<td>Sent a broadcast with a typo</td>
+<td>Broadcasts cannot be edited. Send a follow-up notice or broadcast
+with the corrected information. Double-check next time.</td>
+</tr>
+<tr class="odd">
+<td>Broadcast went to the wrong school</td>
+<td>Verify you’re logged into the correct school account before sending.
+Each admin account is tied to a single school.</td>
+</tr>
+<tr class="even">
+<td>Can’t access the Emergency page</td>
+<td>Only administrators can send emergency broadcasts. Teachers and
+staff do not have access to this feature.</td>
+</tr>
+<tr class="odd">
+<td>Parents say they didn’t receive the alert</td>
+<td>Check that the parent’s account is active (not deactivated). Verify
+their push notification settings. The alert is also visible in the app
+even if the push notification was missed.</td>
+</tr>
+<tr class="even">
+<td>Want to send an update to a previous broadcast</td>
+<td>Create a new broadcast or notice with the updated information.
+Previous broadcasts cannot be modified.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Can I recall or delete an emergency broadcast after
+sending it?</strong> A: No. Once sent, a broadcast cannot be recalled,
+edited, or deleted. If you need to correct information, send a new
+broadcast or notice with the update.</p>
+<p><strong>Q: Who receives emergency broadcasts?</strong> A: Everyone at
+your school — all parents, students, teachers, and staff. Emergency
+broadcasts cannot be targeted to specific roles or grades.</p>
+<p><strong>Q: Can teachers send emergency broadcasts?</strong> A:
+No. Only administrators can send emergency broadcasts. If a teacher
+identifies an emergency situation, they should contact the school
+administrator immediately.</p>
+<p><strong>Q: How quickly are emergency broadcasts delivered?</strong>
+A: Push notifications are sent immediately. Most recipients receive them
+within seconds. Delivery speed depends on the recipient’s phone and
+network connection.</p>
+<p><strong>Q: What if a user’s phone is off when the broadcast is
+sent?</strong> A: The push notification is queued by the phone’s
+operating system. When the phone is turned back on and connected to the
+internet, the notification is delivered. The alert is also visible in
+the app whenever the user opens it.</p>
+<p><strong>Q: Can I see who specifically has and hasn’t acknowledged a
+broadcast?</strong> A: The admin portal shows the overall acknowledgment
+count and percentage. For detailed per-user acknowledgment data, check
+the analytics dashboard or contact your SkoConnect representative.</p>
+<p><strong>Q: What’s the difference between Red (High) and Orange
+(Medium) priority?</strong> A: Red means there is an immediate threat to
+safety — lockdown, security incident, or similar. Orange means the
+situation is urgent but not immediately dangerous — severe weather,
+school closure, or significant operational disruption.</p>
+<hr />
+<h2 id="related-guides">Related Guides</h2>
+<p>→ See <a href="./admin-sop.html">Admin Complete SOP</a> — full
+emergency broadcast instructions → See <a href="./notices.html">Notices
+Deep-Dive</a> — when to use notices instead of emergency broadcasts →
+See <a href="./parent-quick-start.html">Parent Quick Start
+Guide</a> — how parents see and acknowledge alerts → See <a
+href="./faq.html">FAQ</a> — answers to common questions</p>
+</body>
+</html>

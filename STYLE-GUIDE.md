@@ -1,6 +1,6 @@
 # SkoConnect Documentation — Style Guide
 
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 ---
 
@@ -50,7 +50,7 @@ Use code blocks (` ``` `) ONLY for things the user types or sees as text:
 
 ```
 admin@school.edu
-https://school-connect-enterprise.web.app
+https://admin.skoconnect.com
 ```
 
 Do NOT use code blocks for descriptions, explanations, or prose.
@@ -126,7 +126,7 @@ Always use relative paths from the repository root. Never use absolute URLs or f
 Every guide must follow this structure:
 
 ```
-> SkoConnect Documentation v1.0 | Last updated: [date]
+> SkoConnect Documentation v1.1 | Last updated: [date]
 
 # [Guide Title]
 
@@ -200,7 +200,7 @@ These words make readers feel stupid, dismissed, or overwhelmed. Do NOT use them
 Every guide MUST start with this line at the very top:
 
 ```
-> SkoConnect Documentation v1.0 | Last updated: [date]
+> SkoConnect Documentation v1.1 | Last updated: [date]
 ```
 
 The date should be the date the guide was last reviewed or updated.

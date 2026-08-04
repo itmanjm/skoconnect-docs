@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="SkoConnect" />
-  <meta name="dcterms.date" content="2026-04-05" />
+  <meta name="dcterms.date" content="2026-08-03" />
   <title>SkoConnect Documentation</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -49,7 +47,7 @@
 <header id="title-block-header">
 <h1 class="title">SkoConnect Documentation</h1>
 <p class="author">SkoConnect</p>
-<p class="date">2026-04-05</p>
+<p class="date">2026-08-03</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -80,7 +78,7 @@ Help?</a></li>
 </ul>
 </nav>
 <blockquote>
-<p>SkoConnect Documentation v1.0 | Last updated: 2026-04-02</p>
+<p>SkoConnect Documentation v1.1 | Last updated: 2026-08-03</p>
 </blockquote>
 <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
 <p>This page answers common questions from all SkoConnect users.
@@ -105,9 +103,10 @@ click the <strong>Forgot Password</strong> link on the portal login
 page. Enter your email address and check your inbox for a reset link.
 The link expires after a few hours — if it doesn’t work, request a new
 one.</p>
-<p><strong>Q: How do I download the mobile app?</strong> A: Open the App
-Store (iPhone) or Google Play (Android) and search for “SkoConnect.”
-Download and install the free app. You need iOS 14+ or Android 8.0+.</p>
+<p><strong>Q: How do I download the mobile app?</strong> A: Open the
+Google Play Store on your Android phone and search for “SkoConnect.”
+Download and install the free app. You need Android 8.0+. The iOS app is
+coming soon.</p>
 <p><strong>Q: Can I use SkoConnect on my computer?</strong> A: The admin
 portal (for administrators, teachers, and staff) works in any web
 browser. Parents and students use the mobile app only — there’s no web
@@ -120,16 +119,16 @@ a new invitation be sent. Make sure the email address the school has on
 file is the one you’re checking.</p>
 <hr />
 <h2 id="admin-questions">Admin Questions</h2>
-<p><strong>Q: How many users can I enroll at once?</strong> A: You can
-upload up to 400 rows in a single CSV file. For larger schools, split
-your list across multiple uploads. The system automatically skips
+<p><strong>Q: How many users can I enroll at once?</strong> A: Each
+enrollment CSV file has a maximum size of 10 MB. For very large schools,
+split your list across multiple uploads. The system automatically skips
 duplicate emails, so re-uploading is safe.</p>
 <p><strong>Q: What format should my enrollment CSV use?</strong> A: Your
 CSV must have these columns in the first row: <code>email</code>,
 <code>role</code>, <code>first_name</code>, <code>last_name</code>.
 Optional columns: <code>phone</code>, <code>parent_email</code> (for
 linking students to parents). See the <a
-href="guides/admin-sop.md">Admin Complete SOP</a> for a complete
+href="./admin-sop.html">Admin Complete SOP</a> for a complete
 example.</p>
 <p><strong>Q: How do I add a new administrator?</strong> A: Go to
 <strong>Users</strong> and click <strong>Create User</strong>. Set the
@@ -216,9 +215,9 @@ directly.</p>
 <p><strong>Q: Can I enable fingerprint or face login?</strong> A: Go to
 <strong>More</strong> → <strong>Privacy &amp; Security</strong> and
 toggle <strong>Biometric Login</strong> on. You’ll also need fingerprint
-or face recognition set up in your phone’s system settings (under
-Settings → Face ID/Touch ID on iPhone, or Settings → Security →
-Fingerprint on Android).</p>
+or face recognition set up in your phone’s system settings (Settings →
+Security → Fingerprint or Face on Android). iOS biometric setup will be
+published when the iOS app launches.</p>
 <p><strong>Q: I submitted a form with the wrong answers. Can I change
 it?</strong> A: Contact your teacher right away. They may be able to
 help you resubmit the form. Once a form closes, you can’t make
@@ -266,9 +265,10 @@ school administrator for details.</p>
 <hr />
 <h2 id="general">General</h2>
 <p><strong>Q: What devices does SkoConnect support?</strong> A: The
-mobile app works on iPhones (iOS 14+) and Android phones (Android 8.0+).
-The admin portal works in any modern web browser (Chrome, Firefox,
-Safari, Edge). There’s no tablet or desktop app version.</p>
+mobile app works on Android phones (Android 8.0+). The iOS app is coming
+soon — iOS version requirements will be published at launch. The admin
+portal works in any modern web browser (Chrome, Firefox, Safari, Edge).
+There’s no tablet or desktop app version.</p>
 <p><strong>Q: Does SkoConnect work offline?</strong> A: The mobile app
 requires an internet connection to load new content. If you’re offline,
 you can view the last content that was loaded. New notices, events, and
@@ -292,13 +292,13 @@ SkoConnect currently supports English only. Additional language support
 may be considered for future updates.</p>
 <p><strong>Q: How often is the app updated?</strong> A: The app is
 updated periodically with bug fixes and improvements. Enable automatic
-updates on your phone (App Store → SkoConnect → Automatic Updates) to
+updates on your phone (Google Play → SkoConnect → Enable Auto-Update) to
 always have the latest version.</p>
 <p><strong>Q: What should I do if the app crashes or freezes?</strong>
-A: First, try closing the app completely (swipe up from the app
-switcher) and reopening it. If the problem persists, check the App Store
-or Google Play for an update. As a last resort, uninstall and reinstall
-the app — you won’t lose any data since it’s stored on the server.</p>
+A: First, try closing the app completely (swipe it away from your recent
+apps list) and reopening it. If the problem persists, check the Google
+Play Store for an update. As a last resort, uninstall and reinstall the
+app — you won’t lose any data since it’s stored on the server.</p>
 <p><strong>Q: Can I change the email address associated with my
 account?</strong> A: Go to <strong>More</strong> → <strong>Profile
 Settings</strong> in the mobile app and update your email address.
@@ -340,15 +340,15 @@ information.</p>
 <p>If you didn’t find your answer here, try these resources:</p>
 <ul>
 <li>→ Check the <strong>Quick Start Guide</strong> for your role: <a
-href="guides/admin-quick-start.md">Admin</a> | <a
-href="guides/teacher-quick-start.md">Teacher &amp; Staff</a> | <a
-href="guides/parent-quick-start.md">Parent</a> | <a
-href="guides/student-quick-start.md">Student</a></li>
+href="./admin-quick-start.html">Admin</a> | <a
+href="./teacher-quick-start.html">Teacher &amp; Staff</a> | <a
+href="./parent-quick-start.html">Parent</a> | <a
+href="./student-quick-start.html">Student</a></li>
 <li>→ Check the <strong>Complete SOP</strong> for your role: <a
-href="guides/admin-sop.md">Admin</a> | <a
-href="guides/teacher-sop.md">Teacher &amp; Staff</a> | <a
-href="guides/parent-sop.md">Parent</a> | <a
-href="guides/student-sop.md">Student</a></li>
+href="./admin-sop.html">Admin</a> | <a
+href="./teacher-sop.html">Teacher &amp; Staff</a> | <a
+href="./parent-sop.html">Parent</a> | <a
+href="./student-sop.html">Student</a></li>
 <li>→ Check the <strong>Troubleshooting</strong> section at the bottom
 of any guide</li>
 <li>→ Contact your school administrator</li>
