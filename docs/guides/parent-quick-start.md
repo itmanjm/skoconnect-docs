@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Parent Quick Start Guide
 
@@ -8,7 +8,7 @@ This guide walks you through the SkoConnect mobile app as a parent — from down
 
 ## Prerequisites
 
-- A smartphone (iPhone or Android)
+- An Android phone (Android 8.0 or later)
 - Your **School Code** (provided by your school administrator)
 - Your SkoConnect login credentials (provided by your school administrator)
 - An internet connection (Wi-Fi or cellular data)
@@ -17,13 +17,15 @@ This guide walks you through the SkoConnect mobile app as a parent — from down
 
 ## Step 1: Download the App
 
-SkoConnect is available for both iPhone and Android:
+SkoConnect is available on Android:
 
-1. Open the **App Store** (iPhone) or **Google Play** (Android)
+1. Open the **Google Play Store** on your phone
 2. Search for **SkoConnect**
 3. Download and install the app
 
-The app icon is green with the SkoConnect logo. Once installed, you'll find it on your home screen.
+> **Note:** iOS coming soon. The iPhone app is in development and will be available on the App Store once Apple Developer registration is complete.
+
+The app icon is teal with a white speech bubble and gold signal waves. Once installed, you'll find it on your home screen.
 
 ---
 
