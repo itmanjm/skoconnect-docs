@@ -1,6 +1,6 @@
-# 🏫 SkoConnect Beta School Welcome Kit
+# 🏫 SkoConnect Pilot School Welcome Kit
 
-> **Version:** 1.0 | **Prepared:** April 2026 | **For:** Beta Partner Schools
+> **Version:** 1.1 | **Prepared:** August 2026 | **For:** Pilot Partner Schools
 
 ---
 
@@ -50,7 +50,7 @@ Your school account has been created and an invitation email is on its way to **
 **Getting started right now:**
 1. Check your inbox for the invitation email from SkoConnect
 2. Click the link to set your password
-3. Log in at [school-connect-enterprise.web.app](https://admin.skoconnect.com)
+3. Log in at [admin.skoconnect.com](https://admin.skoconnect.com)
 4. Complete the Setup Wizard (takes about 10 minutes)
 
 Attached to this email:
@@ -221,9 +221,11 @@ Looking forward to a great partnership!
 **Action:** All staff log in during the session.
 
 **Steps:**
-1. Open the App Store (iPhone) or Google Play Store (Android)
+1. Open Google Play on Android
 2. Search "SkoConnect"
 3. Download and open the app
+
+> iOS availability is still to be announced.
 4. Enter the email address where you received your invitation
 5. Enter the password you set (or click "Forgot Password" if needed)
 6. You should see your school name and dashboard
@@ -301,9 +303,9 @@ Looking forward to a great partnership!
 - Open the floor for questions
 - Common questions:
   - "Can I send a notice to just one class?" → Yes, use the target audience filter
-  - "Can parents reply to notices?" → Yes, they can reply via the in-app chat
-  - "What if a parent doesn't have a smartphone?" → They receive email notifications as backup
-  - "Can I schedule a notice to send later?" → Yes, you can set a send date and time
+  - "Can parents reply to notices?" → Notices are one-way. For replies, direct families to the school's chosen support channel.
+  - "What if a parent doesn't have a smartphone?" → They should contact the school office so the school can provide the current fallback communication path.
+  - "Can I schedule a notice to send later?" → Not yet. Notices send immediately when you click **Send**.
 
 ---
 
@@ -319,8 +321,8 @@ Looking forward to a great partnership!
 We're now using SkoConnect to keep you updated with school notices, events, forms, and important announcements.
 
 📱 Download the SkoConnect app:
-• iPhone: [App Store link]
 • Android: [Google Play link]
+• iOS: Coming soon
 
 Once you download:
 1. Open the app
@@ -359,8 +361,8 @@ Questions? Reply to this message or contact the school office.
 │                                         │
 │  HOW TO GET STARTED:                    │
 │  1. Download the app:                   │
-│     • iPhone: [App Store link]          │
 │     • Android: [Google Play link]       │
+│     • iOS: Coming soon                  │
 │  2. Open the app and enter this email:  │
 │     [Parent Email]                      │
 │  3. Set your password                   │
@@ -414,8 +416,8 @@ Starting this week, all official school notices, forms, and announcements will b
 
 ✅ If you've already downloaded SkoConnect: You're all set! Check the app for updates.
 ❌ If you haven't downloaded yet: Please do so now.
-  • iPhone: [App Store link]
   • Android: [Google Play link]
+  • iOS: Coming soon
   • Need help? Contact the school office.
 
 📱 This WhatsApp group will remain active for quick questions and conversations, but official communication is moving to SkoConnect.
@@ -486,7 +488,7 @@ Thank you!
 ├──────────────────────────────────────────────┤
 │                                              │
 │  🔗 Admin Portal:                            │
-│     school-connect-enterprise.web.app        │
+│     admin.skoconnect.com                     │
 │                                              │
 │  📢 SEND A NOTICE                            │
 │  Notices → Create Notice → Fill in details   │
@@ -525,14 +527,14 @@ Thank you!
 ├──────────────────────────────────────────────┤
 │                                              │
 │  📱 Download the SkoConnect app              │
-│     App Store / Google Play → "SkoConnect"   │
+│     Google Play → "SkoConnect"              │
 │                                              │
 │  🔔 WHAT YOU CAN DO:                         │
 │  • Send notices to parents and students      │
 │  • Create permission slips and forms         │
 │  • View form submissions in real time        │
-│  • Post to group chats                       │
 │  • View school events and calendar           │
+│  • Receive emergency alerts                  │
 │                                              │
 │  📢 SEND A NOTICE                            │
 │  Notices tab → + button → Write & Send       │
@@ -540,9 +542,9 @@ Thank you!
 │  📋 CREATE A FORM                            │
 │  Forms tab → + button → Add fields & Send    │
 │                                              │
-│  ⚠️ EMERGENCY?                               │
-│  Emergency tab → Create Alert → Send         │
-│  (School emergencies ONLY)                   │
+│  ⚠️ EMERGENCY ALERTS                         │
+│  Follow school emergency instructions in-app │
+│  and acknowledge alerts when prompted        │
 │                                              │
 │  ❓ QUESTIONS?                               │
 │  Ask your school administrator or contact:   │
@@ -559,7 +561,7 @@ Thank you!
 ├──────────────────────────────────────────────┤
 │                                              │
 │  📱 Download the SkoConnect app              │
-│     App Store / Google Play → "SkoConnect"   │
+│     Google Play → "SkoConnect"              │
 │                                              │
 │  ✅ WHAT YOU'LL SEE:                         │
 │  • School notices (instantly on your phone)  │
@@ -595,7 +597,7 @@ Thank you!
 | Issue | Solution |
 |-------|----------|
 | "I didn't get an invitation email" | Check spam/junk folder. If not there, admin can resend from Enrollment page |
-| "I can't find the app" | Search "SkoConnect" (one word) in App Store or Google Play |
+| "I can't find the app" | Search "SkoConnect" (one word) in Google Play. iOS availability is still to be announced. |
 | "My password doesn't work" | Use "Forgot Password" on login screen |
 | "I don't see my child's name" | Contact school admin to verify parent-child link |
 | "I'm not getting notifications" | Check phone Settings → SkoConnect → Notifications → Allow |
@@ -621,4 +623,4 @@ Thank you!
 ---
 
 **End of Welcome Kit**
-*This kit will be updated as SkoConnect evolves. Feedback from beta schools shapes future versions.*
+*This kit will be updated as SkoConnect evolves. Feedback from pilot schools shapes future versions.*

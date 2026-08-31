@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
+> SkoConnect Documentation v1.2 | Last updated: 2026-08-31
 
 # Frequently Asked Questions
 
@@ -15,7 +15,7 @@ A: Open the SkoConnect app (mobile) or go to your school's portal URL (admin/tea
 A: A School Code is a short identifier that tells the mobile app which school you belong to. Your school administrator provides this code during enrollment. If you don't know your School Code, contact your school's main office or administrator.
 
 **Q: I forgot my password. How do I reset it?**
-A: Tap **Forgot Password** on the login screen (mobile app) or click the **Forgot Password** link on the portal login page. Enter your email address and check your inbox for a reset link. The link expires after a few hours — if it doesn't work, request a new one.
+A: Tap **Forgot Password** on the login screen (mobile app) or click the **Forgot Password** link on the portal login page. Enter your email address and check your inbox for a reset link. The link expires in 1 hour — if it doesn't work, request a new one.
 
 **Q: How do I download the mobile app?**
 A: Open the Google Play Store on your Android phone and search for "SkoConnect." Download and install the free app. You need Android 8.0+. The iOS app is coming soon.

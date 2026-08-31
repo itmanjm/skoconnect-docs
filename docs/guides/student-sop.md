@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Student — Complete SOP
 
@@ -27,15 +27,16 @@ Each section below is self-contained — jump to any section without reading the
 
 ### Download
 
-SkoConnect is available for both iPhone and Android:
+SkoConnect is available on Android phones (iOS coming soon):
 
-1. Open the **App Store** (iPhone) or **Google Play** (Android)
+1. Open the **Google Play Store** on your Android phone
 2. Search for **SkoConnect**
 3. Download and install the app
 
+> **Note:** SkoConnect for iPhone is coming soon. iOS version requirements will be published when the iOS app launches.
+
 ### System Requirements
 
-- **iPhone**: iOS 14 or later
 - **Android**: Version 8.0 or later
 - An internet connection (Wi-Fi or cellular data)
 
@@ -164,12 +165,9 @@ Notices are color-coded to help you find what matters:
 
 | Category | Color | What You'll See |
 |----------|-------|-----------------|
-| School Announcement | Blue | General school news |
-| Alert | Red | Important warnings |
-| Exam | Blue | Test schedules and results |
-| Event | Blue | Event reminders |
-| Sports | Green | Sports news and schedules |
-| Holiday | Purple | Holiday and closure dates |
+| 📢 School Announcement | Green | General school news |
+| ⚠️ Alert | Orange | Important warnings |
+| 🌟 Holiday | Pink | Holiday and closure dates |
 
 > **Tip:** Check the Notices tab at least once a day so you don't miss anything important from your teachers.
 
@@ -330,7 +328,7 @@ A: Go to **More** → **Privacy & Security** and enable biometric login. You'll 
 A: Yes. SkoConnect is provided by your school at no cost to you. You just need an internet connection.
 
 **Q: Can I use the app on a tablet or computer?**
-A: Currently, SkoConnect is designed for phones only. It works on iPhones and Android phones.
+A: Currently, SkoConnect is designed for phones only. It works on Android phones (iOS coming soon).
 
 ---
 

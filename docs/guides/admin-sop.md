@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Admin Portal — Complete SOP
 
@@ -93,7 +93,7 @@ emma.doe@email.com,student,Emma,Doe,,john.doe@email.com
 mark.smith@school.edu,staff,Mark,Smith,(555) 100-0003,
 ```
 
-> **Important:** The first row must be column headers exactly as shown. The CSV must use commas as separators. Maximum 400 rows per upload.
+> **Important:** The first row must be column headers exactly as shown. The CSV must use commas as separators. Maximum file size: 10 MB.
 
 ### Uploading Your CSV
 
@@ -113,7 +113,7 @@ After uploading, you'll see a results summary:
 
 > **Tip:** If you see errors, open your CSV in a spreadsheet app, fix the problematic rows, and re-upload. The system will skip any users who already exist, so you won't create duplicates.
 
-→ For detailed enrollment instructions, see [Enrollment Deep-Dive](deep-dives/enrollment-onboarding.md)
+→ For detailed enrollment instructions, see [Digital Forms Deep-Dive](deep-dives/digital-forms.md)
 
 ![Screenshot of Enrollment page showing CSV upload area with drag-and-drop and column preview](assets/screenshots/enrollment-page.png)
 
@@ -199,12 +199,9 @@ Categories help organize notices visually. When you create a notice, you can ass
 
 | Category | Color | When to Use |
 |----------|-------|-------------|
-| School Announcement | Blue | General school-wide news |
-| Alert | Red | Important warnings or urgent but non-emergency updates |
-| Exam | Blue | Exam schedules, study tips, test results |
-| Event | Blue | Event reminders and details |
-| Sports | Green | Sports schedules, team announcements, game results |
-| Holiday | Purple | Holiday schedules, school closures |
+| School Announcement | Green | General school-wide news |
+| Alert | Orange | Important warnings or urgent but non-emergency updates |
+| Holiday | Pink | Holiday schedules, school closures |
 
 ### Targeting Your Audience
 
@@ -562,7 +559,7 @@ If a user forgets their password:
 ## FAQ
 
 **Q: How many users can I enroll at once?**
-A: You can upload up to 400 rows in a single CSV file. If you have more users, split them across multiple uploads.
+A: The maximum CSV file size is 10 MB. For very large schools, you can split your enrollment list across multiple uploads. The system automatically skips duplicate emails, so re-uploading is safe.
 
 **Q: Can a user have more than one role?**
 A: No. Each user has exactly one role. If someone needs different permissions, contact your SkoConnect representative.
@@ -590,8 +587,8 @@ A: Deactivating a user stops them from logging in but keeps their data intact. D
 ## Related Guides
 
 - → See [Admin Quick Start Guide](guides/admin-quick-start.md) — the 5-minute getting started guide
-- → See [Enrollment Deep-Dive](deep-dives/enrollment-onboarding.md) — detailed CSV formatting and bulk enrollment instructions
 - → See [Digital Forms Deep-Dive](deep-dives/digital-forms.md) — form builder, templates, and submission tracking
 - → See [Emergency Broadcast Deep-Dive](deep-dives/emergency-broadcast.md) — priority levels, best practices, and acknowledgment tracking
-- → See [Notice System Deep-Dive](deep-dives/notice-system.md) — targeting, categories, and writing effective notices
+- → See [Notices Deep-Dive](deep-dives/notices.md) — targeting, categories, and writing effective notices
+- → See [Calendar & Events Deep-Dive](deep-dives/events-calendar.md) — events, reminders, and calendar management
 - → See [FAQ](faq.md) — answers to common questions from all roles

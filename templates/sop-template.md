@@ -11,7 +11,7 @@
 Before you begin, make sure you have:
 
 - [Prerequisite 1: e.g., "An active SkoConnect administrator account"]
-- [Prerequisite 2: e.g., "Access to the admin portal at school-connect-enterprise.web.app"]
+- [Prerequisite 2: e.g., "Access to the admin portal at admin.skoconnect.com"]
 - [Prerequisite 3: e.g., "Your school's enrollment CSV file ready"]
 
 ---
