@@ -169,6 +169,8 @@ Notices are color-coded to help you find what matters:
 | ⚠️ Alert | Orange | Important warnings |
 | 🌟 Holiday | Pink | Holiday and closure dates |
 
+> **Note:** School staff pick from these three categories when creating notices. Depending on your app version, the mobile app may also show additional labels such as Exam, Event, or Sports for older notices.
+
 > **Tip:** Check the Notices tab at least once a day so you don't miss anything important from your teachers.
 
 ![Screenshot of mobile app notices feed showing categorized announcements](assets/screenshots/mobile-notices.jpg)

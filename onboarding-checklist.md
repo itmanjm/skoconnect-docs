@@ -33,7 +33,7 @@ Before contacting a new school, verify the platform is ready:
   - `health`, `auth`, `members`, `events`, `notifications`, `forms`, `relationships`, `scheduleReminders`, `enrollmentWizard`, `analytics`
 - [ ] Firestore security rules are current
 - [ ] Admin portal is accessible at `https://admin.skoconnect.com`
-- [ ] Mobile app is available on App Store and Google Play (latest version)
+- [ ] Mobile app is available on Google Play (latest version); iOS availability TBA
 
 If any of these checks fail, resolve the issue before proceeding with onboarding.
 

@@ -133,7 +133,7 @@ A: Families download the SkoConnect mobile app from the Google Play Store (searc
 A: You can edit or delete any notice after sending it. However, push notifications may have already been delivered. It's always worth double-checking your audience selection before clicking **Send**.
 
 **Q: Can I schedule a notice to be sent later?**
-A: Currently, notices are sent immediately when you click **Send**. For time-sensitive communications, consider preparing your notice ahead of time and sending it when you're ready.
+A: Yes — when creating a notice, choose **Schedule** instead of **Send Now** and pick a date/time. You can also save it as a **Draft** and send it later.
 
 **Q: How do I add teachers to my school?**
 A: Include teachers in your enrollment CSV with the role set to "teacher," or create them individually from the **Users** page. Each teacher will receive their own login credentials.

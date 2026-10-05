@@ -177,6 +177,8 @@ Notices are color-coded by category to help you find what's relevant:
 | Alert | Orange | Important warnings and non-emergency alerts |
 | Holiday | Pink | Holiday schedules and school closures |
 
+> **Note:** School staff pick from these three categories when creating notices. Depending on your app version, the mobile app may also show additional labels such as Exam, Event, or Sports for older notices.
+
 ### Grade-Level Targeting
 
 The school can target notices to specific grade levels. This means you'll only see notices relevant to your child's grade. If you have children in different grades, switch between them using the child selector to see each child's notices.

@@ -93,7 +93,7 @@ emma.doe@email.com,student,Emma,Doe,,john.doe@email.com
 mark.smith@school.edu,staff,Mark,Smith,(555) 100-0003,
 ```
 
-> **Important:** The first row must be column headers exactly as shown. The CSV must use commas as separators. Maximum file size: 10 MB.
+> **Important:** The first row must be column headers exactly as shown. The CSV must use commas as separators. There is no hard row or file-size cap; for very large lists you can split across multiple uploads, and duplicates are skipped safely.
 
 ### Uploading Your CSV
 
@@ -113,7 +113,7 @@ After uploading, you'll see a results summary:
 
 > **Tip:** If you see errors, open your CSV in a spreadsheet app, fix the problematic rows, and re-upload. The system will skip any users who already exist, so you won't create duplicates.
 
-→ For detailed enrollment instructions, see [Digital Forms Deep-Dive](deep-dives/digital-forms.md)
+→ For detailed form instructions, see [Digital Forms Deep-Dive](deep-dives/digital-forms.md)
 
 ![Screenshot of Enrollment page showing CSV upload area with drag-and-drop and column preview](assets/screenshots/enrollment-page.png)
 
@@ -559,7 +559,7 @@ If a user forgets their password:
 ## FAQ
 
 **Q: How many users can I enroll at once?**
-A: The maximum CSV file size is 10 MB. For very large schools, you can split your enrollment list across multiple uploads. The system automatically skips duplicate emails, so re-uploading is safe.
+A: There is no hard CSV size cap. For very large schools, you can split your enrollment list across multiple uploads. The system automatically skips duplicate emails, so re-uploading is safe.
 
 **Q: Can a user have more than one role?**
 A: No. Each user has exactly one role. If someone needs different permissions, contact your SkoConnect representative.

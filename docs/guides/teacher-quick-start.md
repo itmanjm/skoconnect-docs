@@ -165,4 +165,4 @@ A: Notices include read receipt tracking. You can see how many people have opene
 A: A **notice** is a message — an announcement, reminder, or alert. An **event** appears on the calendar with a date and time. If something has a specific date and time attached to it, create an event. If it's just information to share, create a notice.
 
 **Q: Can I schedule a notice to send later?**
-A: Currently, notices are sent immediately when you click **Send**. For time-sensitive communications, prepare your notice ahead of time and send it when you're ready.
+A: Yes — when creating a notice, choose **Schedule** instead of **Send Now** and pick a date/time. You can also save it as a **Draft** and send it later.

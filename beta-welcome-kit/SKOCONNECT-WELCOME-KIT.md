@@ -303,9 +303,9 @@ Looking forward to a great partnership!
 - Open the floor for questions
 - Common questions:
   - "Can I send a notice to just one class?" → Yes, use the target audience filter
-  - "Can parents reply to notices?" → Notices are one-way. For replies, direct families to the school's chosen support channel.
+  - "Can parents reply to notices?" → Notices are one-way, but parents can message their child's teachers and school staff directly in the app via **Messages** (direct messages).
   - "What if a parent doesn't have a smartphone?" → They should contact the school office so the school can provide the current fallback communication path.
-  - "Can I schedule a notice to send later?" → Not yet. Notices send immediately when you click **Send**.
+  - "Can I schedule a notice to send later?" → Yes — when creating a notice, choose **Schedule** instead of **Send Now** and pick a date/time. You can also save it as a **Draft**.
 
 ---
 
