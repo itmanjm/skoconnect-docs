@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Teacher & Staff Quick Start Guide
 
@@ -56,7 +56,7 @@ Notices are the fastest way to reach families. Here's how to send one:
 3. Enter a clear **Title** — for example, "Grade 5 Science Fair Reminder"
 4. Write your message in the **Description** field
 5. Under **Target Audience**, choose who should see the notice — you can target specific roles (parents, students, staff) or grades
-6. Optionally, pick a **Category** (School Announcement, Alert, Exam, Event, Sports, Holiday) to help families organize their feed
+6. Optionally, pick a **Category** (School Announcement, Alert, Holiday) to help families organize their feed
 7. Click **Send**
 
 The notice appears instantly in the mobile app for everyone in your target audience. They'll also receive a push notification on their phone.
@@ -111,7 +111,7 @@ Need to collect information from parents or students? Digital forms replace pape
 
 While the admin portal is where you create content, the mobile app is where you can check what's happening on the go:
 
-1. Download the SkoConnect app from the App Store (iPhone) or Google Play (Android)
+1. Download the SkoConnect app from the **Google Play Store** (Android). Search for **SkoConnect**. iOS coming soon.
 2. Open the app and enter your **School Code** (provided by your school administrator)
 3. Log in with the same email and password you use for the admin portal
 3. Tap the **Notices** tab to see all recent announcements
@@ -165,4 +165,4 @@ A: Notices include read receipt tracking. You can see how many people have opene
 A: A **notice** is a message — an announcement, reminder, or alert. An **event** appears on the calendar with a date and time. If something has a specific date and time attached to it, create an event. If it's just information to share, create a notice.
 
 **Q: Can I schedule a notice to send later?**
-A: Currently, notices are sent immediately when you click **Send**. For time-sensitive communications, prepare your notice ahead of time and send it when you're ready.
+A: Yes — when creating a notice, choose **Schedule** instead of **Send Now** and pick a date/time. You can also save it as a **Draft** and send it later.

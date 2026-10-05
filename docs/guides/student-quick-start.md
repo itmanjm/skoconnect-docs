@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Student Quick Start Guide
 
@@ -8,7 +8,7 @@ This guide walks you through the SkoConnect mobile app as a student — from dow
 
 ## Prerequisites
 
-- A smartphone (iPhone or Android)
+- An Android phone (Android 8.0 or later)
 - Your **School Code** (provided by your school)
 - Your SkoConnect login credentials (provided by your school)
 - An internet connection (Wi-Fi or cellular data)
@@ -17,13 +17,15 @@ This guide walks you through the SkoConnect mobile app as a student — from dow
 
 ## Step 1: Download the App
 
-SkoConnect is available for both iPhone and Android:
+SkoConnect is available on Android:
 
-1. Open the **App Store** (iPhone) or **Google Play** (Android)
+1. Open the **Google Play Store** on your phone
 2. Search for **SkoConnect**
 3. Download and install the app
 
-The app icon is green with the SkoConnect logo. Once installed, find it on your home screen.
+> **Note:** iOS coming soon. The iPhone app will be available on the App Store once it launches.
+
+The app icon is teal with a white speech bubble and gold signal waves. Once installed, find it on your home screen.
 
 ---
 
@@ -73,7 +75,7 @@ Notices are messages from your school and teachers — things like exam schedule
 2. Scroll through the list of recent notices
 3. Tap any notice to read the full message
 
-Notices are sorted by date — the newest ones appear first. Some notices have colored labels like "Exam" (blue), "Sports" (green), or "Holiday" (purple) to help you spot what's relevant.
+Notices are sorted by date — the newest ones appear first. Some notices have colored labels like "School Announcement" (green), "Alert" (orange), or "Holiday" (pink) to help you spot what's relevant.
 
 > **Tip:** Check the Notices tab at least once a day so you don't miss important announcements from your teachers.
 

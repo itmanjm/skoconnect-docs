@@ -1,4 +1,4 @@
-> SkoConnect Documentation v1.0 | Last updated: 2026-04-02
+> SkoConnect Documentation v1.1 | Last updated: 2026-08-03
 
 # Teacher & Staff — Complete SOP
 
@@ -72,9 +72,6 @@ Notices are the primary way to communicate with families. As a teacher, you'll l
    |----------|-------------|
    | School Announcement | General classroom or school news |
    | Alert | Important but non-emergency warnings |
-   | Exam | Test schedules, study materials, results |
-   | Event | Event reminders and details |
-   | Sports | Sports schedules, team updates |
    | Holiday | Holiday-related announcements |
 
 4. Optionally, attach an image (e.g., a flyer or worksheet image)
@@ -251,7 +248,7 @@ While the admin portal is where you do most of your content creation, the mobile
 
 ### Logging In
 
-1. Download the SkoConnect app from the App Store (iPhone) or Google Play (Android)
+1. Download the SkoConnect app from the **Google Play Store** (search for "SkoConnect"). iOS coming soon.
 2. Open the app
 3. Enter your **School Code** (provided by your school administrator)
 4. Log in with the same email and password you use for the admin portal
@@ -320,6 +317,6 @@ A: A **notice** is a message — an announcement or alert. An **event** has a da
 
 - → See [Teacher & Staff Quick Start Guide](guides/teacher-quick-start.md) — the 5-minute getting started guide
 - → See [Digital Forms Deep-Dive](deep-dives/digital-forms.md) — templates, field builder, and submission tracking
-- → See [Notice System Deep-Dive](deep-dives/notice-system.md) — targeting, categories, and writing effective notices
-- → See [Calendar Deep-Dive](deep-dives/calendar-events.md) — events, reminders, and calendar management
+- → See [Notices Deep-Dive](deep-dives/notices.md) — targeting, categories, and writing effective notices
+- → See [Calendar & Events Deep-Dive](deep-dives/events-calendar.md) — events, reminders, and calendar management
 - → See [FAQ](faq.md) — answers to common questions from all roles
